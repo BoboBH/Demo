@@ -1,0 +1,6 @@
+D:\github\Demo\CSharp\Demo_SocketServer\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+D:\github\Demo\CSharp\Demo_SocketServer\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+D:\github\Demo\CSharp\Demo_SocketServer\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+D:\github\Demo\CSharp\Demo_SocketServer\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+D:\github\Demo\CSharp\Demo_SocketServer\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+D:\github\Demo\CSharp\Demo_SocketServer\ConsoleApplication1\bin\Debug\DemoSocket.exe.config

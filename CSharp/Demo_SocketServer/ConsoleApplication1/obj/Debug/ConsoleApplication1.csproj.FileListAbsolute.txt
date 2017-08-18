@@ -1,0 +1,1 @@
+D:\github\Demo\CSharp\Demo_SocketServer\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config

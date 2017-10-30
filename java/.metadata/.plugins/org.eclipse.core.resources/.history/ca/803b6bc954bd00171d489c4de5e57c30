@@ -1,0 +1,28 @@
+package com.bobo.spring_boot_app;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.*;
+import org.springframework.boot.autoconfigure.*;
+import org.springframework.stereotype.*;
+import org.springframework.web.bind.annotation.*;
+
+/**
+ * Hello world!
+ *
+ */
+@RestController
+@EnableAutoConfiguration
+public class App 
+{
+	@Autowired("applicationConfig")
+	protected ApplicationConfig applicationConfig;
+    public static void main( String[] args )
+    {
+        System.out.println( "Start Spring Boot!" );
+        SpringApplication.run(App.class, args);
+    }
+    
+    @RequestMapping("/")
+    String home() {
+        return "Hello Strping Boot!";
+    }
+}

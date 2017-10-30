@@ -1,0 +1,15 @@
+package com.bobo.spring_boot_app.main.resources;
+
+import javax.annotation.PostConstruct;
+import javax.inject.Named;
+
+import com.indoqa.boot.proxy.AbstractProxyResourceBase;
+
+@Named
+public class GeonamesProxyResource extends AbstractProxyResourceBase {
+
+    @PostConstruct
+    public void mount() {
+        this.proxy("/geonames", "http://api.geonames.org");
+    }
+}

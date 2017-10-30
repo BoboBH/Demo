@@ -49,6 +49,12 @@ namespace SocketDemo.Server
             
         }
 
+
+        public void ReceiveSingleMes()
+        {
+
+        }
+
         public void Run()
         {
             this.serverSocket.Listen(10);

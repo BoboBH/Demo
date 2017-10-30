@@ -39,9 +39,12 @@ class StudentDao(abd.AbsBaseDao):
 		cursor = db.cursor();
 		try:
 			cursor.execute(sql);
+			if existSt == None:
+				student.id = int(db.lastrowid);
 			db.commit();
 		except:
 			db.rollback();
 		db.close();
-		return;
+		print("new student in student dao:", student);
+		return student;
    

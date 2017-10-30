@@ -1,0 +1,13 @@
+package com.bobo.mybatis.bean;
+
+import org.springframework.web.bind.annotation.RestController;
+
+import com.bobo.mybatis.bean.UserMessage;
+import com.bobo.mybatis.bean.UserMessageMapper;
+import com.bobo.mybatis.bean.UserMessageService;
+@RestController
+public class UserMessageController {
+	@Resource
+	private UserMessageService userMessageService;
+
+}

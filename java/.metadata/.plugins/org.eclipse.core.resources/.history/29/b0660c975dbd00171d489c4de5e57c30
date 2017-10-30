@@ -1,0 +1,6 @@
+package com.bobo.mybatis.bean;
+
+@RestController
+public class UserMessageController {
+
+}

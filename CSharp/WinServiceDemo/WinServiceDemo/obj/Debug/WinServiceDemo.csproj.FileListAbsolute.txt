@@ -1,0 +1,7 @@
+D:\github\Demo\CSharp\WinServiceDemo\WinServiceDemo\bin\Debug\WinServiceDemo.exe.config
+D:\github\Demo\CSharp\WinServiceDemo\WinServiceDemo\bin\Debug\WinServiceDemo.exe
+D:\github\Demo\CSharp\WinServiceDemo\WinServiceDemo\bin\Debug\WinServiceDemo.pdb
+D:\github\Demo\CSharp\WinServiceDemo\WinServiceDemo\obj\Debug\WinServiceDemo.ProjectInstaller.resources
+D:\github\Demo\CSharp\WinServiceDemo\WinServiceDemo\obj\Debug\WinServiceDemo.csproj.GenerateResource.Cache
+D:\github\Demo\CSharp\WinServiceDemo\WinServiceDemo\obj\Debug\WinServiceDemo.exe
+D:\github\Demo\CSharp\WinServiceDemo\WinServiceDemo\obj\Debug\WinServiceDemo.pdb

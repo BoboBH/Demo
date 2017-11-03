@@ -1,10 +1,10 @@
-package com.bobo.mybatis.bean;
+package com.bobo.service;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.bobo.mybatis.bean.UserMessage;
-import com.bobo.mybatis.bean.UserMessageMapper;
+import com.bobo.mybatis.mapper.UserMessageMapper;
 
 @Service
 public class UserMessageService {

@@ -1,4 +1,4 @@
-package com.bobo.mybatis.bean;
+package com.bobo.mybatis.mapper;
 
 
 import java.util.List;

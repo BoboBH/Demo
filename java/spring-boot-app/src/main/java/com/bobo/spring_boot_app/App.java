@@ -7,6 +7,7 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.*;
 import org.springframework.boot.autoconfigure.*;
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -14,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 
 import com.bobo.config.ApplicationConfig;
 import com.bobo.mybatis.bean.UserMessage;
-import com.bobo.mybatis.bean.UserMessageService;
+import com.bobo.service.UserMessageService;
 
 /**
  * Hello world!
@@ -23,8 +24,9 @@ import com.bobo.mybatis.bean.UserMessageService;
 @RestController
 @EnableAutoConfiguration
 @SpringBootConfiguration
-@ComponentScan(value="com.bobo.config,com.bobo.mybatis.bean")
-@MapperScan("com.bobo.mybatis.bean")//告诉mapper所在的包名
+@ComponentScan(value="com.bobo.config,com.bobo.mybatis.bean,com.bobo.service,com.bobo.controller,org.springframework.data.redis.core")
+@MapperScan("com.bobo.mybatis.mapper")//告诉mapper所在的包名
+@EnableCaching
 public class App 
 {
 	@Autowired

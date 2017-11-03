@@ -1,3 +1,4 @@
+package com.bobo.controller;
 /*package com.bobo.mybatis.bean;
 
 import java.util.List;

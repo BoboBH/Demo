@@ -1,7 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
 <fullyQualifiedTypeName name="org.springframework.boot.context.properties.ConfigurationProperties"/>
 <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+<fullyQualifiedTypeName name="org.springframework.cache.annotation.CachingConfigurerSupport"/>
+<fullyQualifiedTypeName name="org.springframework.cache.interceptor.KeyGenerator"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Method"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+<fullyQualifiedTypeName name="org.springframework.data.redis.connection.RedisConnectionFactory"/>
+<fullyQualifiedTypeName name="org.springframework.data.redis.core.StringRedisTemplate"/>
+<fullyQualifiedTypeName name="org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer"/>
+<fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.PropertyAccessor"/>
+<fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonAutoDetect"/>
+<fullyQualifiedTypeName name="com.fasterxml.jackson.databind.ObjectMapper"/>
+<fullyQualifiedTypeName name="org.springframework.cache.CacheManager"/>
+<fullyQualifiedTypeName name="org.springframework.data.redis.cache.RedisCacheManager"/>
+<fullyQualifiedTypeName name="org.springframework.data.redis.core.RedisTemplate"/>
+<fullyQualifiedTypeName name="org.springframework.data.redis.core.ValueOperations"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
+<fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="org.springframework.data.redis.core.HashOperations"/>
+<fullyQualifiedTypeName name="org.springframework.data.redis.core.ListOperations"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.springframework.data.redis.core.SetOperations"/>
+<fullyQualifiedTypeName name="org.springframework.data.redis.core.ZSetOperations"/>
+<fullyQualifiedTypeName name="com.bobo.service.RedisService"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
+<fullyQualifiedTypeName name="org.springframework.cache.annotation.EnableCaching"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.SpringBootApplication"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
 </qualifiedTypeNameHistroy>

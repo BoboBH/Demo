@@ -1,8 +1,16 @@
-
-from sqlalchemy import Column,String,Integer,create_engine,ForeignKey;
+import sys;
+sys.path.append("..");
+from sqlalchemy import Column,String,Integer,DateTime, Numeric,create_engine,ForeignKey;
 from sqlalchemy.orm import sessionmaker;
 from sqlalchemy.ext.declarative import declarative_base;
+from sqlAlchemy.JsonBase import JsonBase;
+import Utility.JsonUtil as JsonUtil;
 Base = declarative_base();
+def convert_datetime(value):
+    if value:
+        return value.strftime("%Y-%m-%d %H:%M:%S");
+    else:
+        return "";
 class UserInfo(Base):
     __tablename__ = "user_info";
     id = Column(Integer, primary_key = True);
@@ -13,6 +21,17 @@ class UserInfo(Base):
         self.address = address;
     def __str__(self):
         return "User info: id={id}, name={name}, address={address}".format(id=self.id, name=self.name,address=self.address);
+    """
+    def toDict(self):
+        for col in self.__table__.columns:
+            if isinstance(col.type, DateTime):
+                value = convert_datetime(value);
+            elif isinstance(col.type, Numeric):
+                value = float(getattr(self, col.name));
+            else:
+                value = getattr(self, col.name);
+            yield (col.name, value);
+    """
 class Book(Base):
     __tablename__ = "book";
     id = Column(Integer, primary_key = True);

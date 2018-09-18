@@ -1,27 +1,37 @@
-from flask import Flask,Response,json;
+from flask import Flask,Response,json,request;
 from config import DevConfig
 #import json;
 
-app = Flask(__name__)
-app.config.from_object("config.DevConfig")
+myapp = Flask(__name__)
+myapp.config.from_object("config.DevConfig")
 print(json.__file__);
 
 tempObj = {'name':'bobo huang'};
 globalJsonString = json.dumps(tempObj);
 
-@app.route('/')
+@myapp.route('/')
 def home():
     return '<h1>Hello World!</h1>'
 
-@app.route('/bobo')
+@myapp.route('/bobo/')
 def bobo():
     return '<h1>Hello Bobo Huang!</h1>'
+    
+@myapp.route('/sayhello/<string:name>')
+def sayhello(name):
+    return '<h1>Hello {name}!</h1>'.format(name=name)
 
-@app.route('/ross/')
+@myapp.route('/post/<string:name>', methods=['POST'])
+def post(name):
+    data = request.data;
+    print(data);
+    return '<h1>Hello {name}!</h1>'.format(name=name)
+
+@myapp.route('/ross/')
 def ross():
     return '<h1>Hello CRM/ROSS/CMSg!</h1>'
 
-@app.route('/json/')
+@myapp.route('/json/')
 def httpjson():
     jsonObj = {
         'name':'bobo huang',
@@ -31,4 +41,4 @@ def httpjson():
 
 #print(app.__file__);
 if __name__ == '__main__':
-    app.run(port=DevConfig.PORT)
+    myapp.run(port=DevConfig.PORT)

@@ -13,3 +13,8 @@ it = iter(list);
 for obj in it:
     print(obj);
 print("Display all item in list");
+
+dict = {};
+dict["name"]="bobo huang";
+dict["id"]=30;
+print(dict);

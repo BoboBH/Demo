@@ -1,6 +1,9 @@
+import sys;
+sys.path.append("..");
 from user_test2 import UserInfo;
 from UserDao import UserDao;
-
+from flask import json;
+import Utility.JsonUtil as JsonUtil;
 if __name__ == "__main__":
     print("this is main function");
     userId = 11000;
@@ -16,3 +19,8 @@ if __name__ == "__main__":
         userInfo = UserInfo("bobo H, insert", "address");
         userid = userDao.updateUserInfo(userInfo);
         print("insert a new user({user}) successfully".format(user=userInfo));
+        dobj = JsonUtil.toDict(userInfo);
+        print("dobj:")
+        print(dobj);
+        print("dobj dict:")
+        print(dict(dobj));

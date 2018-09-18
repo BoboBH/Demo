@@ -1,0 +1,5 @@
+D:\git3\ROSS\demoservice\bin\demoservice.dll
+D:\git3\ROSS\demoservice\bin\demoservice.pdb
+D:\git3\ROSS\demoservice\obj\Debug\demoservice.dll
+D:\git3\ROSS\demoservice\obj\Debug\demoservice.pdb
+D:\git3\ROSS\demoservice\bin\Newtonsoft.Json.dll

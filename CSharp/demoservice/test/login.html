@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+</head>
+ <script src="../js/jquery-2.1.1.min.js">
+</script>
+<script>
+    $(document).ready(function () {
+        $("#btLogin").click(onLogin);
+
+    });
+    function onLogin() {
+        var credential = {
+            userName: $("#userName").val(),
+            password: $("#password").val(),
+            domain: $("#domain").val()
+        };
+        var data = {
+            credential: credential
+        };
+        alert(credential.userName);
+        var url = "../Login.svc/login";
+        $.ajax({
+            type: "POST",
+            url: url,
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            data: JSON.stringify(data),
+            async: false,
+            success: function (result) {
+                if (result != null && result.code == 0) {
+                    alert("Success !!!");
+                }
+                else {
+                    alert(result.Msg);
+                }
+            },
+            error: function (result) {
+                alert(result.statusText);
+            }
+        });
+    }
+
+</script>
+<body>
+    Domain:  <input type="text" id="domain" />
+    User Name: <input type="text" id="userName" />
+    Password: <input type="text" id="password"/>
+    <input type="button" id="btLogin" value="Login" />
+</body>
+</html>

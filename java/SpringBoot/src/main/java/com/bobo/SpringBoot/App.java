@@ -35,6 +35,7 @@ import com.bobo.service.UserService;
 @MapperScan("com.bobo.mapper")
 @ComponentScan("com.bobo.impl")
 @ComponentScan("com.bobo.service")
+@ComponentScan("com.bobo.controller")//支持多个controller
 public class App 
 {
 	@Autowired

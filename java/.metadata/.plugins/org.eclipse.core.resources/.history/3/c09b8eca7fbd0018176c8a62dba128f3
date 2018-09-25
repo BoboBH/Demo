@@ -1,0 +1,9 @@
+package com.bobo.mapper;
+
+import com.bobo.bean.User;
+public interface UserMapper {
+	
+	@Select("")
+	User getUserById(int id);
+
+}

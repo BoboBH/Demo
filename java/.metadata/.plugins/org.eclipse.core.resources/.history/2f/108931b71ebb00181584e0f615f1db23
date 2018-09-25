@@ -1,0 +1,11 @@
+
+package com.bobo.SpringBoot;
+
+import java.util.Date;
+
+public class Student {
+	public String name;
+	public Date? birthday;
+	public DateTime dt;
+
+}

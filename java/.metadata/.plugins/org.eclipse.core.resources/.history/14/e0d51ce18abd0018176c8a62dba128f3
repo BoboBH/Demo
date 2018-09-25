@@ -1,0 +1,19 @@
+package com.bobo.bean;
+
+public class JsonResult {
+	private int status;
+	private String message;
+	private Ojbect data;
+	public JsonResult(){
+		this.status = 0;
+		this.message = "";
+		this.data = null;
+	}
+	
+	public JsonResult(Object data){
+		this.status = 0;
+		this.message = "";
+		this.data = data;
+	}
+
+}

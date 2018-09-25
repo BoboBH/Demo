@@ -1,0 +1,13 @@
+package com.bobo.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.bobo.mapper.UserMapper;
+import com.bobo.service.UserService;
+
+public class UserServiceImpl implements UserService {
+	
+	@Autowired
+	private UserMapper userMapper;
+
+}

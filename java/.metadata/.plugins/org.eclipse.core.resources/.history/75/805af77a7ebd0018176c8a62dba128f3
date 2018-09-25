@@ -1,0 +1,6 @@
+package com.bobo.mapper;
+
+import com.bobo.bean;
+public interface UserMapper {
+
+}

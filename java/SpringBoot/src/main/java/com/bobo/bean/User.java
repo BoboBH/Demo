@@ -13,7 +13,7 @@ public class User {
 	private String username;
 	private int age;
 	private Date ctm;
-	private int grade;
+	private Integer grade;
 	public User() {
 	}
  
@@ -55,11 +55,11 @@ public class User {
 		this.ctm = ctm;
 	}
 
-	public int getGrade() {
+	public Integer getGrade() {
 		return grade;
 	}
 
-	public void setGrade(int grade) {
+	public void setGrade(Integer grade) {
 		this.grade = grade;
 	}
  

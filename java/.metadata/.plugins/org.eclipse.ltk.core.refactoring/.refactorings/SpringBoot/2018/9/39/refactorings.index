@@ -5,3 +5,6 @@
 1537844921796	Copy file
 1537844927872	Copy file
 1537844934943	Delete element
+1537856102620	Encapsulate field 'username'
+1537856106958	Encapsulate field 'age'
+1537856152561	Encapsulate field 'toString'

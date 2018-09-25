@@ -9,7 +9,6 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.http.ResponseEntity;
 import org.springframework.session.data.redis.config.annotation.web.http.EnableRedisHttpSession;
@@ -26,16 +25,13 @@ import com.bobo.service.UserService;
 
 /**
  * Hello world!
- *
+ * ComponentScan:支持多个controller,支持扫描多个包，例如("package1, package2, package3")
  */
-@SpringBootApplication
 @RestController
 @EnableRedisHttpSession(maxInactiveIntervalInSeconds= 3600)
 @EnableAutoConfiguration
 @MapperScan("com.bobo.mapper")
-@ComponentScan("com.bobo.impl")
-@ComponentScan("com.bobo.service")
-@ComponentScan("com.bobo.controller")//支持多个controller
+@ComponentScan("com.bobo.impl,com.bobo.service,com.bobo.controller")
 public class App 
 {
 	@Autowired

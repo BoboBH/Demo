@@ -11249,3 +11249,584 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: expected ST
 2018-09-25 15:44:36,484 [Worker-221] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
 2018-09-25 15:44:36,486 [Worker-221] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2018-09-25 15:44:36,486 [Worker-221] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 15:51:19,856 [Worker-229] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 15:51:19,857 [Worker-229] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 15:51:19,865 [Worker-229] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 15:51:19,867 [Worker-229] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 15:51:19,867 [Worker-229] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 15:51:35,204 [Worker-229] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 15:51:35,204 [Worker-229] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 15:51:35,212 [Worker-229] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 15:51:35,213 [Worker-229] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 15:51:35,213 [Worker-229] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 15:51:46,958 [Worker-228] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 15:51:46,959 [Worker-228] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 15:51:46,967 [Worker-228] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 15:51:46,969 [Worker-228] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 15:51:46,969 [Worker-228] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 15:52:35,599 [Worker-228] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 15:52:35,600 [Worker-228] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 15:52:35,608 [Worker-228] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 15:52:35,610 [Worker-228] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 15:52:35,610 [Worker-228] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 15:53:11,711 [Worker-231] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 15:53:11,712 [Worker-231] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 15:53:11,721 [Worker-231] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 15:53:11,722 [Worker-231] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 15:53:11,722 [Worker-231] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 15:54:08,489 [Worker-233] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 15:54:08,490 [Worker-233] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 15:54:08,498 [Worker-233] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 15:54:08,499 [Worker-233] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 15:54:08,499 [Worker-233] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 15:54:19,129 [Worker-232] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 15:54:19,130 [Worker-232] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 15:54:19,138 [Worker-232] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 15:54:19,139 [Worker-232] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 15:54:19,139 [Worker-232] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 16:10:24,885 [Worker-242] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bobo:SpringBoot:0.0.1-SNAPSHOT @ D:\github\Demo\java\SpringBoot\pom.xml.
+2018-09-25 16:10:30,603 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/springfox/springfox-swagger2/2.6.1/springfox-swagger2-2.6.1.pom
+2018-09-25 16:10:30,790 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/springfox/springfox-swagger2/2.6.1/springfox-swagger2-2.6.1.pom
+2018-09-25 16:10:30,967 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/swagger/swagger-annotations/1.5.10/swagger-annotations-1.5.10.pom
+2018-09-25 16:10:31,162 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/swagger/swagger-annotations/1.5.10/swagger-annotations-1.5.10.pom
+2018-09-25 16:10:31,344 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/swagger/swagger-project/1.5.10/swagger-project-1.5.10.pom
+2018-09-25 16:10:31,693 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/swagger/swagger-project/1.5.10/swagger-project-1.5.10.pom
+2018-09-25 16:10:31,883 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/sonatype/oss/oss-parent/5/oss-parent-5.pom
+2018-09-25 16:10:32,484 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/sonatype/oss/oss-parent/5/oss-parent-5.pom
+2018-09-25 16:10:32,665 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/swagger/swagger-models/1.5.10/swagger-models-1.5.10.pom
+2018-09-25 16:10:32,843 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/swagger/swagger-models/1.5.10/swagger-models-1.5.10.pom
+2018-09-25 16:10:33,024 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/springfox/springfox-spi/2.6.1/springfox-spi-2.6.1.pom
+2018-09-25 16:10:33,197 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/springfox/springfox-spi/2.6.1/springfox-spi-2.6.1.pom
+2018-09-25 16:10:33,372 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/springfox/springfox-core/2.6.1/springfox-core-2.6.1.pom
+2018-09-25 16:10:33,556 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/springfox/springfox-core/2.6.1/springfox-core-2.6.1.pom
+2018-09-25 16:10:34,083 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/plugin/spring-plugin-core/1.2.0.RELEASE/spring-plugin-core-1.2.0.RELEASE.pom
+2018-09-25 16:10:34,262 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/plugin/spring-plugin-core/1.2.0.RELEASE/spring-plugin-core-1.2.0.RELEASE.pom
+2018-09-25 16:10:34,447 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/plugin/spring-plugin/1.2.0.RELEASE/spring-plugin-1.2.0.RELEASE.pom
+2018-09-25 16:10:34,635 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/plugin/spring-plugin/1.2.0.RELEASE/spring-plugin-1.2.0.RELEASE.pom
+2018-09-25 16:10:34,810 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/plugin/spring-plugin-metadata/1.2.0.RELEASE/spring-plugin-metadata-1.2.0.RELEASE.pom
+2018-09-25 16:10:35,416 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/plugin/spring-plugin-metadata/1.2.0.RELEASE/spring-plugin-metadata-1.2.0.RELEASE.pom
+2018-09-25 16:10:35,618 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/springfox/springfox-schema/2.6.1/springfox-schema-2.6.1.pom
+2018-09-25 16:10:35,800 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/springfox/springfox-schema/2.6.1/springfox-schema-2.6.1.pom
+2018-09-25 16:10:35,978 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/springfox/springfox-swagger-common/2.6.1/springfox-swagger-common-2.6.1.pom
+2018-09-25 16:10:36,716 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/springfox/springfox-swagger-common/2.6.1/springfox-swagger-common-2.6.1.pom
+2018-09-25 16:10:36,895 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/springfox/springfox-spring-web/2.6.1/springfox-spring-web-2.6.1.pom
+2018-09-25 16:10:37,069 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/springfox/springfox-spring-web/2.6.1/springfox-spring-web-2.6.1.pom
+2018-09-25 16:10:37,243 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mapstruct/mapstruct/1.0.0.Final/mapstruct-1.0.0.Final.pom
+2018-09-25 16:10:37,470 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mapstruct/mapstruct/1.0.0.Final/mapstruct-1.0.0.Final.pom
+2018-09-25 16:10:37,649 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mapstruct/mapstruct-parent/1.0.0.Final/mapstruct-parent-1.0.0.Final.pom
+2018-09-25 16:10:38,185 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mapstruct/mapstruct-parent/1.0.0.Final/mapstruct-parent-1.0.0.Final.pom
+2018-09-25 16:10:38,371 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/jboss/arquillian/arquillian-bom/1.0.2.Final/arquillian-bom-1.0.2.Final.pom
+2018-09-25 16:10:38,919 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/jboss/arquillian/arquillian-bom/1.0.2.Final/arquillian-bom-1.0.2.Final.pom
+2018-09-25 16:10:39,124 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/jboss/shrinkwrap/shrinkwrap-bom/1.0.1/shrinkwrap-bom-1.0.1.pom
+2018-09-25 16:10:39,316 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/jboss/shrinkwrap/shrinkwrap-bom/1.0.1/shrinkwrap-bom-1.0.1.pom
+2018-09-25 16:10:39,764 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-bom/1.0.0-beta-7/shrinkwrap-resolver-bom-1.0.0-beta-7.pom
+2018-09-25 16:10:39,953 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-bom/1.0.0-beta-7/shrinkwrap-resolver-bom-1.0.0-beta-7.pom
+2018-09-25 16:10:40,140 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-bom/2.0.0-alpha-3/shrinkwrap-descriptors-bom-2.0.0-alpha-3.pom
+2018-09-25 16:10:40,541 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-bom/2.0.0-alpha-3/shrinkwrap-descriptors-bom-2.0.0-alpha-3.pom
+2018-09-25 16:10:40,735 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/springfox/springfox-swagger-ui/2.6.1/springfox-swagger-ui-2.6.1.pom
+2018-09-25 16:10:40,920 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/springfox/springfox-swagger-ui/2.6.1/springfox-swagger-ui-2.6.1.pom
+2018-09-25 16:10:41,242 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/springfox/springfox-swagger2/2.6.1/springfox-swagger2-2.6.1.jar
+2018-09-25 16:10:43,800 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/springfox/springfox-swagger2/2.6.1/springfox-swagger2-2.6.1.jar
+2018-09-25 16:10:43,992 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/swagger/swagger-annotations/1.5.10/swagger-annotations-1.5.10.jar
+2018-09-25 16:10:44,875 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/swagger/swagger-annotations/1.5.10/swagger-annotations-1.5.10.jar
+2018-09-25 16:10:45,095 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/swagger/swagger-models/1.5.10/swagger-models-1.5.10.jar
+2018-09-25 16:10:49,558 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/swagger/swagger-models/1.5.10/swagger-models-1.5.10.jar
+2018-09-25 16:10:49,987 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/springfox/springfox-spi/2.6.1/springfox-spi-2.6.1.jar
+2018-09-25 16:10:52,023 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/springfox/springfox-spi/2.6.1/springfox-spi-2.6.1.jar
+2018-09-25 16:10:52,193 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/springfox/springfox-core/2.6.1/springfox-core-2.6.1.jar
+2018-09-25 16:10:55,835 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/springfox/springfox-core/2.6.1/springfox-core-2.6.1.jar
+2018-09-25 16:10:56,020 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/springfox/springfox-schema/2.6.1/springfox-schema-2.6.1.jar
+2018-09-25 16:10:57,875 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/springfox/springfox-schema/2.6.1/springfox-schema-2.6.1.jar
+2018-09-25 16:10:58,043 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/springfox/springfox-swagger-common/2.6.1/springfox-swagger-common-2.6.1.jar
+2018-09-25 16:11:01,248 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/springfox/springfox-swagger-common/2.6.1/springfox-swagger-common-2.6.1.jar
+2018-09-25 16:11:01,451 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/springfox/springfox-spring-web/2.6.1/springfox-spring-web-2.6.1.jar
+2018-09-25 16:11:08,085 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/springfox/springfox-spring-web/2.6.1/springfox-spring-web-2.6.1.jar
+2018-09-25 16:11:09,075 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/plugin/spring-plugin-core/1.2.0.RELEASE/spring-plugin-core-1.2.0.RELEASE.jar
+2018-09-25 16:11:10,367 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/plugin/spring-plugin-core/1.2.0.RELEASE/spring-plugin-core-1.2.0.RELEASE.jar
+2018-09-25 16:11:10,558 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/plugin/spring-plugin-metadata/1.2.0.RELEASE/spring-plugin-metadata-1.2.0.RELEASE.jar
+2018-09-25 16:11:11,113 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/plugin/spring-plugin-metadata/1.2.0.RELEASE/spring-plugin-metadata-1.2.0.RELEASE.jar
+2018-09-25 16:11:11,282 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mapstruct/mapstruct/1.0.0.Final/mapstruct-1.0.0.Final.jar
+2018-09-25 16:11:12,799 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mapstruct/mapstruct/1.0.0.Final/mapstruct-1.0.0.Final.jar
+2018-09-25 16:11:13,213 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/springfox/springfox-swagger-ui/2.6.1/springfox-swagger-ui-2.6.1.jar
+2018-09-25 16:11:28,958 [Worker-242] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/springfox/springfox-swagger-ui/2.6.1/springfox-swagger-ui-2.6.1.jar
+2018-09-25 16:11:30,686 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:11:30,686 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-09-25 16:11:30,686 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 16:11:30,688 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:11:30,688 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 16:11:32,320 [Worker-237] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:11:32,321 [Worker-237] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 16:11:32,345 [Worker-237] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 16:11:32,347 [Worker-237] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:11:32,347 [Worker-237] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 16:13:38,297 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:13:38,298 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 16:13:38,305 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 16:13:38,307 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:13:38,307 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 16:13:45,209 [Worker-245] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:13:45,210 [Worker-245] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 16:13:45,218 [Worker-245] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 16:13:45,220 [Worker-245] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:13:45,220 [Worker-245] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 16:14:02,278 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:14:02,278 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 16:14:02,287 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 16:14:02,288 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:14:02,288 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 16:14:26,543 [Worker-243] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:14:26,543 [Worker-243] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 16:14:26,551 [Worker-243] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 16:14:26,553 [Worker-243] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:14:26,553 [Worker-243] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 16:14:30,080 [Worker-246] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:14:30,080 [Worker-246] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 16:14:30,089 [Worker-246] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 16:14:30,090 [Worker-246] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:14:30,091 [Worker-246] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 16:14:44,051 [Worker-245] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:14:44,052 [Worker-245] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 16:14:44,060 [Worker-245] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 16:14:44,063 [Worker-245] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:14:44,063 [Worker-245] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 16:15:02,815 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:15:02,816 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 16:15:02,824 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 16:15:02,826 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:15:02,826 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 16:17:32,307 [Worker-249] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:17:32,308 [Worker-249] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 16:17:32,318 [Worker-249] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 16:17:32,319 [Worker-249] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:17:32,319 [Worker-249] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 16:17:33,459 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:17:33,460 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 16:17:33,469 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 16:17:33,470 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:17:33,470 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 16:18:10,488 [Worker-243] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:18:10,489 [Worker-243] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 16:18:10,498 [Worker-243] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 16:18:10,499 [Worker-243] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:18:10,499 [Worker-243] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 16:18:57,674 [Worker-245] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:18:57,675 [Worker-245] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 16:18:57,683 [Worker-245] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 16:18:57,684 [Worker-245] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:18:57,684 [Worker-245] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 16:19:22,066 [Worker-248] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/swagger/swagger-annotations/1.5.10/swagger-annotations-1.5.10-sources.jar
+2018-09-25 16:19:22,799 [Worker-248] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/swagger/swagger-annotations/1.5.10/swagger-annotations-1.5.10-sources.jar
+2018-09-25 16:19:22,916 [Worker-248] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for io.swagger:swagger-annotations:1.5.10
+2018-09-25 16:19:23,392 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:19:23,392 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-09-25 16:19:23,392 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 16:19:23,394 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:19:23,394 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 16:19:52,688 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:19:52,689 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 16:19:52,697 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 16:19:52,699 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:19:52,699 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 16:22:48,513 [Worker-246] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:22:48,514 [Worker-246] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 16:22:48,522 [Worker-246] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 16:22:48,524 [Worker-246] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:22:48,524 [Worker-246] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 16:23:20,392 [Worker-246] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:23:20,392 [Worker-246] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 16:23:20,401 [Worker-246] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 16:23:20,402 [Worker-246] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:23:20,402 [Worker-246] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 16:23:30,581 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:23:30,581 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 16:23:30,589 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 16:23:30,591 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:23:30,591 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 16:24:44,685 [Worker-254] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:24:44,686 [Worker-254] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 16:24:44,695 [Worker-254] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 16:24:44,708 [Worker-254] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:24:44,708 [Worker-254] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 16:30:00,896 [Worker-250] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:30:00,896 [Worker-250] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 16:30:00,905 [Worker-250] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 16:30:00,906 [Worker-250] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:30:00,906 [Worker-250] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 16:30:16,714 [Worker-250] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:30:16,715 [Worker-250] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 16:30:16,723 [Worker-250] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 16:30:16,724 [Worker-250] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:30:16,724 [Worker-250] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 16:32:17,890 [Worker-261] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:32:17,890 [Worker-261] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 16:32:17,899 [Worker-261] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 16:32:17,900 [Worker-261] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:32:17,900 [Worker-261] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 16:32:18,922 [Worker-261] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:32:18,923 [Worker-261] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 16:32:18,931 [Worker-261] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 16:32:18,932 [Worker-261] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:32:18,932 [Worker-261] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 16:32:22,998 [Worker-255] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:32:22,999 [Worker-255] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 16:32:23,007 [Worker-255] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 16:32:23,009 [Worker-255] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:32:23,009 [Worker-255] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 16:32:35,516 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:32:35,517 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 16:32:35,525 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 16:32:35,526 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:32:35,526 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 16:32:45,033 [Worker-255] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:32:45,033 [Worker-255] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 16:32:45,042 [Worker-255] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 16:32:45,043 [Worker-255] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:32:45,043 [Worker-255] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 16:32:59,053 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:32:59,054 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 16:32:59,062 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 16:32:59,064 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:32:59,064 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 16:33:08,076 [Worker-256] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:33:08,077 [Worker-256] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 16:33:08,085 [Worker-256] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 16:33:08,087 [Worker-256] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:33:08,087 [Worker-256] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 16:42:26,733 [Worker-267] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bobo:SpringBoot:0.0.1-SNAPSHOT @ D:\github\Demo\java\SpringBoot\pom.xml.
+2018-09-25 16:42:27,265 [Worker-267] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:42:27,265 [Worker-267] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-09-25 16:42:27,265 [Worker-267] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 16:42:27,267 [Worker-267] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:42:27,267 [Worker-267] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 16:42:43,062 [Worker-267] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bobo:SpringBoot:0.0.1-SNAPSHOT @ D:\github\Demo\java\SpringBoot\pom.xml.
+2018-09-25 16:42:43,871 [Worker-270] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-log4j/1.3.8.RELEASE/spring-boot-starter-log4j-1.3.8.RELEASE.pom
+2018-09-25 16:42:44,069 [Worker-270] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-log4j/1.3.8.RELEASE/spring-boot-starter-log4j-1.3.8.RELEASE.pom
+2018-09-25 16:42:44,443 [Worker-267] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-log4j/1.3.8.RELEASE/spring-boot-starter-log4j-1.3.8.RELEASE.pom
+2018-09-25 16:42:45,821 [Worker-270] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starters/1.3.8.RELEASE/spring-boot-starters-1.3.8.RELEASE.pom
+2018-09-25 16:42:46,016 [Worker-270] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starters/1.3.8.RELEASE/spring-boot-starters-1.3.8.RELEASE.pom
+2018-09-25 16:42:46,196 [Worker-267] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-log4j/1.3.8.RELEASE/spring-boot-starter-log4j-1.3.8.RELEASE.pom
+2018-09-25 16:42:46,214 [Worker-270] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-parent/1.3.8.RELEASE/spring-boot-parent-1.3.8.RELEASE.pom
+2018-09-25 16:42:46,392 [Worker-267] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-parent/1.3.8.RELEASE/spring-boot-parent-1.3.8.RELEASE.pom
+2018-09-25 16:42:46,642 [Worker-270] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-parent/1.3.8.RELEASE/spring-boot-parent-1.3.8.RELEASE.pom
+2018-09-25 16:42:46,805 [Worker-267] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-parent/1.3.8.RELEASE/spring-boot-parent-1.3.8.RELEASE.pom
+2018-09-25 16:42:46,843 [Worker-270] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-dependencies/1.3.8.RELEASE/spring-boot-dependencies-1.3.8.RELEASE.pom
+2018-09-25 16:42:47,006 [Worker-267] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-dependencies/1.3.8.RELEASE/spring-boot-dependencies-1.3.8.RELEASE.pom
+2018-09-25 16:42:47,285 [Worker-270] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-dependencies/1.3.8.RELEASE/spring-boot-dependencies-1.3.8.RELEASE.pom
+2018-09-25 16:42:47,450 [Worker-267] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-dependencies/1.3.8.RELEASE/spring-boot-dependencies-1.3.8.RELEASE.pom
+2018-09-25 16:42:47,486 [Worker-270] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-releasetrain/Gosling-SR5/spring-data-releasetrain-Gosling-SR5.pom
+2018-09-25 16:42:47,695 [Worker-270] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-releasetrain/Gosling-SR5/spring-data-releasetrain-Gosling-SR5.pom
+2018-09-25 16:42:47,869 [Worker-267] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-releasetrain/Gosling-SR5/spring-data-releasetrain-Gosling-SR5.pom
+2018-09-25 16:42:47,893 [Worker-270] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/data/build/spring-data-build/1.7.5.RELEASE/spring-data-build-1.7.5.RELEASE.pom
+2018-09-25 16:42:48,070 [Worker-267] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-releasetrain/Gosling-SR5/spring-data-releasetrain-Gosling-SR5.pom
+2018-09-25 16:42:48,093 [Worker-270] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/data/build/spring-data-build/1.7.5.RELEASE/spring-data-build-1.7.5.RELEASE.pom
+2018-09-25 16:42:48,291 [Worker-270] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/integration/spring-integration-bom/4.2.9.RELEASE/spring-integration-bom-4.2.9.RELEASE.pom
+2018-09-25 16:42:48,454 [Worker-267] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/data/build/spring-data-build/1.7.5.RELEASE/spring-data-build-1.7.5.RELEASE.pom
+2018-09-25 16:42:48,490 [Worker-270] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/integration/spring-integration-bom/4.2.9.RELEASE/spring-integration-bom-4.2.9.RELEASE.pom
+2018-09-25 16:42:48,654 [Worker-267] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/data/build/spring-data-build/1.7.5.RELEASE/spring-data-build-1.7.5.RELEASE.pom
+2018-09-25 16:42:48,688 [Worker-270] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-bom/4.0.4.RELEASE/spring-security-bom-4.0.4.RELEASE.pom
+2018-09-25 16:42:48,851 [Worker-267] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-bom/4.0.4.RELEASE/spring-security-bom-4.0.4.RELEASE.pom
+2018-09-25 16:42:48,885 [Worker-270] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-bom/4.0.4.RELEASE/spring-security-bom-4.0.4.RELEASE.pom
+2018-09-25 16:42:49,049 [Worker-267] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-bom/4.0.4.RELEASE/spring-security-bom-4.0.4.RELEASE.pom
+2018-09-25 16:42:49,084 [Worker-270] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/slf4j/slf4j-log4j12/1.7.21/slf4j-log4j12-1.7.21.pom
+2018-09-25 16:42:49,246 [Worker-267] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/slf4j/slf4j-log4j12/1.7.21/slf4j-log4j12-1.7.21.pom
+2018-09-25 16:42:49,280 [Worker-270] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/slf4j/slf4j-log4j12/1.7.21/slf4j-log4j12-1.7.21.pom
+2018-09-25 16:42:49,448 [Worker-267] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/slf4j/slf4j-log4j12/1.7.21/slf4j-log4j12-1.7.21.pom
+2018-09-25 16:42:49,829 [Worker-270] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-log4j/1.3.8.RELEASE/spring-boot-starter-log4j-1.3.8.RELEASE.jar
+2018-09-25 16:42:50,049 [Worker-270] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-log4j/1.3.8.RELEASE/spring-boot-starter-log4j-1.3.8.RELEASE.jar
+2018-09-25 16:42:50,237 [Worker-270] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/slf4j/slf4j-log4j12/1.7.21/slf4j-log4j12-1.7.21.jar
+2018-09-25 16:42:50,443 [Worker-270] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/slf4j/slf4j-log4j12/1.7.21/slf4j-log4j12-1.7.21.jar
+2018-09-25 16:42:50,538 [Worker-267] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-log4j/1.3.8.RELEASE/spring-boot-starter-log4j-1.3.8.RELEASE.jar
+2018-09-25 16:42:51,551 [Worker-267] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-log4j/1.3.8.RELEASE/spring-boot-starter-log4j-1.3.8.RELEASE.jar
+2018-09-25 16:42:51,801 [Worker-267] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/slf4j/slf4j-log4j12/1.7.21/slf4j-log4j12-1.7.21.jar
+2018-09-25 16:42:52,403 [Worker-267] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/slf4j/slf4j-log4j12/1.7.21/slf4j-log4j12-1.7.21.jar
+2018-09-25 16:42:53,827 [Worker-267] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:42:53,827 [Worker-267] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-09-25 16:42:53,827 [Worker-267] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 16:42:53,830 [Worker-267] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:42:53,830 [Worker-267] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 16:42:55,170 [Worker-272] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:42:55,171 [Worker-272] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 16:42:55,187 [Worker-272] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 16:42:55,188 [Worker-272] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:42:55,188 [Worker-272] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 16:46:00,936 [Worker-275] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:46:00,937 [Worker-275] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-09-25 16:46:00,938 [Worker-275] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 16:46:00,939 [Worker-275] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:46:00,939 [Worker-275] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 16:47:28,089 [Worker-271] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:47:28,090 [Worker-271] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 16:47:28,098 [Worker-271] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 16:47:28,099 [Worker-271] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:47:28,099 [Worker-271] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 16:47:52,917 [Worker-277] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:47:52,918 [Worker-277] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 16:47:52,926 [Worker-277] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 16:47:52,928 [Worker-277] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:47:52,928 [Worker-277] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 16:48:39,744 [Worker-276] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:48:39,744 [Worker-276] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 16:48:39,753 [Worker-276] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 16:48:39,755 [Worker-276] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:48:39,755 [Worker-276] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 16:49:31,935 [Worker-274] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:49:31,936 [Worker-274] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 16:49:31,944 [Worker-274] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 16:49:31,945 [Worker-274] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:49:31,945 [Worker-274] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 16:50:03,965 [Worker-271] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:50:03,966 [Worker-271] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 16:50:03,975 [Worker-271] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 16:50:03,976 [Worker-271] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:50:03,976 [Worker-271] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 16:52:15,073 [Worker-276] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:52:15,074 [Worker-276] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 16:52:15,082 [Worker-276] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 16:52:15,084 [Worker-276] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:52:15,084 [Worker-276] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 16:52:32,867 [Worker-276] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:52:32,868 [Worker-276] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 16:52:32,876 [Worker-276] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 16:52:32,878 [Worker-276] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 16:52:32,878 [Worker-276] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:03:27,409 [Worker-284] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bobo:SpringBoot:0.0.1-SNAPSHOT @ D:\github\Demo\java\SpringBoot\pom.xml.
+2018-09-25 17:03:30,585 [Worker-284] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:03:30,585 [Worker-284] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 17:03:30,600 [Worker-284] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:03:30,601 [Worker-284] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:03:30,601 [Worker-284] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:03:31,922 [Worker-284] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:03:31,922 [Worker-284] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 17:03:31,934 [Worker-284] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:03:31,935 [Worker-284] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:03:31,935 [Worker-284] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:07:04,117 [Worker-284] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:07:04,117 [Worker-284] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-09-25 17:07:04,119 [Worker-284] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:07:04,120 [Worker-284] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:07:04,120 [Worker-284] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:07:38,439 [Worker-284] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:07:38,439 [Worker-284] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-09-25 17:07:38,440 [Worker-284] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:07:38,442 [Worker-284] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:07:38,442 [Worker-284] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:07:58,069 [Worker-281] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:07:58,069 [Worker-281] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-09-25 17:07:58,071 [Worker-281] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:07:58,073 [Worker-281] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:07:58,073 [Worker-281] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:11:06,696 [Worker-286] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:11:06,696 [Worker-286] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-09-25 17:11:06,698 [Worker-286] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:11:06,699 [Worker-286] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:11:06,699 [Worker-286] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:11:25,748 [Worker-287] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:11:25,749 [Worker-287] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-09-25 17:11:25,750 [Worker-287] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:11:25,751 [Worker-287] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:11:25,751 [Worker-287] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:25:58,985 [Worker-299] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:25:58,985 [Worker-299] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-09-25 17:25:58,987 [Worker-299] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:25:58,988 [Worker-299] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:25:58,988 [Worker-299] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:26:02,147 [Worker-297] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:26:02,147 [Worker-297] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-09-25 17:26:02,149 [Worker-297] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:26:02,150 [Worker-297] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:26:02,150 [Worker-297] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:27:39,141 [Worker-304] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:27:39,141 [Worker-304] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-09-25 17:27:39,143 [Worker-304] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:27:39,144 [Worker-304] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:27:39,144 [Worker-304] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:28:11,998 [Worker-306] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:28:11,999 [Worker-306] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 17:28:12,025 [Worker-306] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:28:12,027 [Worker-306] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:28:12,027 [Worker-306] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:28:13,055 [Worker-306] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:28:13,055 [Worker-306] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 17:28:13,064 [Worker-306] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:28:13,065 [Worker-306] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:28:13,065 [Worker-306] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:28:58,946 [Worker-306] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:28:58,947 [Worker-306] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 17:28:58,956 [Worker-306] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:28:58,957 [Worker-306] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:28:58,957 [Worker-306] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:31:38,245 [Worker-305] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:31:38,246 [Worker-305] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 17:31:38,254 [Worker-305] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:31:38,255 [Worker-305] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:31:38,256 [Worker-305] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:31:45,834 [Worker-288] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:31:45,835 [Worker-288] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 17:31:45,844 [Worker-288] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:31:45,845 [Worker-288] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:31:45,845 [Worker-288] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:31:50,659 [Worker-305] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:31:50,659 [Worker-305] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 17:31:50,669 [Worker-305] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:31:50,671 [Worker-305] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:31:50,671 [Worker-305] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:33:20,540 [Worker-305] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:33:20,540 [Worker-305] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 17:33:20,549 [Worker-305] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:33:20,550 [Worker-305] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:33:20,550 [Worker-305] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:33:54,084 [Worker-305] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:33:54,085 [Worker-305] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 17:33:54,093 [Worker-305] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:33:54,095 [Worker-305] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:33:54,095 [Worker-305] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:34:30,854 [Worker-311] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:34:30,855 [Worker-311] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 17:34:30,863 [Worker-311] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:34:30,865 [Worker-311] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:34:30,865 [Worker-311] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:34:36,601 [Worker-314] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:34:36,601 [Worker-314] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 17:34:36,610 [Worker-314] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:34:36,612 [Worker-314] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:34:36,612 [Worker-314] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:34:47,929 [Worker-288] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:34:47,930 [Worker-288] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 17:34:47,939 [Worker-288] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:34:47,940 [Worker-288] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:34:47,940 [Worker-288] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:36:46,267 [Worker-314] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:36:46,268 [Worker-314] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 17:36:46,276 [Worker-314] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:36:46,278 [Worker-314] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:36:46,278 [Worker-314] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:37:50,087 [Worker-316] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:37:50,087 [Worker-316] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 17:37:50,095 [Worker-316] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:37:50,097 [Worker-316] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:37:50,097 [Worker-316] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:37:51,164 [Worker-311] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:37:51,165 [Worker-311] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 17:37:51,174 [Worker-311] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:37:51,175 [Worker-311] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:37:51,175 [Worker-311] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:37:55,833 [Worker-313] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:37:55,834 [Worker-313] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 17:37:55,842 [Worker-313] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:37:55,843 [Worker-313] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:37:55,843 [Worker-313] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:38:03,360 [Worker-311] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:38:03,361 [Worker-311] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 17:38:03,369 [Worker-311] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:38:03,371 [Worker-311] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:38:03,371 [Worker-311] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:38:53,914 [Worker-314] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:38:53,915 [Worker-314] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 17:38:53,925 [Worker-314] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:38:53,926 [Worker-314] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:38:53,926 [Worker-314] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:39:47,882 [Worker-316] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:39:47,882 [Worker-316] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 17:39:47,891 [Worker-316] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:39:47,892 [Worker-316] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:39:47,892 [Worker-316] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:40:22,041 [Worker-305] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:40:22,041 [Worker-305] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 17:40:22,049 [Worker-305] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:40:22,051 [Worker-305] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:40:22,051 [Worker-305] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:40:35,626 [Worker-316] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:40:35,627 [Worker-316] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 17:40:35,636 [Worker-316] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:40:35,637 [Worker-316] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:40:35,637 [Worker-316] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:40:43,185 [Worker-313] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:40:43,186 [Worker-313] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 17:40:43,195 [Worker-313] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:40:43,196 [Worker-313] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:40:43,196 [Worker-313] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:41:53,485 [Worker-318] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:41:53,486 [Worker-318] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 17:41:53,495 [Worker-318] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:41:53,495 [Worker-318] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:41:53,496 [Worker-318] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:41:59,134 [Worker-316] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:41:59,135 [Worker-316] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 17:41:59,144 [Worker-316] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:41:59,145 [Worker-316] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:41:59,145 [Worker-316] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:42:01,558 [Worker-313] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:42:01,559 [Worker-313] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 17:42:01,569 [Worker-313] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:42:01,570 [Worker-313] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:42:01,570 [Worker-313] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:42:14,641 [Worker-316] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:42:14,642 [Worker-316] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 17:42:14,650 [Worker-316] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:42:14,651 [Worker-316] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:42:14,651 [Worker-316] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:42:38,741 [Worker-305] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:42:38,742 [Worker-305] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 17:42:38,750 [Worker-305] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:42:38,752 [Worker-305] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:42:38,752 [Worker-305] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:42:58,011 [Worker-317] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:42:58,011 [Worker-317] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 17:42:58,021 [Worker-317] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:42:58,022 [Worker-317] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:42:58,022 [Worker-317] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:43:09,678 [Worker-313] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:43:09,679 [Worker-313] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 17:43:09,688 [Worker-313] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:43:09,689 [Worker-313] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:43:09,689 [Worker-313] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:43:28,259 [Worker-305] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:43:28,260 [Worker-305] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 17:43:28,268 [Worker-305] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:43:28,270 [Worker-305] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:43:28,270 [Worker-305] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:45:46,700 [Worker-319] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:45:46,701 [Worker-319] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 17:45:46,710 [Worker-319] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:45:46,711 [Worker-319] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:45:46,711 [Worker-319] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:47:21,935 [Worker-315] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:47:21,936 [Worker-315] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 17:47:21,946 [Worker-315] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:47:21,947 [Worker-315] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:47:21,947 [Worker-315] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:47:23,017 [Worker-313] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:47:23,017 [Worker-313] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 17:47:23,028 [Worker-313] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:47:23,029 [Worker-313] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:47:23,029 [Worker-313] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:47:25,886 [Worker-318] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:47:25,886 [Worker-318] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 17:47:25,899 [Worker-318] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:47:25,901 [Worker-318] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:47:25,901 [Worker-318] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:48:45,958 [Worker-311] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:48:45,959 [Worker-311] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 17:48:45,983 [Worker-311] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:48:45,984 [Worker-311] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:48:45,985 [Worker-311] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:49:48,076 [Worker-316] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:49:48,077 [Worker-316] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 17:49:48,086 [Worker-316] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:49:48,088 [Worker-316] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:49:48,088 [Worker-316] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:50:00,331 [Worker-317] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:50:00,331 [Worker-317] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 17:50:00,341 [Worker-317] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:50:00,342 [Worker-317] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:50:00,342 [Worker-317] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:50:24,371 [Worker-305] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:50:24,372 [Worker-305] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 17:50:24,380 [Worker-305] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:50:24,382 [Worker-305] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:50:24,382 [Worker-305] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources
+2018-09-25 17:51:31,947 [Worker-311] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:51:31,947 [Worker-311] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-09-25 17:51:31,956 [Worker-311] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\config\${package.environment}
+2018-09-25 17:51:31,958 [Worker-311] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:51:31,958 [Worker-311] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\Demo\java\SpringBoot\src\test\resources

@@ -1,5 +1,6 @@
 package com.bobo.bean;
  
+import java.io.Serializable;
 import java.util.Date;
  
 /**
@@ -7,7 +8,7 @@ import java.util.Date;
  * @Description
  * @date 2017-07-04 22:47:28
  */
-public class User {
+public class User implements Serializable{
  
 	private int id;
 	private String username;

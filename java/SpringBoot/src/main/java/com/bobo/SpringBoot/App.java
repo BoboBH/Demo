@@ -23,6 +23,8 @@ import com.bobo.bean.JsonResult;
 import com.bobo.bean.User;
 import com.bobo.service.UserService;
 
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
 /**
  * Hello world!
  * ComponentScan:支持多个controller,支持扫描多个包，例如("package1, package2, package3")
@@ -30,6 +32,7 @@ import com.bobo.service.UserService;
 @RestController
 @EnableRedisHttpSession(maxInactiveIntervalInSeconds= 3600)
 @EnableAutoConfiguration
+@EnableSwagger2
 @MapperScan("com.bobo.mapper")
 @ComponentScan("com.bobo.impl,com.bobo.service,com.bobo.controller")
 public class App 

@@ -1,0 +1,5 @@
+package com.bobo.dao;
+
+public class UserDaoImpl implements UserDao {
+
+}

@@ -46,8 +46,20 @@ print(df2);
 print("查看不同列的数据类型：");
 print(df2.dtypes);
 print("查看frame中头部和尾部的行：");
+print("Head 2");
 print(df2.head(1));
+print("Tail 2");
 print(df2.tail(2));
+print("describe(df2)函数对于数据的快速统计汇总：");
+print(df2.describe());
+print("df2.sum(0)：");
+print(df2.sum(0));
+print("df2.mean(0)：");
+print(df2.mean(0));
+
+
+
+
 print("describe()函数对于数据的快速统计汇总：");
 print(df.describe());
 print("对数据的转置:");

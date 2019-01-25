@@ -1,0 +1,6 @@
+package com.bobo.dao;
+
+@Reposity
+public class UserDaoImpl implements UserDao {
+
+}

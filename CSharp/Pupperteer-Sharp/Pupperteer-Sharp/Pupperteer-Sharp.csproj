@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1CED0D42-03EB-43DA-828F-B9BCF749B290}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pupperteer_Sharp</RootNamespace>
+    <AssemblyName>Pupperteer-Sharp</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\git3\ROSS\Lib\Json.net\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddTagOptions.cs" />
+    <Compile Include="BoundingBox.cs" />
+    <Compile Include="BoxModel.cs" />
+    <Compile Include="BoxModelPoint.cs" />
+    <Compile Include="Browser.cs" />
+    <Compile Include="BrowserContext.cs" />
+    <Compile Include="BrowserFetcher.cs" />
+    <Compile Include="BrowserFetcherOptions.cs" />
+    <Compile Include="BufferException.cs" />
+    <Compile Include="CDPSession.cs" />
+    <Compile Include="ChromiumProcess.cs" />
+    <Compile Include="ChromiumProcessException.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Connection.cs" />
+    <Compile Include="ConnectOptions.cs" />
+    <Compile Include="ConsoleEventArgs.cs" />
+    <Compile Include="ConsoleMessage.cs" />
+    <Compile Include="ConsoleType.cs" />
+    <Compile Include="ContextPayload.cs" />
+    <Compile Include="ContextPayloadAuxData.cs" />
+    <Compile Include="CookieParam.cs" />
+    <Compile Include="Credentials.cs" />
+    <Compile Include="Dialog.cs" />
+    <Compile Include="DialogEventArgs.cs" />
+    <Compile Include="DialogType.cs" />
+    <Compile Include="ElementHandle.cs" />
+    <Compile Include="EmulationManager.cs" />
+    <Compile Include="ErrorEventArgs.cs" />
+    <Compile Include="EvaluateExceptionDetails.cs" />
+    <Compile Include="EvaluateExceptionInfo.cs" />
+    <Compile Include="EvaluateExceptionStackTrace.cs" />
+    <Compile Include="EvaluationExceptionCallFrame.cs" />
+    <Compile Include="EvaluationFailedException.cs" />
+    <Compile Include="ExecutionContext.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="Frame.cs" />
+    <Compile Include="FrameEventArgs.cs" />
+    <Compile Include="FrameManager.cs" />
+    <Compile Include="FramePayload.cs" />
+    <Compile Include="FrameTree.cs" />
+    <Compile Include="GeolocationOption.cs" />
+    <Compile Include="Helpers\AsyncFileHelper.cs" />
+    <Compile Include="Helpers\DictionaryExtensions.cs" />
+    <Compile Include="Helpers\FlexibleStringEnumConverter.cs" />
+    <Compile Include="Helpers\HttpMethodConverter.cs" />
+    <Compile Include="Helpers\JTokenExtensions.cs" />
+    <Compile Include="Helpers\MultiMap.cs" />
+    <Compile Include="Helpers\ProcessExtensions.cs" />
+    <Compile Include="Helpers\RemoteObjectHelper.cs" />
+    <Compile Include="Helpers\StringExtensions.cs" />
+    <Compile Include="Helpers\TaskHelper.cs" />
+    <Compile Include="Helpers\TaskQueue.cs" />
+    <Compile Include="Helpers\TempDirectory.cs" />
+    <Compile Include="IBrowserOptions.cs" />
+    <Compile Include="IConnection.cs" />
+    <Compile Include="IConnectionOptions.cs" />
+    <Compile Include="Input\ClickOptions.cs" />
+    <Compile Include="Input\DownOptions.cs" />
+    <Compile Include="Input\Key.cs" />
+    <Compile Include="Input\Keyboard.cs" />
+    <Compile Include="Input\KeyDefinition.cs" />
+    <Compile Include="Input\KeyDefinitions.cs" />
+    <Compile Include="Input\Mouse.cs" />
+    <Compile Include="Input\MouseButton.cs" />
+    <Compile Include="Input\MoveOptions.cs" />
+    <Compile Include="Input\PressOptions.cs" />
+    <Compile Include="Input\Touchscreen.cs" />
+    <Compile Include="Input\TypeOptions.cs" />
+    <Compile Include="InvalidPageBinding.cs" />
+    <Compile Include="InvalidTargetException.cs" />
+    <Compile Include="JSHandle.cs" />
+    <Compile Include="Launcher.cs" />
+    <Compile Include="LaunchOptions.cs" />
+    <Compile Include="Media\Clip.cs" />
+    <Compile Include="Media\MarginOptions.cs" />
+    <Compile Include="Media\MediaType.cs" />
+    <Compile Include="Media\PaperFormat.cs" />
+    <Compile Include="Media\ScreenOrientation.cs" />
+    <Compile Include="Media\ScreenOrientationType.cs" />
+    <Compile Include="MessageEventArgs.cs" />
+    <Compile Include="MessageException.cs" />
+    <Compile Include="MessageTask.cs" />
+    <Compile Include="Messaging\BasicFrameResponse.cs" />
+    <Compile Include="Messaging\BindingCalledResponse.cs" />
+    <Compile Include="Messaging\BoxModelResponse.cs" />
+    <Compile Include="Messaging\CertificateErrorResponse.cs" />
+    <Compile Include="Messaging\CoverageResponseRange.cs" />
+    <Compile Include="Messaging\CreateBrowserContextResponse.cs" />
+    <Compile Include="Messaging\CSSStopRuleUsageTrackingResponse.cs" />
+    <Compile Include="Messaging\CSSStyleSheetAddedResponse.cs" />
+    <Compile Include="Messaging\DebuggerScriptParsedResponse.cs" />
+    <Compile Include="Messaging\DomDescribeNodeResponse.cs" />
+    <Compile Include="Messaging\GetBrowserContextsResponse.cs" />
+    <Compile Include="Messaging\GetContentQuadsResponse.cs" />
+    <Compile Include="Messaging\GetLayoutMetricsResponse.cs" />
+    <Compile Include="Messaging\IOReadResponse.cs" />
+    <Compile Include="Messaging\LifecycleEventResponse.cs" />
+    <Compile Include="Messaging\LoadingFailedResponse.cs" />
+    <Compile Include="Messaging\LoadingFinishedResponse.cs" />
+    <Compile Include="Messaging\LogEntryAddedResponse.cs" />
+    <Compile Include="Messaging\MessageKeys.cs" />
+    <Compile Include="Messaging\NavigatedWithinDocumentResponse.cs" />
+    <Compile Include="Messaging\NetworkGetResponseBodyResponse.cs" />
+    <Compile Include="Messaging\PageCaptureScreenshotResponse.cs" />
+    <Compile Include="Messaging\PageConsoleResponse.cs" />
+    <Compile Include="Messaging\PageGetLayoutMetricsResponse.cs" />
+    <Compile Include="Messaging\PageGetNavigationHistoryResponse.cs" />
+    <Compile Include="Messaging\PageJavascriptDialogOpeningResponse.cs" />
+    <Compile Include="Messaging\PageNavigateResponse.cs" />
+    <Compile Include="Messaging\PerformanceGetMetricsResponse.cs" />
+    <Compile Include="Messaging\PerformanceMetricsResponse.cs" />
+    <Compile Include="Messaging\ProfilerTakePreciseCoverageResponse.cs" />
+    <Compile Include="Messaging\RequestInterceptedResponse.cs" />
+    <Compile Include="Messaging\RequestServedFromCacheResponse.cs" />
+    <Compile Include="Messaging\RequestWillBeSentPayload.cs" />
+    <Compile Include="Messaging\ResponsePayload.cs" />
+    <Compile Include="Messaging\ResponseReceivedResponse.cs" />
+    <Compile Include="Messaging\TargetCreatedResponse.cs" />
+    <Compile Include="Messaging\TargetDestroyedResponse.cs" />
+    <Compile Include="Metric.cs" />
+    <Compile Include="MetricEventArgs.cs" />
+    <Compile Include="Mobile\DeviceDescriptor.cs" />
+    <Compile Include="Mobile\DeviceDescriptorName.cs" />
+    <Compile Include="Mobile\DeviceDescriptors.cs" />
+    <Compile Include="NavigationException.cs" />
+    <Compile Include="NavigationOptions.cs" />
+    <Compile Include="NavigatorWatcher.cs" />
+    <Compile Include="NetworkManager.cs" />
+    <Compile Include="OverridePermission.cs" />
+    <Compile Include="Page.cs" />
+    <Compile Include="PageCloseOptions.cs" />
+    <Compile Include="PageCoverage\Coverage.cs" />
+    <Compile Include="PageCoverage\CoverageEntry.cs" />
+    <Compile Include="PageCoverage\CoverageEntryPoint.cs" />
+    <Compile Include="PageCoverage\CoverageEntryRange.cs" />
+    <Compile Include="PageCoverage\CoverageStartOptions.cs" />
+    <Compile Include="PageCoverage\CSSCoverage.cs" />
+    <Compile Include="PageCoverage\JSCoverage.cs" />
+    <Compile Include="PageErrorEventArgs.cs" />
+    <Compile Include="Payload.cs" />
+    <Compile Include="PdfOptions.cs" />
+    <Compile Include="Platform.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Puppeteer.cs" />
+    <Compile Include="PuppeteerException.cs" />
+    <Compile Include="RemoteAddress.cs" />
+    <Compile Include="Request.cs" />
+    <Compile Include="RequestAbortErrorCode.cs" />
+    <Compile Include="RequestEventArgs.cs" />
+    <Compile Include="ResourceType.cs" />
+    <Compile Include="Response.cs" />
+    <Compile Include="ResponseCreatedEventArgs.cs" />
+    <Compile Include="ResponseData.cs" />
+    <Compile Include="RevisionInfo.cs" />
+    <Compile Include="ScreenshotOptions.cs" />
+    <Compile Include="ScreenshotType.cs" />
+    <Compile Include="SecurityDetails.cs" />
+    <Compile Include="SelectorException.cs" />
+    <Compile Include="Target.cs" />
+    <Compile Include="TargetChangedArgs.cs" />
+    <Compile Include="TargetClosedException.cs" />
+    <Compile Include="TargetCrashedException.cs" />
+    <Compile Include="TargetInfo.cs" />
+    <Compile Include="TargetType.cs" />
+    <Compile Include="Tracing.cs" />
+    <Compile Include="TracingCompleteEventArgs.cs" />
+    <Compile Include="TracingOptions.cs" />
+    <Compile Include="Transport\IConnectionTransport.cs" />
+    <Compile Include="Transport\MessageReceivedEventArgs.cs" />
+    <Compile Include="Transport\WebSocketTransport.cs" />
+    <Compile Include="ViewPortOptions.cs" />
+    <Compile Include="WaitForFunctionOptions.cs" />
+    <Compile Include="WaitForFunctionPollingOption.cs" />
+    <Compile Include="WaitForOptions.cs" />
+    <Compile Include="WaitForSelectorOptions.cs" />
+    <Compile Include="WaitTask.cs" />
+    <Compile Include="WaitTaskTimeoutException.cs" />
+    <Compile Include="WaitUntilNavigation.cs" />
+    <Compile Include="Worker.cs" />
+    <Compile Include="WorkerEventArgs.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

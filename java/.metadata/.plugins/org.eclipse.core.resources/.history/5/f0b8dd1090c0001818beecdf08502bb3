@@ -1,0 +1,26 @@
+package com.bobo.dao;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
+
+import com.bobo.bean.User;
+
+@Repository
+public class UserDaoImpl implements UserDao {
+
+	@Autowired
+	private JdbcTemplate jdbcTemplate;
+	
+	@Override
+	public User getUserById(int id){
+		List<User> list = jdbcTemplate.query("select * from tb_user where id = ?", new Object[]{id}, 
+				new BeanPropertyRowMapper(User.class));
+		if(list.isEmpty())
+			return null;
+		return list[0];
+	}
+}

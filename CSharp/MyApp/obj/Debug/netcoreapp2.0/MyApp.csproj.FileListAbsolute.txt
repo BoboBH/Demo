@@ -1,0 +1,11 @@
+D:\github\Demo\CSharp\MyApp\bin\Debug\netcoreapp2.0\MyApp.deps.json
+D:\github\Demo\CSharp\MyApp\bin\Debug\netcoreapp2.0\MyApp.runtimeconfig.json
+D:\github\Demo\CSharp\MyApp\bin\Debug\netcoreapp2.0\MyApp.runtimeconfig.dev.json
+D:\github\Demo\CSharp\MyApp\bin\Debug\netcoreapp2.0\MyApp.dll
+D:\github\Demo\CSharp\MyApp\bin\Debug\netcoreapp2.0\MyApp.pdb
+D:\github\Demo\CSharp\MyApp\obj\Debug\netcoreapp2.0\MyApp.csproj.CoreCompileInputs.cache
+D:\github\Demo\CSharp\MyApp\obj\Debug\netcoreapp2.0\MyApp.AssemblyInfoInputs.cache
+D:\github\Demo\CSharp\MyApp\obj\Debug\netcoreapp2.0\MyApp.AssemblyInfo.cs
+D:\github\Demo\CSharp\MyApp\obj\Debug\netcoreapp2.0\MyApp.dll
+D:\github\Demo\CSharp\MyApp\obj\Debug\netcoreapp2.0\MyApp.pdb
+D:\github\Demo\CSharp\MyApp\obj\Debug\netcoreapp2.0\MyApp.csprojResolveAssemblyReference.cache

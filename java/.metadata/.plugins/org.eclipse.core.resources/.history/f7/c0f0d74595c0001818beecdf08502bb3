@@ -1,0 +1,47 @@
+package com.bobo.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.bobo.bean.JsonResult;
+import com.bobo.bean.User;
+import com.bobo.dao.UserDao;
+
+@ComponentScan("com.bobo.dao")
+@RestController
+public class UserController {
+
+	@Autowired
+	private UserDao userDao;
+	
+	
+	@RequestMapping(value="/testuser/{id}", method = RequestMethod.GET)
+	public ResponseEntity<JsonResult> getUserById(@PathVariable(value="id") int id){
+		
+		try{
+			User user = this.userDao.getUserById(id);
+			return ResponseEntity.ok(new JsonResult(user));
+			
+		}
+		catch(Exception ex){
+			return ResponseEntity.ok(new JsonResult(-1, "System Error:" + ex.getMessage()));
+		}
+	}
+
+	@RequestMapping(value="/testuser/{id}", method = RequestMethod.GET)
+	public ResponseEntity<JsonResult> getUserList(){
+		try{
+			List<User> list = this.userDao.getUserById();
+			return ResponseEntity.ok(new JsonResult(list));
+			
+		}
+		catch(Exception ex){
+			return ResponseEntity.ok(new JsonResult(-1, "System Error:" + ex.getMessage()));
+		}
+	}
+}

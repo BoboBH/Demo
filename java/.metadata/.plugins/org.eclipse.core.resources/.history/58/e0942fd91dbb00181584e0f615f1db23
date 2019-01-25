@@ -1,8 +1,0 @@
-package com.bobo.SpringBoot;
-
-public class Student {
-	public String name;
-	public DateTime birthday;
-	public boolean? gender;
-
-}

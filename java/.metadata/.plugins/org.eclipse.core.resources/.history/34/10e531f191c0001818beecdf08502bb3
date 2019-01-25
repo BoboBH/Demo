@@ -1,0 +1,17 @@
+package com.bobo.controller;
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.web.bind.annotation.RestController;
+
+@ComponentScan("com.bobo.dao")
+@RestController
+public class UserController {
+
+	@Autowired
+	private UserDaoImpl userDaoImpl;
+	@RequestMapping(value="/testuser/{id}", method = RequestMethod.GET)
+	public ResponseEntity<JsonResult> getUserById(@PathVariable(value="id") int id){
+		
+		
+	}
+}

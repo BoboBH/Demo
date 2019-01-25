@@ -1,0 +1,6 @@
+package com.bobo.bean;
+
+@Configuration
+public class Swagger2 {
+
+}

@@ -1,0 +1,10 @@
+package com.bobo.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class TestUserController {
+
+	@Autowired
+	private TestUser testUser;
+}

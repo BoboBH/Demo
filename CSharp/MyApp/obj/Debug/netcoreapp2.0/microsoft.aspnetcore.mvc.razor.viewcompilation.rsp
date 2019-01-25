@@ -1,0 +1,5 @@
+D:\github\Demo\CSharp\MyApp
+--output-path=obj\Debug\netcoreapp2.0\
+--application-name=MyApp
+--content-root=D:\github\Demo\CSharp\MyApp
+--file=

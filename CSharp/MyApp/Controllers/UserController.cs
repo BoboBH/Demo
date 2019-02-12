@@ -24,7 +24,9 @@ namespace MyApp.Controllers
         public User Get(string id)
         {
             MyAppContext context = new MyAppContext();
-            User user = context.User.Find(id);
+            User user = null;
+            user = context.User.FirstOrDefault(u => u.Id == id);
+            //user = context.User.Find(id);
             if (user != null)
                 return user;
             user = new User()

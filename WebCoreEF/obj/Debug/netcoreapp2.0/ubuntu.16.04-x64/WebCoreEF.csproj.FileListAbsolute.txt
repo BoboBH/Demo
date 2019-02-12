@@ -1,0 +1,13 @@
+D:\github\Demo\WebCoreEF\bin\Debug\netcoreapp2.0\ubuntu.16.04-x64\libhostpolicy.so
+D:\github\Demo\WebCoreEF\bin\Debug\netcoreapp2.0\ubuntu.16.04-x64\libhostfxr.so
+D:\github\Demo\WebCoreEF\bin\Debug\netcoreapp2.0\ubuntu.16.04-x64\WebCoreEF
+D:\github\Demo\WebCoreEF\bin\Debug\netcoreapp2.0\ubuntu.16.04-x64\WebCoreEF.deps.json
+D:\github\Demo\WebCoreEF\bin\Debug\netcoreapp2.0\ubuntu.16.04-x64\WebCoreEF.runtimeconfig.json
+D:\github\Demo\WebCoreEF\bin\Debug\netcoreapp2.0\ubuntu.16.04-x64\WebCoreEF.runtimeconfig.dev.json
+D:\github\Demo\WebCoreEF\bin\Debug\netcoreapp2.0\ubuntu.16.04-x64\WebCoreEF.dll
+D:\github\Demo\WebCoreEF\bin\Debug\netcoreapp2.0\ubuntu.16.04-x64\WebCoreEF.pdb
+D:\github\Demo\WebCoreEF\obj\Debug\netcoreapp2.0\ubuntu.16.04-x64\WebCoreEF.csproj.CoreCompileInputs.cache
+D:\github\Demo\WebCoreEF\obj\Debug\netcoreapp2.0\ubuntu.16.04-x64\WebCoreEF.AssemblyInfoInputs.cache
+D:\github\Demo\WebCoreEF\obj\Debug\netcoreapp2.0\ubuntu.16.04-x64\WebCoreEF.AssemblyInfo.cs
+D:\github\Demo\WebCoreEF\obj\Debug\netcoreapp2.0\ubuntu.16.04-x64\WebCoreEF.dll
+D:\github\Demo\WebCoreEF\obj\Debug\netcoreapp2.0\ubuntu.16.04-x64\WebCoreEF.pdb

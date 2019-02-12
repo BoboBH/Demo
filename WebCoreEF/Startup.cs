@@ -29,7 +29,6 @@ namespace WebCoreEF
 
             services.AddDbContext<UserContext>(options =>
                 options.UseMySql(Configuration.GetConnectionString("MySql")));//添加Mysql支持
-
             services.AddUnitOfWork<UserContext>();//添加UnitOfWork支持
             services.AddScoped(typeof(IUserService), typeof(UserService));//用ASP.NET Core自带依赖注入(DI)注入使用的类
             services.AddMvc();

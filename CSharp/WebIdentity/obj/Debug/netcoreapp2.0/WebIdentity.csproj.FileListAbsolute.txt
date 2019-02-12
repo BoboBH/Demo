@@ -1,0 +1,12 @@
+D:\github\Demo\CSharp\WebIdentity\bin\Debug\netcoreapp2.0\WebIdentity.deps.json
+D:\github\Demo\CSharp\WebIdentity\bin\Debug\netcoreapp2.0\WebIdentity.runtimeconfig.json
+D:\github\Demo\CSharp\WebIdentity\bin\Debug\netcoreapp2.0\WebIdentity.runtimeconfig.dev.json
+D:\github\Demo\CSharp\WebIdentity\bin\Debug\netcoreapp2.0\WebIdentity.dll
+D:\github\Demo\CSharp\WebIdentity\bin\Debug\netcoreapp2.0\WebIdentity.pdb
+D:\github\Demo\CSharp\WebIdentity\obj\Debug\netcoreapp2.0\WebIdentity.csprojResolveAssemblyReference.cache
+D:\github\Demo\CSharp\WebIdentity\obj\Debug\netcoreapp2.0\WebIdentity.csproj.CoreCompileInputs.cache
+D:\github\Demo\CSharp\WebIdentity\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+D:\github\Demo\CSharp\WebIdentity\obj\Debug\netcoreapp2.0\WebIdentity.AssemblyInfoInputs.cache
+D:\github\Demo\CSharp\WebIdentity\obj\Debug\netcoreapp2.0\WebIdentity.AssemblyInfo.cs
+D:\github\Demo\CSharp\WebIdentity\obj\Debug\netcoreapp2.0\WebIdentity.dll
+D:\github\Demo\CSharp\WebIdentity\obj\Debug\netcoreapp2.0\WebIdentity.pdb

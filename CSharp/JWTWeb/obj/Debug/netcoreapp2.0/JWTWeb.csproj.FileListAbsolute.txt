@@ -1,0 +1,11 @@
+D:\github\Demo\csharp\JWTWeb\bin\Debug\netcoreapp2.0\JWTWeb.deps.json
+D:\github\Demo\csharp\JWTWeb\bin\Debug\netcoreapp2.0\JWTWeb.runtimeconfig.json
+D:\github\Demo\csharp\JWTWeb\bin\Debug\netcoreapp2.0\JWTWeb.runtimeconfig.dev.json
+D:\github\Demo\csharp\JWTWeb\bin\Debug\netcoreapp2.0\JWTWeb.dll
+D:\github\Demo\csharp\JWTWeb\bin\Debug\netcoreapp2.0\JWTWeb.pdb
+D:\github\Demo\csharp\JWTWeb\obj\Debug\netcoreapp2.0\JWTWeb.csprojResolveAssemblyReference.cache
+D:\github\Demo\csharp\JWTWeb\obj\Debug\netcoreapp2.0\JWTWeb.csproj.CoreCompileInputs.cache
+D:\github\Demo\csharp\JWTWeb\obj\Debug\netcoreapp2.0\JWTWeb.AssemblyInfoInputs.cache
+D:\github\Demo\csharp\JWTWeb\obj\Debug\netcoreapp2.0\JWTWeb.AssemblyInfo.cs
+D:\github\Demo\csharp\JWTWeb\obj\Debug\netcoreapp2.0\JWTWeb.dll
+D:\github\Demo\csharp\JWTWeb\obj\Debug\netcoreapp2.0\JWTWeb.pdb

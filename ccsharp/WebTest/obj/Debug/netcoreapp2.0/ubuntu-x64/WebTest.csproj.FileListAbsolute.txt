@@ -1,0 +1,13 @@
+D:\github\Demo\ccsharp\WebTest\bin\Debug\netcoreapp2.0\ubuntu-x64\libhostpolicy.so
+D:\github\Demo\ccsharp\WebTest\bin\Debug\netcoreapp2.0\ubuntu-x64\libhostfxr.so
+D:\github\Demo\ccsharp\WebTest\bin\Debug\netcoreapp2.0\ubuntu-x64\WebTest
+D:\github\Demo\ccsharp\WebTest\bin\Debug\netcoreapp2.0\ubuntu-x64\WebTest.deps.json
+D:\github\Demo\ccsharp\WebTest\bin\Debug\netcoreapp2.0\ubuntu-x64\WebTest.runtimeconfig.json
+D:\github\Demo\ccsharp\WebTest\bin\Debug\netcoreapp2.0\ubuntu-x64\WebTest.runtimeconfig.dev.json
+D:\github\Demo\ccsharp\WebTest\bin\Debug\netcoreapp2.0\ubuntu-x64\WebTest.dll
+D:\github\Demo\ccsharp\WebTest\bin\Debug\netcoreapp2.0\ubuntu-x64\WebTest.pdb
+D:\github\Demo\ccsharp\WebTest\obj\Debug\netcoreapp2.0\ubuntu-x64\WebTest.csproj.CoreCompileInputs.cache
+D:\github\Demo\ccsharp\WebTest\obj\Debug\netcoreapp2.0\ubuntu-x64\WebTest.AssemblyInfoInputs.cache
+D:\github\Demo\ccsharp\WebTest\obj\Debug\netcoreapp2.0\ubuntu-x64\WebTest.AssemblyInfo.cs
+D:\github\Demo\ccsharp\WebTest\obj\Debug\netcoreapp2.0\ubuntu-x64\WebTest.dll
+D:\github\Demo\ccsharp\WebTest\obj\Debug\netcoreapp2.0\ubuntu-x64\WebTest.pdb

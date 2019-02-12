@@ -1,0 +1,13 @@
+D:\github\Demo\CSharp\MyApp\bin\Debug\netcoreapp2.0\ubuntu-x64\libhostpolicy.so
+D:\github\Demo\CSharp\MyApp\bin\Debug\netcoreapp2.0\ubuntu-x64\libhostfxr.so
+D:\github\Demo\CSharp\MyApp\bin\Debug\netcoreapp2.0\ubuntu-x64\MyApp
+D:\github\Demo\CSharp\MyApp\bin\Debug\netcoreapp2.0\ubuntu-x64\MyApp.deps.json
+D:\github\Demo\CSharp\MyApp\bin\Debug\netcoreapp2.0\ubuntu-x64\MyApp.runtimeconfig.json
+D:\github\Demo\CSharp\MyApp\bin\Debug\netcoreapp2.0\ubuntu-x64\MyApp.runtimeconfig.dev.json
+D:\github\Demo\CSharp\MyApp\bin\Debug\netcoreapp2.0\ubuntu-x64\MyApp.dll
+D:\github\Demo\CSharp\MyApp\bin\Debug\netcoreapp2.0\ubuntu-x64\MyApp.pdb
+D:\github\Demo\CSharp\MyApp\obj\Debug\netcoreapp2.0\ubuntu-x64\MyApp.csproj.CoreCompileInputs.cache
+D:\github\Demo\CSharp\MyApp\obj\Debug\netcoreapp2.0\ubuntu-x64\MyApp.AssemblyInfoInputs.cache
+D:\github\Demo\CSharp\MyApp\obj\Debug\netcoreapp2.0\ubuntu-x64\MyApp.AssemblyInfo.cs
+D:\github\Demo\CSharp\MyApp\obj\Debug\netcoreapp2.0\ubuntu-x64\MyApp.dll
+D:\github\Demo\CSharp\MyApp\obj\Debug\netcoreapp2.0\ubuntu-x64\MyApp.pdb

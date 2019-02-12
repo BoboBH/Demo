@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using JWTWeb.Context;
 using JWTWeb.Service;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -63,6 +65,23 @@ namespace JWTWeb
                 o.TokenValidationParameters = tokenValidationParameters;
            });
             services.AddSingleton(typeof(IUserService), typeof(UserService));
+
+            //运行跨域访问
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+                    builder => builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+                    .AllowCredentials().Build());
+            });
+
+
+            services.AddDbContext<JWTDBContext>(options =>
+                options.UseMySQL(Configuration.GetConnectionString("MySql")));//添加Mysql支持
+            services.AddUnitOfWork<JWTDBContext>();
+            services.AddScoped(typeof(IUserService), typeof(UserService));
+            services.AddScoped(typeof(ITokenInfoService), typeof(TokenInfoService));
             services.AddMvc();
         }
 
@@ -80,6 +99,7 @@ namespace JWTWeb
                 Issuer = audienceConfig["Issuer"],
                 SigningCredentials = new SigningCredentials(signingKey, SecurityAlgorithms.HmacSha256)
             });
+            app.UseCors("CorsPolicy");
             app.UseMvc();
         }
     }

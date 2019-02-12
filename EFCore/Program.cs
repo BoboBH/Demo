@@ -11,7 +11,7 @@ namespace EFCore
             Console.WriteLine("Hello World!");
             using (DBContext context = new DBContext())
             {
-                User user = context.User.Find(new String[] { id });
+                User user = context.User.Find(new String[] { id });                
                 if (user == null)
                 {
                     context.User.Add(new MyApp.Model.User()

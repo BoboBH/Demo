@@ -9,6 +9,8 @@ using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using JWTWeb.Service;
+using JWTWeb.Model;
+using JWTWeb.Entity;
 
 namespace JWTWeb
 {
@@ -16,18 +18,17 @@ namespace JWTWeb
     {
         private readonly RequestDelegate _next;
         private readonly TokenProviderOptions _options;
-        private readonly IUserService _service;
+        private readonly IUserService userService;
         public IAuthenticationSchemeProvider Schemes { get; set; }
         public TokenProviderMiddleware(
            IOptions<TokenProviderOptions> options,
            RequestDelegate next,
-           IUserService _service,
            IAuthenticationSchemeProvider schemes)
         {
             _next = next;
             _options = options.Value;
-            this._service = _service;
             Schemes = schemes;
+            //this.userService = userService;
         }
 
         public async Task Invoke(HttpContext context)
@@ -69,22 +70,40 @@ namespace JWTWeb
         {
             var username = context.Request.Form["username"];
             var password = context.Request.Form["password"];
-
-            var identity = await GetIdentity(username, password);
-            if (identity == null)
+            var identity = Task.FromResult<ClaimsIdentity>(null);// await GetIdentity(username, password);
+            IUserService userService = context.RequestServices.GetService(typeof(IUserService)) as IUserService;
+            if (userService.Auth(username, password))
+            {
+                identity = Task.FromResult(new ClaimsIdentity(new System.Security.Principal.GenericIdentity(username, "Token"), new Claim[] { }));
+            }
+            if (identity.Result == null)
             {
                 await ReturnBadRequest(context);
                 return;
             }
-
+            TokenModel tokenModel = this.GetJwt(username);
+            this.SaveToken2DB(context, username, tokenModel);
             // Serialize and return the response
             context.Response.ContentType = "application/json";
-            await context.Response.WriteAsync(GetJwt(username));
+            string content = JsonConvert.SerializeObject(tokenModel, new JsonSerializerSettings { Formatting = Formatting.Indented });
+            await context.Response.WriteAsync(content);
+        }
+        private void SaveToken2DB(HttpContext context, string username, TokenModel token)
+        {
+            ITokenInfoService tokenService = (ITokenInfoService)context.RequestServices.GetService(typeof(ITokenInfoService));
+            TokenInfo ti = new TokenInfo()
+            {
+                Token = token.AccessToken,
+                IP = context.Request.Host.Host,
+                Expiry = DateTime.Now.AddMinutes(1),
+                UserName = username
+            };
+            tokenService.SaveToken(ti);
         }
         private Task<ClaimsIdentity> GetIdentity(string username, string password)
         {
-            var isValidated = this._service.Auth(username, password);
 
+            var isValidated = true;// this.userService.Auth(username, password);
             if (isValidated)
             {
                 return Task.FromResult(new ClaimsIdentity(new System.Security.Principal.GenericIdentity(username, "Token"), new Claim[] { }));
@@ -92,7 +111,7 @@ namespace JWTWeb
             }
             return Task.FromResult<ClaimsIdentity>(null);
         }
-        private string GetJwt(string username)
+        private TokenModel GetJwt(string username)
         {
             var now = DateTime.UtcNow;
 
@@ -118,14 +137,14 @@ namespace JWTWeb
             );
             var encodedJwt = new JwtSecurityTokenHandler().WriteToken(jwt);
 
-            var response = new
+            return new TokenModel
             {
                 Status = true,
-                access_token = encodedJwt,
-                expires_in = (int)_options.Expiration.TotalSeconds,
-                token_type = "Bearer"
+                AccessToken = encodedJwt,
+                ExpiresIn = (int)_options.Expiration.TotalSeconds,
+                TokenType = "Bearer"
             };
-            return JsonConvert.SerializeObject(response, new JsonSerializerSettings { Formatting = Formatting.Indented });
+            //return JsonConvert.SerializeObject(response, new JsonSerializerSettings { Formatting = Formatting.Indented });
         }
     private async Task ReturnBadRequest(HttpContext context)
         {

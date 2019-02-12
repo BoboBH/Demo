@@ -18,5 +18,10 @@ namespace JWTWeb.Controllers
         {
             return string.Format("id={0};Name:bobo huang.",id);
         }
+        [HttpDelete("{id}")]
+        public string DeleteUser(string id)
+        {
+            return string.Format("delete user(id={0};Name:bobo huang) successfully.", id);
+        }
     }
 }

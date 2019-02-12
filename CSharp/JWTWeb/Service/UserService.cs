@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using JWTWeb.Entity;
+using JWTWeb.Model;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,17 +8,17 @@ using System.Threading.Tasks;
 
 namespace JWTWeb.Service
 {
-    public class UserService:IUserService
+    public class UserService: BaseService, IUserService
     {
-        //private readonly IUnitOfWork _unitOfWork;
-        //public UserService(IUnitOfWork unitOfWork)
-        //{
-        //    _unitOfWork = unitOfWork;
-        //}
-
+        public UserService(IUnitOfWork unitOfWork)
+            :base(unitOfWork)
+        {
+        }
         public bool Auth(string username, string password)
         {
-            return "bobo.huang".Equals(username) && "123456".Equals(password);
+            var repo = _unitOfWork.GetRepository<User>();
+            var user = repo.FromSql($"select * from user where user_name = '{username}' and password='{password}'", username, password).FirstOrDefault();
+            return user != null;
         }
     }
 }

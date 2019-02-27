@@ -1,0 +1,11 @@
+D:\github\Demo\csharp\WebMVC\bin\Debug\netcoreapp2.0\WebMVC.deps.json
+D:\github\Demo\csharp\WebMVC\bin\Debug\netcoreapp2.0\WebMVC.runtimeconfig.json
+D:\github\Demo\csharp\WebMVC\bin\Debug\netcoreapp2.0\WebMVC.runtimeconfig.dev.json
+D:\github\Demo\csharp\WebMVC\bin\Debug\netcoreapp2.0\WebMVC.dll
+D:\github\Demo\csharp\WebMVC\bin\Debug\netcoreapp2.0\WebMVC.pdb
+D:\github\Demo\csharp\WebMVC\obj\Debug\netcoreapp2.0\WebMVC.csprojResolveAssemblyReference.cache
+D:\github\Demo\csharp\WebMVC\obj\Debug\netcoreapp2.0\WebMVC.csproj.CoreCompileInputs.cache
+D:\github\Demo\csharp\WebMVC\obj\Debug\netcoreapp2.0\WebMVC.AssemblyInfoInputs.cache
+D:\github\Demo\csharp\WebMVC\obj\Debug\netcoreapp2.0\WebMVC.AssemblyInfo.cs
+D:\github\Demo\csharp\WebMVC\obj\Debug\netcoreapp2.0\WebMVC.dll
+D:\github\Demo\csharp\WebMVC\obj\Debug\netcoreapp2.0\WebMVC.pdb

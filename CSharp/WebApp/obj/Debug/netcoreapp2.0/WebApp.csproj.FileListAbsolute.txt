@@ -1,0 +1,11 @@
+D:\github\Demo\csharp\WebApp\bin\Debug\netcoreapp2.0\WebApp.deps.json
+D:\github\Demo\csharp\WebApp\bin\Debug\netcoreapp2.0\WebApp.runtimeconfig.json
+D:\github\Demo\csharp\WebApp\bin\Debug\netcoreapp2.0\WebApp.runtimeconfig.dev.json
+D:\github\Demo\csharp\WebApp\bin\Debug\netcoreapp2.0\WebApp.dll
+D:\github\Demo\csharp\WebApp\obj\Debug\netcoreapp2.0\WebApp.csprojResolveAssemblyReference.cache
+D:\github\Demo\csharp\WebApp\obj\Debug\netcoreapp2.0\WebApp.csproj.CoreCompileInputs.cache
+D:\github\Demo\csharp\WebApp\obj\Debug\netcoreapp2.0\WebApp.AssemblyInfoInputs.cache
+D:\github\Demo\csharp\WebApp\obj\Debug\netcoreapp2.0\WebApp.AssemblyInfo.cs
+D:\github\Demo\csharp\WebApp\bin\Debug\netcoreapp2.0\WebApp.pdb
+D:\github\Demo\csharp\WebApp\obj\Debug\netcoreapp2.0\WebApp.dll
+D:\github\Demo\csharp\WebApp\obj\Debug\netcoreapp2.0\WebApp.pdb

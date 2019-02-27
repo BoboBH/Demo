@@ -1,0 +1,12 @@
+D:\github\Demo\csharp\WebAuth1\bin\Debug\netcoreapp2.0\WebAuth1.deps.json
+D:\github\Demo\csharp\WebAuth1\bin\Debug\netcoreapp2.0\WebAuth1.runtimeconfig.json
+D:\github\Demo\csharp\WebAuth1\bin\Debug\netcoreapp2.0\WebAuth1.runtimeconfig.dev.json
+D:\github\Demo\csharp\WebAuth1\bin\Debug\netcoreapp2.0\WebAuth1.dll
+D:\github\Demo\csharp\WebAuth1\bin\Debug\netcoreapp2.0\WebAuth1.pdb
+D:\github\Demo\csharp\WebAuth1\obj\Debug\netcoreapp2.0\WebAuth1.csproj.CoreCompileInputs.cache
+D:\github\Demo\csharp\WebAuth1\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+D:\github\Demo\csharp\WebAuth1\obj\Debug\netcoreapp2.0\WebAuth1.AssemblyInfoInputs.cache
+D:\github\Demo\csharp\WebAuth1\obj\Debug\netcoreapp2.0\WebAuth1.AssemblyInfo.cs
+D:\github\Demo\csharp\WebAuth1\obj\Debug\netcoreapp2.0\WebAuth1.dll
+D:\github\Demo\csharp\WebAuth1\obj\Debug\netcoreapp2.0\WebAuth1.pdb
+D:\github\Demo\csharp\WebAuth1\obj\Debug\netcoreapp2.0\WebAuth1.csprojResolveAssemblyReference.cache

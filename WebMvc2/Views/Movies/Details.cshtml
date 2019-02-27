@@ -1,0 +1,63 @@
+﻿
+@addTagHelper WebMvc2.TagHelpers.EmailTagHelper, WebMvc2
+@addTagHelper WebMvc2.TagHelpers.WebSiteTagHelper, WebMvc2
+@using WebMvc2.Models
+@model WebMvc2.Models.Movie
+
+@{
+    ViewData["Title"] = "Details";
+    WebSiteInfo websiteInfo = new WebSiteInfo()
+    {
+        Version = "1.3",
+        Approved = true,
+        CopyRightYear = 2019,
+        TagToShow = 1
+
+    };
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Movie</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ReleaseDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ReleaseDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Genre)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Genre)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Rating)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Rating)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+    <email>bobo.huang</email>
+    <email mail-to="bhuang"></email>
+    <p><website-information info="@websiteInfo"></website-information></p>
+</div>

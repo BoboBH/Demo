@@ -1,0 +1,12 @@
+D:\github\Demo\csharp\AuthWeb\bin\Debug\netcoreapp2.0\AuthWeb.deps.json
+D:\github\Demo\csharp\AuthWeb\bin\Debug\netcoreapp2.0\AuthWeb.runtimeconfig.json
+D:\github\Demo\csharp\AuthWeb\bin\Debug\netcoreapp2.0\AuthWeb.runtimeconfig.dev.json
+D:\github\Demo\csharp\AuthWeb\bin\Debug\netcoreapp2.0\AuthWeb.dll
+D:\github\Demo\csharp\AuthWeb\bin\Debug\netcoreapp2.0\AuthWeb.pdb
+D:\github\Demo\csharp\AuthWeb\obj\Debug\netcoreapp2.0\AuthWeb.csproj.CoreCompileInputs.cache
+D:\github\Demo\csharp\AuthWeb\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+D:\github\Demo\csharp\AuthWeb\obj\Debug\netcoreapp2.0\AuthWeb.AssemblyInfoInputs.cache
+D:\github\Demo\csharp\AuthWeb\obj\Debug\netcoreapp2.0\AuthWeb.AssemblyInfo.cs
+D:\github\Demo\csharp\AuthWeb\obj\Debug\netcoreapp2.0\AuthWeb.dll
+D:\github\Demo\csharp\AuthWeb\obj\Debug\netcoreapp2.0\AuthWeb.pdb
+D:\github\Demo\CSharp\AuthWeb\obj\Debug\netcoreapp2.0\AuthWeb.csprojResolveAssemblyReference.cache

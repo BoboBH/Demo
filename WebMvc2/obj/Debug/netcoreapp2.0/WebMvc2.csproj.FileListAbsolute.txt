@@ -1,0 +1,11 @@
+D:\github\Demo\WebMvc2\bin\Debug\netcoreapp2.0\WebMvc2.deps.json
+D:\github\Demo\WebMvc2\bin\Debug\netcoreapp2.0\WebMvc2.runtimeconfig.json
+D:\github\Demo\WebMvc2\bin\Debug\netcoreapp2.0\WebMvc2.runtimeconfig.dev.json
+D:\github\Demo\WebMvc2\bin\Debug\netcoreapp2.0\WebMvc2.dll
+D:\github\Demo\WebMvc2\bin\Debug\netcoreapp2.0\WebMvc2.pdb
+D:\github\Demo\WebMvc2\obj\Debug\netcoreapp2.0\WebMvc2.csprojResolveAssemblyReference.cache
+D:\github\Demo\WebMvc2\obj\Debug\netcoreapp2.0\WebMvc2.csproj.CoreCompileInputs.cache
+D:\github\Demo\WebMvc2\obj\Debug\netcoreapp2.0\WebMvc2.AssemblyInfoInputs.cache
+D:\github\Demo\WebMvc2\obj\Debug\netcoreapp2.0\WebMvc2.AssemblyInfo.cs
+D:\github\Demo\WebMvc2\obj\Debug\netcoreapp2.0\WebMvc2.dll
+D:\github\Demo\WebMvc2\obj\Debug\netcoreapp2.0\WebMvc2.pdb

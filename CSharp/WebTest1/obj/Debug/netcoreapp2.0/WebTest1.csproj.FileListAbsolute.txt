@@ -1,0 +1,12 @@
+D:\github\Demo\csharp\WebTest1\bin\Debug\netcoreapp2.0\WebTest1.deps.json
+D:\github\Demo\csharp\WebTest1\bin\Debug\netcoreapp2.0\WebTest1.runtimeconfig.json
+D:\github\Demo\csharp\WebTest1\bin\Debug\netcoreapp2.0\WebTest1.runtimeconfig.dev.json
+D:\github\Demo\csharp\WebTest1\bin\Debug\netcoreapp2.0\WebTest1.dll
+D:\github\Demo\csharp\WebTest1\bin\Debug\netcoreapp2.0\WebTest1.pdb
+D:\github\Demo\csharp\WebTest1\obj\Debug\netcoreapp2.0\WebTest1.csprojResolveAssemblyReference.cache
+D:\github\Demo\csharp\WebTest1\obj\Debug\netcoreapp2.0\WebTest1.csproj.CoreCompileInputs.cache
+D:\github\Demo\csharp\WebTest1\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+D:\github\Demo\csharp\WebTest1\obj\Debug\netcoreapp2.0\WebTest1.AssemblyInfoInputs.cache
+D:\github\Demo\csharp\WebTest1\obj\Debug\netcoreapp2.0\WebTest1.AssemblyInfo.cs
+D:\github\Demo\csharp\WebTest1\obj\Debug\netcoreapp2.0\WebTest1.dll
+D:\github\Demo\csharp\WebTest1\obj\Debug\netcoreapp2.0\WebTest1.pdb

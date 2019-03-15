@@ -11,7 +11,7 @@ GO
 IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = object_id(N'[dbo].[sp_BrokerAccountAuditReport]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1) 
 	DROP PROCEDURE dbo.sp_BrokerAccountAuditReport
 GO
-CREATE PROCEDURE dbo.sp_BrokerAccountAuditReport(@p_EndDate DATETIME) AS
+CREATE PROCEDURE dbo.sp_BrokerAccountAuditReport(@p_EndDate DATETIME = NULL) AS
 BEGIN
 	IF EXISTS (SELECT * FROM tempdb.dbo.sysobjects WHERE id = object_id(N'tempdb..#tmp_val') AND type='U')
 	   DROP TABLE #tmp_val
@@ -23,15 +23,36 @@ BEGIN
 	   DROP TABLE #tmp_lastest
 	IF EXISTS (SELECT * FROM tempdb.dbo.sysobjects WHERE id = object_id(N'tempdb..#tmp_report') AND type='U')
 	   DROP TABLE #tmp_report
+	IF EXISTS (SELECT * FROM tempdb.dbo.sysobjects WHERE id = object_id(N'tempdb..#tmp_finalreport') AND type='U')
+	   DROP TABLE #tmp_finalreport
 	IF EXISTS (SELECT * FROM tempdb.dbo.sysobjects WHERE id = object_id(N'tempdb..#tmp_STRINGMAPBASE') AND type='U')
 	   DROP TABLE #tmp_STRINGMAPBASE
+	IF EXISTS (SELECT * FROM tempdb.dbo.sysobjects WHERE id = object_id(N'tempdb..#tmp_attr') AND type='U')
+	   DROP TABLE #tmp_attr
+	create table #tmp_attr(entname  nvarchar(max),entdisplayname nvarchar(max), colname nvarchar(max), dispalyname nvarchar(max))
 	create table #tmp_val(TransactionId uniqueidentifier, id int, val nvarchar(max), colname varchar(max),CreatedOn datetime, UserId uniqueidentifier, ObjectId uniqueidentifier, ObjectTypeCode int )
 	create table #tmp_col(TransactionId uniqueidentifier,id int,  val nvarchar(max), colname varchar(max))
 	create table #tmp_change(id int IDENTITY(1,1), TransactionId uniqueidentifier,val nvarchar(max),colname varchar(max),CreatedOn datetime, UserId uniqueidentifier, ObjectId uniqueidentifier, ObjectTypeCode int)
 	create table #tmp_lastest(ObjectId uniqueidentifier,val nvarchar(max),colname varchar(max))
 	create table #tmp_report(ObjectId uniqueidentifier,ObjectTypeCode int,oldval nvarchar(max),newval nvarchar(max),colname varchar(max))
 	create table #tmp_STRINGMAPBASE(ObjectTypeCode int, AttributeName varchar(max),AttributeValue nvarchar(max),value nvarchar(max))
+	create table #tmp_finalreport(ObjectId uniqueidentifier,objectName NVARCHAR(MAX),colname varchar(max),oldval nvarchar(max),newval nvarchar(max))
 
+	truncate table #tmp_attr
+	insert into #tmp_attr(entname,entdisplayname, colname, dispalyname)
+		SELECT  EntityView.Name AS EntityName, LocalizedLabelView_1.Label AS EntityDisplayName,
+		   AttributeView.Name AS AttributeName, LocalizedLabelView_2.Label AS AttributeDisplayName
+		FROM    dev02.reohk_mscrm.dbo.LocalizedLabelView AS LocalizedLabelView_2 INNER JOIN
+			   dev02.reohk_mscrm.dbo.AttributeView ON LocalizedLabelView_2.ObjectId = AttributeView.AttributeId RIGHT OUTER JOIN
+			   dev02.reohk_mscrm.dbo.EntityView INNER JOIN
+			   dev02.reohk_mscrm.dbo.LocalizedLabelView AS LocalizedLabelView_1 ON EntityView.EntityId = LocalizedLabelView_1.ObjectId ON
+			   AttributeView.EntityId = EntityView.EntityId
+		WHERE   LocalizedLabelView_1.ObjectColumnName = 'LocalizedName'
+		 AND LocalizedLabelView_2.ObjectColumnName = 'DisplayName'
+		 AND LocalizedLabelView_1.LanguageId = '1033'
+		 AND LocalizedLabelView_2.LanguageId = '1033'
+		 AND EntityView.Name IN ('new_yffbrokeraccount')
+		ORDER BY EntityName, AttributeName
 	
 	truncate table #tmp_val
 	insert into #tmp_val(TransactionId, id, val,colname,UserId,ObjectId,CreatedOn,ObjectTypeCode)
@@ -40,7 +61,7 @@ BEGIN
 	inner join dev02.reohk_mscrm.dbo.new_yffbrokeraccountBase b  with(nolock) on a.ObjectId = b.new_yffbrokeraccountId
 	INNER JOIN dev02.reohk_mscrm.dbo.systemuser u  with(nolock) on a.UserId = u.SystemUserId
 	 CROSS APPLY dbo.string_split(a.ChangeData,'~')v 
-	 where a.CreatedOn >= @p_EndDate
+	 where a.CreatedOn >= DATEADD(hh,-8,ISNULL(@p_EndDate,GETDATE()))
 	 AND u.FullName NOT IN('Reo Admin','spdev1 Reo')
 
 	truncate table #tmp_col
@@ -50,7 +71,7 @@ BEGIN
 	inner join dev02.reohk_mscrm.dbo.new_yffbrokeraccountBase b with(nolock)  on a.ObjectId = b.new_yffbrokeraccountId
 	INNER JOIN dev02.reohk_mscrm.dbo.systemuser u  with(nolock) on a.UserId = u.SystemUserId
 	 CROSS APPLY dbo.string_split(LEFT(RIGHT(AttributeMask, (LEN(AttributeMask)-1)), (LEN(RIGHT(AttributeMask, (LEN(AttributeMask)-1)))-1)),',')v
-	 where a.CreatedOn >= @p_EndDate
+	 where a.CreatedOn >= DATEADD(hh,-8,ISNULL(@p_EndDate,GETDATE()))
 	 AND u.FullName NOT IN('Reo Admin','spdev1 Reo')
 	 AND a.AttributeMask  LIKE ',%,'
 
@@ -107,21 +128,29 @@ BEGIN
 	select ObjectTypeCode, AttributeName,AttributeValue, value from dev02.reohk_mscrm.dbo.STRINGMAPBASE 
 
 	--get result except for lookup values
+	truncate table #tmp_finalreport
+	insert into #tmp_finalreport(ObjectId,objectName,colName,oldVal, newVal)
 	select  a.ObjectId,b.new_hsclientid AS HS_ClientId, a.colName,
 	CASE WHEN dbo.string_split_first(a.oldval,',') IN('new_reoisocountry','systemuser','new_aecode_settings') THEN dbo.getLookupName(dbo.string_split_first(a.oldval,','), replace(a.oldval,concat(dbo.string_split_first(a.oldval,','),','),'')) ELSE  ISNULL(oldmap.value,a.oldval) END as oldValue, 
 	CASE WHEN dbo.string_split_first(a.oldval,',') IN('new_reoisocountry','systemuser','new_aecode_settings') THEN dbo.getLookupName(dbo.string_split_first(a.oldval,','), a.newval) ELSE  ISNULL(newmap.value,a.newval) END as newValue
-	--ISNULL(newmap.value,a.newval) as newValue,
-	--dbo.string_split_first(a.oldval,',') as lookupentity,
-	--replace(a.oldval,concat(dbo.string_split_first(a.oldval,','),','),'') as lkid
 	  from #tmp_report a
 	inner join dev02.reohk_mscrm.dbo.new_yffbrokeraccountBase b  with(nolock) on a.ObjectId = b.new_yffbrokeraccountId
 	left join #tmp_STRINGMAPBASE oldmap   on a.ObjectTypeCode = oldmap.ObjectTypeCode and a.colname = oldmap.AttributeName   and  a.oldval = oldmap.AttributeValue
 	left join #tmp_STRINGMAPBASE newmap   on a.ObjectTypeCode = newmap.ObjectTypeCode and a.colname = newmap.AttributeName   and  a.newval = newmap.AttributeValue
 
+	SELECT fr.ObjectId,fr.objectName,att.dispalyname as colname,fr.oldval,fr.newval, DATEADD(hh,8,bcu.createdon) as LastModifiedOn,su.FullName as LastModifiedBy FROM #tmp_finalreport fr
+	INNER JOIN(
+		select a.ObjectId, a.CreatedOn,a.UserId from #tmp_change a
+		INNER JOIN(
+		  SELECT ObjectId, MAX(Id) AS Id from #tmp_change group by ObjectId
+		) b ON a.ObjectId = b.ObjectId AND a.id = b.Id
+	) bcu on fr.ObjectId = bcu.ObjectId
+	INNER JOIN dev02.reohk_mscrm.dbo.SystemUserBase su on su.SystemUserId = bcu.UserId
+	INNER JOIN #tmp_attr att on att.colname = fr.colname
 
 END
 GO
 GRANT EXEC ON  dbo.sp_BrokerAccountAuditReport TO cdbdev
 GO
 
-exec dbo.sp_BrokerAccountAuditReport '2019-01-01';
+--exec dbo.sp_BrokerAccountAuditReport '2019-01-01';

@@ -1,0 +1,69 @@
+﻿@page
+@model WebPage.Pages.SMC.Activities.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Pages/_BootstrapLayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SMCActivity</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SMCActivity.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SMCActivity.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SMCActivity.Description)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SMCActivity.Description)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SMCActivity.Key)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SMCActivity.Key)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SMCActivity.Type)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SMCActivity.Type)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SMCActivity.Status)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SMCActivity.Status)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SMCActivity.Owner)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SMCActivity.Owner.UserName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SMCActivity.ParentActivity)
+        </dt>
+        <dd>
+            @if(Model.SMCActivity.ParentActivity != null)
+            {
+            <a asp-page="./Details" asp-route-id="@Model.SMCActivity.ParentActivity.Id">@Html.DisplayFor(model => model.SMCActivity.ParentActivity.Name)</a>
+            }
+            else
+            {
+                @Html.DisplayFor(model => model.SMCActivity.ParentActivity.Name)
+            }
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.SMCActivity.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

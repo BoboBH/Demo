@@ -33,7 +33,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAuth1", "csharp\WebAuth1
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebTest1", "csharp\WebTest1\WebTest1.csproj", "{4830B979-E3EB-4A7D-B608-F0D34477E0AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebPage", "csharp\WebPage\WebPage.csproj", "{6613CAEC-D79F-4E48-847C-795AA982F661}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebPage", "csharp\WebPage\WebPage.csproj", "{6613CAEC-D79F-4E48-847C-795AA982F661}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebTest2", "csharp\WebTest2\WebTest2.csproj", "{A4D01E63-3EA7-4556-A575-978387C22BDA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +107,10 @@ Global
 		{6613CAEC-D79F-4E48-847C-795AA982F661}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6613CAEC-D79F-4E48-847C-795AA982F661}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6613CAEC-D79F-4E48-847C-795AA982F661}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4D01E63-3EA7-4556-A575-978387C22BDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4D01E63-3EA7-4556-A575-978387C22BDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4D01E63-3EA7-4556-A575-978387C22BDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4D01E63-3EA7-4556-A575-978387C22BDA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

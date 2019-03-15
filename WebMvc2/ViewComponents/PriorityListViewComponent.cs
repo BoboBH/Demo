@@ -25,7 +25,7 @@ namespace WebMvc2.ViewComponents
             }
             if (maxPriority == 1 && !isDone)
                 cutView = "HTD";
-            var query  = this._context.ToDo.Where(x => x.Priority < maxPriority && x.IsDone == isDone);
+            var query  = this._context.ToDo.Where(x => (int)x.Priority < maxPriority && x.IsDone == isDone);
             var result =  query.ToList();
             return View(cutView, result);
         }

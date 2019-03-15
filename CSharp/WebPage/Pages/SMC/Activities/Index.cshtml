@@ -1,0 +1,82 @@
+﻿@page
+@using WebPage.Models
+@model WebPage.Pages.SMC.Activities.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Pages/_BootstrapLayout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.SMCActivity[0].Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SMCActivity[0].Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SMCActivity[0].Key)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SMCActivity[0].Type)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SMCActivity[0].Status)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SMCActivity[0].Owner)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SMCActivity[0].ParentActivity)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.SMCActivity)
+        {
+            <tr>
+                <td>
+                    <a asp-page="./Details" asp-route-id="@item.Id"> @Html.DisplayFor(modelItem => item.Name)</a>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Key)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Type)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Owner.UserName)
+                </td>
+                <td>
+                    @if (item.ParentActivity == null)
+                    {
+                         @Html.DisplayFor(modelItem => item.ParentActivity.Name)
+                    }
+                    else
+                    {
+                         <a asp-page="./Details" asp-route-id="@item.ParentActivity.Id"> @Html.DisplayFor(modelItem => item.ParentActivity.Name)</a>
+
+                    }
+                </td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

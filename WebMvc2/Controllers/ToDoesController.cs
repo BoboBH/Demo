@@ -53,7 +53,7 @@ namespace WebMvc2.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,IsDone,Pririty")] ToDo toDo)
+        public async Task<IActionResult> Create([Bind("Id,Name,IsDone,Priority")] ToDo toDo)
         {
             if (ModelState.IsValid)
             {
@@ -85,7 +85,7 @@ namespace WebMvc2.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,IsDone,Pririty")] ToDo toDo)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,IsDone,Priority")] ToDo toDo)
         {
             if (id != toDo.Id)
             {

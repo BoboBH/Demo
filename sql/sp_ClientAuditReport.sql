@@ -10,9 +10,9 @@ GO
 IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = object_id(N'[dbo].[sp_ClientAuditReport]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1) 
 	DROP PROCEDURE dbo.sp_ClientAuditReport
 GO
-CREATE PROCEDURE dbo.sp_ClientAuditReport(@p_EndDate DATETIME) AS
+CREATE PROCEDURE dbo.sp_ClientAuditReport(@p_EndDate DATETIME = NULL) AS
 BEGIN
-	IF EXISTS (SELECT * FROM tempdb.dbo.sysobjects WHERE id = object_id(N'tempdb..#tmp_val') AND type='U')
+    IF EXISTS (SELECT * FROM tempdb.dbo.sysobjects WHERE id = object_id(N'tempdb..#tmp_val') AND type='U')
 	   DROP TABLE #tmp_val
 	IF EXISTS (SELECT * FROM tempdb.dbo.sysobjects WHERE id = object_id(N'tempdb..#tmp_col') AND type='U')
 	   DROP TABLE #tmp_col
@@ -26,6 +26,13 @@ BEGIN
 	   DROP TABLE #tmp_STRINGMAPBASE
 	IF EXISTS (SELECT * FROM tempdb.dbo.sysobjects WHERE id = object_id(N'tempdb..#tmp_finalreport') AND type='U')
 	   DROP TABLE #tmp_finalreport
+	IF EXISTS (SELECT * FROM tempdb.dbo.sysobjects WHERE id = object_id(N'tempdb..#tmp_attr') AND type='U')
+	   DROP TABLE #tmp_attr
+	IF EXISTS (SELECT * FROM tempdb.dbo.sysobjects WHERE id = object_id(N'tempdb..#tmp_changeby') AND type='U')
+	   DROP TABLE #tmp_changeby
+	IF EXISTS (SELECT * FROM tempdb.dbo.sysobjects WHERE id = object_id(N'tempdb..#tmp_finalchangeby') AND type='U')
+	   DROP TABLE #tmp_finalchangeby
+	create table #tmp_attr(entname  nvarchar(max),entdisplayname nvarchar(max), colname nvarchar(max), dispalyname nvarchar(max))
 	create table #tmp_val(TransactionId uniqueidentifier, id int, val nvarchar(max), colname varchar(max),CreatedOn datetime, UserId uniqueidentifier, ObjectId uniqueidentifier, ObjectTypeCode int )
 	create table #tmp_col(TransactionId uniqueidentifier,id int,  val nvarchar(max), colname varchar(max))
 	create table #tmp_change(id int IDENTITY(1,1), TransactionId uniqueidentifier,val nvarchar(max),colname varchar(max),CreatedOn datetime, UserId uniqueidentifier, ObjectId uniqueidentifier, ObjectTypeCode int)
@@ -33,7 +40,24 @@ BEGIN
 	create table #tmp_report(ObjectId uniqueidentifier,ObjectTypeCode int,oldval nvarchar(max),newval nvarchar(max),colname varchar(max))
 	create table #tmp_STRINGMAPBASE(ObjectTypeCode int, AttributeName varchar(max),AttributeValue nvarchar(max),value nvarchar(max))	
 	create table #tmp_finalreport(ObjectId uniqueidentifier,objectName NVARCHAR(MAX),colname varchar(max),oldval nvarchar(max),newval nvarchar(max))
-
+	create table #tmp_changeby(CreatedOn datetime, UserId uniqueidentifier, ObjectId uniqueidentifier)
+	create table #tmp_finalchangeby(id int IDENTITY(1,1),CreatedOn datetime, UserId uniqueidentifier, ObjectId uniqueidentifier)
+	--initialize tmp attr table
+	truncate table #tmp_attr
+	insert into #tmp_attr(entname,entdisplayname, colname, dispalyname)
+		SELECT  EntityView.Name AS EntityName, LocalizedLabelView_1.Label AS EntityDisplayName,
+		   AttributeView.Name AS AttributeName, LocalizedLabelView_2.Label AS AttributeDisplayName
+		FROM    dev02.reohk_mscrm.dbo.LocalizedLabelView AS LocalizedLabelView_2 INNER JOIN
+			   dev02.reohk_mscrm.dbo.AttributeView ON LocalizedLabelView_2.ObjectId = AttributeView.AttributeId RIGHT OUTER JOIN
+			   dev02.reohk_mscrm.dbo.EntityView INNER JOIN
+			   dev02.reohk_mscrm.dbo.LocalizedLabelView AS LocalizedLabelView_1 ON EntityView.EntityId = LocalizedLabelView_1.ObjectId ON
+			   AttributeView.EntityId = EntityView.EntityId
+		WHERE   LocalizedLabelView_1.ObjectColumnName = 'LocalizedName'
+		 AND LocalizedLabelView_2.ObjectColumnName = 'DisplayName'
+		 AND LocalizedLabelView_1.LanguageId = '1033'
+		 AND LocalizedLabelView_2.LanguageId = '1033'
+		 AND EntityView.Name IN ('new_yffclientinfo')
+		ORDER BY EntityName, AttributeName
 	
 	truncate table #tmp_val
 	insert into #tmp_val(TransactionId, id, val,colname,UserId,ObjectId,CreatedOn,ObjectTypeCode)
@@ -42,7 +66,7 @@ BEGIN
 	inner join dev02.reohk_mscrm.dbo.new_yffclientinfoBase b  with(nolock) on a.ObjectId = b.new_yffclientinfoId
 	INNER JOIN dev02.reohk_mscrm.dbo.systemuser u  with(nolock)  on a.UserId = u.SystemUserId
 	 CROSS APPLY dbo.string_split(a.ChangeData,'~')v 
-	 where a.CreatedOn >= @p_EndDate
+	 where a.CreatedOn >= DATEADD(hh,-8,ISNULL(@p_EndDate,GETDATE()))
 	 AND u.FullName NOT IN('Reo Admin','spdev1 Reo')	
 
 	truncate table #tmp_col
@@ -52,10 +76,14 @@ BEGIN
 	inner join dev02.reohk_mscrm.dbo.new_yffclientinfoBase b  with(nolock) on a.ObjectId = b.new_yffclientinfoId
 	INNER JOIN dev02.reohk_mscrm.dbo.systemuser u  with(nolock) on a.UserId = u.SystemUserId
 	 CROSS APPLY dbo.string_split(LEFT(RIGHT(AttributeMask, (LEN(AttributeMask)-1)), (LEN(RIGHT(AttributeMask, (LEN(AttributeMask)-1)))-1)),',')v
-	 where a.CreatedOn >= @p_EndDate
+	 where a.CreatedOn >= DATEADD(hh,-8,ISNULL(@p_EndDate,GETDATE()))
 	 AND u.FullName NOT IN('Reo Admin','spdev1 Reo') 
 	 AND a.AttributeMask  LIKE ',%,'
 
+	 
+	 truncate table #tmp_changeby
+	 insert into #tmp_changeby(ObjectId, CreatedOn, UserId)
+	 select ObjectId, CreatedOn, UserId from #tmp_val
 
 	 --change history data
 	 truncate table #tmp_change
@@ -111,6 +139,7 @@ BEGIN
 			val FOR colname IN 
 			(new_clientname,new_clienttype,new_clientstatus,new_expectedclosedate,new_chinesename,new_firstname,new_lastname,new_middle_name,new_idtype,new_idnumber,new_idexpiry,new_idissuecountrycode,new_birthday,new_gender,emailaddress,new_mobilephone,new_statementreportemail,new_countryofbirthcode,new_allow_ad,new_v2addresscountrycode,new_v2addressdetail,new_residentialcountry,new_residentialdetail,new_postalcountry,new_postaldetail,new_jobstatus,new_company,new_position)) AS UNPVT;
 
+			
 	--get entity change record 
 	truncate table #tmp_report
 	insert into #tmp_report(ObjectId,ObjectTypeCode ,colname,oldval,newval)
@@ -126,6 +155,16 @@ BEGIN
 	insert into #tmp_STRINGMAPBASE(ObjectTypeCode, AttributeName,AttributeValue, value)
 	select ObjectTypeCode, AttributeName,AttributeValue, value from dev02.reohk_mscrm.dbo.STRINGMAPBASE 
 
+	UPDATE #tmp_report
+	SET oldval = CASE WHEN LEN(oldval) > 0 THEN CAST(DATEADD(hh,8, CAST(oldval as datetime)) AS NVARCHAR(MAX)) ELSE oldval END,
+		 newval = CASE WHEN LEN(newval) > 0 THEN CAST(DATEADD(hh,8, CAST(newval as datetime)) AS NVARCHAR(MAX)) ELSE newval END
+	where colName in ('new_birthday','new_idexpiry') 
+
+	update #tmp_report 
+	set colname = b.dispalyname
+	from #tmp_report a
+	inner join #tmp_attr b on a.colname = b.colname
+
 	--get result except for lookup values
 	insert into #tmp_finalreport(ObjectId,objectName,colName,oldVal, newVal)
 	select  a.ObjectId, ISNULL(b.new_chinesename, CONCAT(b.new_firstname,' ', b.new_enlastname)) AS ClientName, a.colName,
@@ -139,6 +178,23 @@ BEGIN
 	left join #tmp_STRINGMAPBASE oldmap   on a.ObjectTypeCode = oldmap.ObjectTypeCode and a.colname = oldmap.AttributeName   and  a.oldval = oldmap.AttributeValue
 	left join #tmp_STRINGMAPBASE newmap   on a.ObjectTypeCode = newmap.ObjectTypeCode and a.colname = newmap.AttributeName   and  a.newval = newmap.AttributeValue
 
+	--initialize client contact columns
+	truncate table #tmp_attr
+	insert into #tmp_attr(entname,entdisplayname, colname, dispalyname)
+		SELECT  EntityView.Name AS EntityName, LocalizedLabelView_1.Label AS EntityDisplayName,
+		   AttributeView.Name AS AttributeName, LocalizedLabelView_2.Label AS AttributeDisplayName
+		FROM    dev02.reohk_mscrm.dbo.LocalizedLabelView AS LocalizedLabelView_2 INNER JOIN
+			   dev02.reohk_mscrm.dbo.AttributeView ON LocalizedLabelView_2.ObjectId = AttributeView.AttributeId RIGHT OUTER JOIN
+			   dev02.reohk_mscrm.dbo.EntityView INNER JOIN
+			   dev02.reohk_mscrm.dbo.LocalizedLabelView AS LocalizedLabelView_1 ON EntityView.EntityId = LocalizedLabelView_1.ObjectId ON
+			   AttributeView.EntityId = EntityView.EntityId
+		WHERE   LocalizedLabelView_1.ObjectColumnName = 'LocalizedName'
+		 AND LocalizedLabelView_2.ObjectColumnName = 'DisplayName'
+		 AND LocalizedLabelView_1.LanguageId = '1033'
+		 AND LocalizedLabelView_2.LanguageId = '1033'
+		 AND EntityView.Name IN ('new_yffclientcontact')
+		ORDER BY EntityName, AttributeName
+
 	--get client contaxt info audit report
 	truncate table #tmp_val
 	insert into #tmp_val(TransactionId, id, val,colname,UserId,ObjectId,CreatedOn,ObjectTypeCode)
@@ -148,7 +204,7 @@ BEGIN
 	INNER JOIN dev02.reohk_mscrm.dbo.new_yffclientinfoBase c  with(nolock) on c.new_yffclientinfoId = b.new_clientid
 	INNER JOIN dev02.reohk_mscrm.dbo.systemuser u  with(nolock) on a.UserId = u.SystemUserId
 	 CROSS APPLY dbo.string_split(a.ChangeData,'~')v 
-	 where a.CreatedOn >= @p_EndDate
+	 where a.CreatedOn >= DATEADD(hh,-8,ISNULL(@p_EndDate,GETDATE()))
 	 AND u.FullName NOT IN('Reo Admin','spdev1 Reo')
 
 	truncate table #tmp_col
@@ -159,7 +215,7 @@ BEGIN
 	INNER JOIN dev02.reohk_mscrm.dbo.new_yffclientinfoBase c  with(nolock) on c.new_yffclientinfoId = b.new_clientid
 	INNER JOIN dev02.reohk_mscrm.dbo.systemuser u  with(nolock) on a.UserId = u.SystemUserId
 	 CROSS APPLY dbo.string_split(LEFT(RIGHT(AttributeMask, (LEN(AttributeMask)-1)), (LEN(RIGHT(AttributeMask, (LEN(AttributeMask)-1)))-1)),',')v
-	 where a.CreatedOn >= @p_EndDate
+	 where a.CreatedOn >= DATEADD(hh,-8,ISNULL(@p_EndDate,GETDATE()))
 	 AND u.FullName NOT IN('Reo Admin','spdev1 Reo')
 
 
@@ -175,7 +231,11 @@ BEGIN
 	 where e.LogicalName = 'new_yffclientcontact' and  d.LogicalName in
 	 ('new_contactstatus','new_countrycode','new_detail','new_firstname','new_lastname','new_phone')
 	 order by b.CreatedOn asc
-
+	 
+	 --merge client change and client contact change, donot truncate changeby table
+	 insert into #tmp_changeby(ObjectId, CreatedOn, UserId)
+	 select b.new_clientId, a.CreatedOn, a.UserId from #tmp_val a
+	 inner join	dev02.reohk_mscrm.dbo.new_yffclientcontactBase b on a.ObjectId = b.new_yffclientcontactId
 
 	 --Lastest data
 	 truncate table #tmp_lastest
@@ -205,7 +265,11 @@ BEGIN
 	 group by ObjectId, colname) as b  on a.id = b.id) as od
 	 inner join #tmp_lastest nd on od.ObjectId=nd.ObjectId and od.colname = nd.colname
 	 where od.val <> nd.val;
- 
+
+	update #tmp_report 
+	set colname = b.dispalyname
+	from #tmp_report a
+	inner join #tmp_attr b on a.colname = b.colname
 
 	--get result except for lookup values
 	insert into #tmp_finalreport(ObjectId,objectName,colName,oldVal, newVal)
@@ -223,14 +287,24 @@ BEGIN
 	left join #tmp_STRINGMAPBASE newmap   on a.ObjectTypeCode = newmap.ObjectTypeCode and a.colname = newmap.AttributeName   and  a.newval = newmap.AttributeValue
 	LEFT JOIN #tmp_STRINGMAPBASE contmap  on a.ObjectTypeCode = contmap.ObjectTypeCode and 'new_contacttype' = contmap.AttributeName  and  b.new_contacttype = contmap.AttributeValue
 	order by c.new_yffclientinfoId ASC
-	
-	UPDATE #tmp_finalreport
-	SET oldval = CASE WHEN LEN(oldval) > 0 THEN CAST(DATEADD(hh,8, CAST(oldval as datetime)) AS NVARCHAR(MAX)) ELSE oldval END,
-		 newval = CASE WHEN LEN(newval) > 0 THEN CAST(DATEADD(hh,8, CAST(newval as datetime)) AS NVARCHAR(MAX)) ELSE newval END
-	where colName in ('new_birthday','new_idexpiry') 
-	SELECT * FROM #tmp_finalreport
+
+	 truncate table #tmp_finalchangeby
+	 insert into #tmp_finalchangeby(ObjectId, CreatedOn, UserId)
+	 select ObjectId, CreatedOn, UserId from #tmp_changeby
+	 order by CreatedOn DESC
+
+	 select fr.ObjectId,fr.objectName,fr.colname,fr.oldval,fr.newval,DATEADD(hh,8,fcb.createdon) as LastModifiedOn,su.FullName as LastModifiedBy from #tmp_finalreport fr
+	 inner join(
+		select a.* from #tmp_finalchangeby a
+		 INNER JOIN(
+			 select ObjectId,min(Id) as Id from #tmp_finalchangeby group by ObjectId
+		 ) b on a.ObjectId = b.ObjectId and a.id = b.Id
+	 ) fcb on fr.ObjectId = fcb.ObjectId
+	 inner join dev02.reohk_mscrm.dbo.SystemUserBase su on su.SystemUserId = fcb.UserId
+
+	 
 END
 GO
 GRANT EXEC ON  dbo.sp_ClientAuditReport TO cdbdev
 GO
-exec sp_ClientAuditReport '2018-02-18'
+--exec sp_ClientAuditReport '2019-02-01'

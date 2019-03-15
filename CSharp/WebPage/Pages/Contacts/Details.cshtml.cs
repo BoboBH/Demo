@@ -64,7 +64,8 @@ namespace WebPage.Pages.Contacts
             Contact.status = status;
             Context.Update(Contact);
             await Context.SaveChangesAsync();
-            return RedirectToPage("./Index");
+            return Page();
+            //return RedirectToPage("./Index");
         }
     }
 }

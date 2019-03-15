@@ -1,0 +1,65 @@
+﻿@page
+@model WebPage.Pages.SMC.Activities.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Pages/_BootstrapLayout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>SMCActivity</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SMCActivity.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SMCActivity.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SMCActivity.Description)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SMCActivity.Description)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SMCActivity.Key)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SMCActivity.Key)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SMCActivity.Type)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SMCActivity.Type)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SMCActivity.Status)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SMCActivity.Status)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SMCActivity.Owner)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SMCActivity.Owner.Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SMCActivity.ParentActivity)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SMCActivity.ParentActivity.Id)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="SMCActivity.Id" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>

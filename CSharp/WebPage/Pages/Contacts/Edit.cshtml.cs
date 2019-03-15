@@ -54,7 +54,7 @@ namespace WebPage.Pages.Contacts
 
             try
             {
-                if (String.IsNullOrEmpty(Contact.OwnerId))
+                if (Contact.OwnerId == null)
                     Contact.OwnerId = UserManager.GetUserId(User);
                 var isAuthorized = await AuthorizationService.AuthorizeAsync(User, Contact, ContactOperations.Update);
                 if (!isAuthorized.Succeeded)

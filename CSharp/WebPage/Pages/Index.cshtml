@@ -73,6 +73,9 @@
         <ul>
             <li>Sample pages using ASP.NET Core Razor Pages</li>
             <li>Theming using <a href="https://go.microsoft.com/fwlink/?LinkID=398939">Bootstrap</a></li>
+            <li>
+                <input type="button" name="btSayHello" id="btSayHello" class="btn-link" value="Say Hello" />
+            </li>
         </ul>
     </div>
     <div class="col-md-3">
@@ -106,3 +109,20 @@
         </ul>
     </div>
 </div>
+<script type="text/javascript">
+    $('#btSayHello').click(function ()
+    {
+        $.ajax(
+            {
+                url: "/Account/SayHello",
+                type: 'GET',
+                success: function (str) {
+                    alert(str);
+                },
+                error: function (err) {
+                    alert(error);
+                }
+            }
+        );
+    });
+</script>

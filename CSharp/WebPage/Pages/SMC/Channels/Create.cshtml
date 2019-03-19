@@ -1,0 +1,70 @@
+﻿@page
+@using WebPage.Models
+@model WebPage.Pages.SMC.Channels.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Pages/_BootstrapLayout.cshtml";
+}
+
+<h2>Create</h2>
+
+<h4>SMCChannel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="SMCChannel.Name" class="control-label"></label>
+                <input asp-for="SMCChannel.Name" class="form-control" />
+                <span asp-validation-for="SMCChannel.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SMCChannel.ChannelCode" class="control-label"></label>
+                <input asp-for="SMCChannel.ChannelCode" class="form-control" />
+                <span asp-validation-for="SMCChannel.ChannelCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SMCChannel.Description" class="control-label"></label>
+                <input asp-for="SMCChannel.Description" class="form-control" />
+                <span asp-validation-for="SMCChannel.Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SMCChannel.OwnerId" class="control-label"></label>
+                <select asp-for="SMCChannel.OwnerId" class ="form-control" asp-items="ViewBag.OwnerId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="SMCChannel.Key" class="control-label"></label>
+                <input asp-for="SMCChannel.Key" class="form-control" />
+                <span asp-validation-for="SMCChannel.Key" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SMCChannel.Status" class="control-label"></label>
+                <select asp-for="SMCChannel.Status" class="form-control" asp-items="@Html.GetEnumSelectList(typeof(SMCChannelStatus))"></select>
+                <span asp-validation-for="SMCChannel.Status" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SMCChannel.CreatedOn" class="control-label"></label>
+                <input asp-for="SMCChannel.CreatedOn" class="form-control" />
+                <span asp-validation-for="SMCChannel.CreatedOn" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SMCChannel.UpdatedOn" class="control-label"></label>
+                <input asp-for="SMCChannel.UpdatedOn" class="form-control" />
+                <span asp-validation-for="SMCChannel.UpdatedOn" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -53,6 +53,7 @@ namespace WebPage.Pages.Clients
             string userId = UserManager.GetUserId(User);
             if (String.IsNullOrEmpty(Client.OwnerId))
                 Client.OwnerId = userId;
+            
             try
             {
                 await Context.SaveChangesAsync();

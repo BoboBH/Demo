@@ -1,0 +1,95 @@
+﻿@page
+@model WebPage.Pages.SMC.Promotions.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Pages/_BootstrapLayout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>SMCPromotion</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SMCPromotion.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SMCPromotion.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SMCPromotion.Code)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SMCPromotion.Code)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SMCPromotion.Key)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SMCPromotion.Key)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SMCPromotion.StartDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SMCPromotion.StartDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SMCPromotion.EndDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SMCPromotion.EndDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SMCPromotion.Url)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SMCPromotion.Url)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SMCPromotion.Status)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SMCPromotion.Status)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SMCPromotion.CreatedOn)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SMCPromotion.CreatedOn)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SMCPromotion.UpdatedOn)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SMCPromotion.UpdatedOn)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SMCPromotion.Activity)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SMCPromotion.Activity.Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SMCPromotion.Channel)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SMCPromotion.Channel.Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SMCPromotion.Owner)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SMCPromotion.Owner.Id)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="SMCPromotion.Id" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using WebPage.Models;
+using WebPage.Data;
 
 namespace WebPage.Data
 {
@@ -28,6 +29,11 @@ namespace WebPage.Data
             builder.Entity<SMCActivity>().HasOne(p => p.Owner).WithMany().HasForeignKey(p => p.OwnerId);
             builder.Entity<SMCActivity>().HasOne(p => p.Owner).WithMany().HasForeignKey(p => p.OwnerId);
             builder.Entity<SMCActivity>().HasOne(p => p.ParentActivity).WithMany().HasForeignKey(p => p.ParentActivityId);
+
+            builder.Entity<SMCChannel>().HasOne(p => p.Owner).WithMany().HasForeignKey(p => p.OwnerId);
+            builder.Entity<SMCPromotion>().HasOne(p => p.Owner).WithMany().HasForeignKey(p => p.OwnerId);
+            builder.Entity<SMCPromotion>().HasOne(p => p.Channel).WithMany().HasForeignKey(p => p.ChannelId);
+            builder.Entity<SMCPromotion>().HasOne(p => p.Activity).WithMany().HasForeignKey(p => p.ActivityId);
             base.OnModelCreating(builder);
             // Customize the ASP.NET Identity model and override the defaults if needed.
             // For example, you can rename the ASP.NET Identity table names and more.
@@ -42,5 +48,13 @@ namespace WebPage.Data
         public DbSet<WebPage.Models.ClientManager> ClientManager { get; set; }
 
         public DbSet<WebPage.Models.SMCActivity> SMCActivity { get; set; }
+
+        public DbSet<WebPage.Models.SMCChannel> SMCChannel { get; set; }
+
+        public DbSet<WebPage.Data.ApplicationUser> ApplicationUser { get; set; }
+
+        public DbSet<WebPage.Models.Role> Role { get; set; }
+
+        public DbSet<WebPage.Models.SMCPromotion> SMCPromotion { get; set; }
     }
 }

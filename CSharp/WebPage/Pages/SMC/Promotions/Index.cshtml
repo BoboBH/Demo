@@ -1,0 +1,115 @@
+﻿@page
+@model WebPage.Pages.SMC.Promotions.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Pages/_BootstrapLayout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.SMCPromotion[0].Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SMCPromotion[0].Code)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SMCPromotion[0].Key)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SMCPromotion[0].StartDate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SMCPromotion[0].EndDate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SMCPromotion[0].Url)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SMCPromotion[0].Status)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SMCPromotion[0].CreatedOn)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SMCPromotion[0].UpdatedOn)
+                </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SMCPromotion[0].Activity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SMCPromotion[0].Channel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SMCPromotion[0].Owner)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.SMCPromotion) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Code)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Key)
+            </td>
+            <td>
+                @if (item.StartDate.HasValue)
+                {
+                  @item.StartDate.Value.ToString("yyyy-MM-dd")
+                }
+            </td>
+            <td>
+                @if (item.EndDate.HasValue)
+                {
+                    @item.EndDate.Value.ToString("yyyy-MM-dd")
+                }
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Url)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                @if (item.UpdatedOn.HasValue)
+                {
+                    @item.UpdatedOn.Value.ToString("yyyy-MM-dd");
+                }
+            </td>
+            <td>
+                @if (item.CreatedOn.HasValue)
+                 {
+                     @item.CreatedOn.Value.ToString("yyyy-MM-dd");
+                }
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Activity.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Channel.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Owner.UserName)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

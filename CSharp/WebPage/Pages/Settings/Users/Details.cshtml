@@ -1,0 +1,160 @@
+﻿@page
+@model WebPage.Pages.Settings.Users.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Pages/_BootstrapLayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ApplicationUser</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ApplicationUser.UserName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ApplicationUser.UserName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ApplicationUser.NormalizedUserName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ApplicationUser.NormalizedUserName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ApplicationUser.Email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ApplicationUser.Email)
+        </dd>
+        @*<dt>
+                @Html.DisplayNameFor(model => model.ApplicationUser.NormalizedEmail)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.ApplicationUser.NormalizedEmail)
+            </dd>*@
+        <dt>
+            @Html.DisplayNameFor(model => model.ApplicationUser.EmailConfirmed)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ApplicationUser.EmailConfirmed)
+        </dd>
+        @*<dt>
+                @Html.DisplayNameFor(model => model.ApplicationUser.PasswordHash)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.ApplicationUser.PasswordHash)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.ApplicationUser.SecurityStamp)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.ApplicationUser.SecurityStamp)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.ApplicationUser.ConcurrencyStamp)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.ApplicationUser.ConcurrencyStamp)
+            </dd>*@
+        <dt>
+            @Html.DisplayNameFor(model => model.ApplicationUser.PhoneNumber)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ApplicationUser.PhoneNumber)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ApplicationUser.PhoneNumberConfirmed)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ApplicationUser.PhoneNumberConfirmed)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ApplicationUser.TwoFactorEnabled)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ApplicationUser.TwoFactorEnabled)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ApplicationUser.LockoutEnd)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ApplicationUser.LockoutEnd)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ApplicationUser.LockoutEnabled)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ApplicationUser.LockoutEnabled)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ApplicationUser.AccessFailedCount)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ApplicationUser.AccessFailedCount)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.ApplicationUser.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+    <input type="button" name="btSayHello" id="btSayHello" class="btn-link" value="Say Hello" />
+</div>
+
+<div class="row">
+    <h4>Mangage User Roles</h4>
+    <div class="col-md-4">
+
+        <form method="post">
+            <input type="hidden" asp-for="ApplicationUser.Id" />
+            <ul>
+                @foreach (var item in Model.AllRoles)
+                {
+                    <li>
+                        @if (Model.SelectedRoles.Contains(item))
+                        {
+                            <input type="checkbox" name="SelectIds" value="@item.Id" checked="checked" />
+                        }
+                        else
+                        {
+                            <input type="checkbox" name="SelectIds" value="@item.Id" />
+
+                        }
+                        <label for="@item.Name">@item.Name</label>
+                    </li>
+
+                }
+            </ul>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+<script type="text/javascript">
+    $('#btSayHello').click(function ()
+    {
+        $.ajax(
+            {
+                url: "/Account/SayHello",
+                type: 'GET',
+                success: function (str) {
+                    alert(str);
+                },
+                error: function (err) {
+                    alert(error);
+                }
+            }
+        );
+    });
+</script>
+

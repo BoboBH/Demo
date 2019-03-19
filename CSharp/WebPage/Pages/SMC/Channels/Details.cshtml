@@ -1,0 +1,68 @@
+﻿@page
+@model WebPage.Pages.SMC.Channels.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Pages/_BootstrapLayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SMCChannel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SMCChannel.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SMCChannel.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SMCChannel.ChannelCode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SMCChannel.ChannelCode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SMCChannel.Description)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SMCChannel.Description)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SMCChannel.Key)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SMCChannel.Key)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SMCChannel.Status)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SMCChannel.Status)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SMCChannel.CreatedOn)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SMCChannel.CreatedOn)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SMCChannel.UpdatedOn)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SMCChannel.UpdatedOn)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SMCChannel.Owner)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SMCChannel.Owner.UserName)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.SMCChannel.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

@@ -1,0 +1,79 @@
+﻿@page
+@model WebPage.Pages.SMC.Channels.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Pages/_BootstrapLayout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.SMCChannel[0].Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SMCChannel[0].ChannelCode)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SMCChannel[0].Description)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SMCChannel[0].Key)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SMCChannel[0].Status)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SMCChannel[0].CreatedOn)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SMCChannel[0].UpdatedOn)
+                </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SMCChannel[0].Owner)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.SMCChannel) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ChannelCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Key)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreatedOn)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UpdatedOn)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Owner.UserName)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

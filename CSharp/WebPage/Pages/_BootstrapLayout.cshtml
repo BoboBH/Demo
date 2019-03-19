@@ -8,53 +8,53 @@
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/bootstrap/bootstrap-datetimepicker.css" />
         <link rel="stylesheet" href="~/css/site.css" />
         <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
         <script src="~/js/bootstrap/bootstrap.min.js"></script>
+        <script src="~/js/bootstrap/bootstrap-datetimepicker.js"></script>
     </environment>
     <environment exclude="Development">
         <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
               asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/css/bootstrap-datetimepicker.min.css" />
+        <script src="~/js/bootstrap/bootstrap-datetimepicker-min.js"></script>
+        <script src="~/js/bootstrap/bootstrap.min.js"></script>
     </environment>
 </head>
 <body>
     <div class="container">
         <p>YFF Sales Management Center</p>
         <ul class="nav nav-tabs">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">SVN</a></li>
-            <li><a href="#">iOS</a></li>
-            <li><a href="#">VB.Net</a></li>
-            <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                    CRM SMC <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="/SMC/Activities/Index">Activity</a></li>
-                    <li><a href="/SMC/Promotions/Index">Promotion</a></li>
-                </ul>
-            </li>
-            @if (SignInManager.IsSignedIn(User) && User.IsInRole("Adminnistor"))
+            <li><a asp-page="/Index">Home</a></li>
+            @if (SignInManager.IsSignedIn(User))
     {
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                CRM SMC <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="/SMC/Promotions/Index">Promotion</a></li>
+                <li><a href="/SMC/Activities/Index">Activity</a></li>
+                <li><a href="/SMC/Channels/Index">Channel</a></li>
+            </ul>
+        </li>
+        <li><a asp-page="/Contacts/Index">Manage Contact</a></li>
+        <li><a asp-page="/Clients/Index">Manage Client</a></li>
+        <li><a asp-page="/ClientManagers/Index">Manage Manager</a></li>
         <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                 Settings <span class="caret"></span>
             </a>
             <ul class="dropdown-menu">
-                <li><a href="#">Users</a></li>
-                <li><a href="#">Security Roles</a></li>
+                <li><a href="/Settings/Users/Index">Users</a></li>
+                <li><a href="/Settings/Roles/Index">Roles</a></li>
                 <li class="divider"></li>
                 <li><a href="#">System Settings</a></li>
             </ul>
         </li>
-}
-            @if (SignInManager.IsSignedIn(User))
-    {
-        <li><a asp-page="/Contacts/Index">Manage Contact</a></li>
-        <li><a asp-page="/Clients/Index">Manage Client</a></li>
-        <li><a asp-page="/ClientManagers/Index">Manage Manager</a></li>
         <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                 Profile <span class="caret"></span>

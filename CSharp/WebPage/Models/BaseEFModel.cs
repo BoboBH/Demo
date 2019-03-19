@@ -10,7 +10,7 @@ namespace WebPage.Models
     {
         [Key]
         public string Id { get; set; }
-        public DateTime? CreatdOn { get; set; }
-        public DateTime? UpdatedOn { get; set; }
+        public DateTime? CreatedOn { get; set; } = DateTime.Now;
+        public DateTime? UpdatedOn { get; set; } = DateTime.Now;
     }
 }

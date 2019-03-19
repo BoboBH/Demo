@@ -33,7 +33,7 @@ namespace WebPage.Controllers
         [Authorize]
         public string SayHello()
         {
-            return "Hello Bobo Huang";
+            return "Hello " + _signInManager.UserManager.GetUserName(User);
         }
     }
 }

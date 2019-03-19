@@ -1,0 +1,106 @@
+﻿@page
+@model WebPage.Pages.SMC.Promotions.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Pages/_BootstrapLayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SMCPromotion</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SMCPromotion.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SMCPromotion.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SMCPromotion.Code)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SMCPromotion.Code)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SMCPromotion.Key)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SMCPromotion.Key)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SMCPromotion.StartDate)
+        </dt>
+        <dd>
+            @if (Model.SMCPromotion.StartDate.HasValue)
+            {
+                @Model.SMCPromotion.StartDate.Value.ToString("yyyy-MM-dd")
+          }
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SMCPromotion.EndDate)
+        </dt>
+        <dd>
+            @if (Model.SMCPromotion.EndDate.HasValue)
+            {
+                @Model.SMCPromotion.EndDate.Value.ToString("yyyy-MM-dd")
+            }
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SMCPromotion.Url)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SMCPromotion.Url)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SMCPromotion.Status)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SMCPromotion.Status)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SMCPromotion.CreatedOn)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SMCPromotion.CreatedOn)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SMCPromotion.UpdatedOn)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SMCPromotion.UpdatedOn)            
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SMCPromotion.Activity)
+        </dt>
+        <dd>
+
+            <a asp-page="../Activities/Details" asp-route-id="@Model.SMCPromotion.ActivityId">
+                @Html.DisplayFor(model => model.SMCPromotion.Activity.Name)
+            </a>
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SMCPromotion.Channel)
+        </dt>
+        <dd>
+            <a asp-page="../Channels/Details" asp-route-id="@Model.SMCPromotion.ChannelId">
+                @Html.DisplayFor(model => model.SMCPromotion.Channel.Name)
+            </a>
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SMCPromotion.Owner)
+            
+        </dt>
+        <dd>
+            <a asp-page="/Settings/Users/Details" asp-route-id="@Model.SMCPromotion.OwnerId">
+                @Html.DisplayFor(model => model.SMCPromotion.Owner.UserName)
+            </a>
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.SMCPromotion.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

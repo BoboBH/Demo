@@ -23,5 +23,10 @@ namespace JWTWeb.Controllers
         {
             return string.Format("delete user(id={0};Name:bobo huang) successfully.", id);
         }
+        [HttpPost]
+        public string Login()
+        {
+            return String.Empty;
+        }
     }
 }

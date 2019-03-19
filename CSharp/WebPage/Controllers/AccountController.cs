@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using WebPage.Data;
+using WebPage.Models;
+using WebPage.Models.Request;
 
 namespace WebPage.Controllers
 {
@@ -34,6 +36,19 @@ namespace WebPage.Controllers
         public string SayHello()
         {
             return "Hello " + _signInManager.UserManager.GetUserName(User);
+        }
+        [HttpPost]
+        public async Task<GeneralJsonResult<string>> Login([FromBody]RequestLogin loginReq)
+        {
+            HttpContext.Response.Headers.Add("authorization", "");
+
+            var result = await _signInManager.PasswordSignInAsync(loginReq.UserName, loginReq.Password, false, false);
+            if (result.Succeeded)
+            {                
+                return new Models.GeneralJsonResult<string>(0,String.Empty, loginReq.UserName);
+            }
+            return new GeneralJsonResult<string>(-1, "Username/Password is not valid");
+
         }
     }
 }

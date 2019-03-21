@@ -37,18 +37,18 @@ namespace WebPage.Controllers
         {
             return "Hello " + _signInManager.UserManager.GetUserName(User);
         }
-        [HttpPost]
-        public async Task<GeneralJsonResult<string>> Login([FromBody]RequestLogin loginReq)
-        {
-            HttpContext.Response.Headers.Add("authorization", "");
+        //[HttpPost]
+        //public async Task<GeneralJsonResult<string>> Login([FromBody]RequestLogin loginReq)
+        //{
+        //    HttpContext.Response.Headers.Add("authorization", "");
 
-            var result = await _signInManager.PasswordSignInAsync(loginReq.UserName, loginReq.Password, false, false);
-            if (result.Succeeded)
-            {                
-                return new Models.GeneralJsonResult<string>(0,String.Empty, loginReq.UserName);
-            }
-            return new GeneralJsonResult<string>(-1, "Username/Password is not valid");
+        //    var result = await _signInManager.PasswordSignInAsync(loginReq.UserName, loginReq.Password, false, false);
+        //    if (result.Succeeded)
+        //    {                
+        //        return new Models.GeneralJsonResult<string>(0,String.Empty, loginReq.UserName);
+        //    }
+        //    return new GeneralJsonResult<string>(-1, "Username/Password is not valid");
 
-        }
+        //}
     }
 }

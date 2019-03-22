@@ -95,6 +95,7 @@ BEGIN
 	insert into #tmp_register_stat(followerid,cnt,stat_type)
 	select followerid,count(*),2 from #tmp_user_follow_mapping a
 	inner join dev02.reohk_mscrm.dbo.new_yffuser b on a.userid = b.new_yffuserid
+	where b.new_registertime < DATEADD(dd,1,@p_EndDate)
 	group by followerid
 
 
@@ -176,6 +177,7 @@ BEGIN
 	insert into #tmp_statement_stat(followerid,hkd_amount,cnt,direction,stat_type)
 	select a.followerid,sum(b.hkd_amount) as hkd_amount,count(distinct a.clientid) cnt,b.direction,2 from #tmp_client_follow_mapping a
 	inner join #tmp_client_statement b on a.clientid = b.clientid and b.direction =1--deposit
+	where txdate < DATEADD(dd,1,@p_EndDate)
 	group by a.followerid,b.direction
 
 	insert into #tmp_statement_stat(followerid,hkd_amount,cnt,direction,stat_type)
@@ -183,9 +185,11 @@ BEGIN
 	inner join #tmp_client_statement b on a.clientid = b.clientid and b.direction =2--deposit
 	where txdate>=@p_EndDate and txdate < DATEADD(dd,1,@p_EndDate)
 	group by a.followerid,direction
+
 	insert into #tmp_statement_stat(followerid,hkd_amount,cnt,direction,stat_type)
 	select a.followerid,sum(b.hkd_amount) as hkd_amount,count(distinct a.clientid) cnt,b.direction,2 from #tmp_client_follow_mapping a
-	inner join #tmp_client_statement b on a.clientid = b.clientid and b.direction =2--deposit
+	inner join #tmp_client_statement b on a.clientid = b.clientid and b.direction =2--deposit	
+	where txdate < DATEADD(dd,1,@p_EndDate)
 	group by a.followerid,direction
 
 

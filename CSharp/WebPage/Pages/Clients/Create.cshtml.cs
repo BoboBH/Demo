@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using WebPage.Data;
 using WebPage.Models;
 using WebPage.Pages.Contacts;
+using WebPage.Extensions;
 
 namespace WebPage.Pages.Clients
 {

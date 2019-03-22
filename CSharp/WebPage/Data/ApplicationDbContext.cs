@@ -22,6 +22,10 @@ namespace WebPage.Data
             builder.Entity<ApplicationUser>().Property(p => p.PhoneNumberConfirmed).HasColumnType("bit");
             builder.Entity<ApplicationUser>().Property(p => p.LockoutEnabled).HasColumnType("bit");
             builder.Entity<ApplicationUser>().Property(p => p.TwoFactorEnabled).HasColumnType("bit");
+            //builder.Entity<ApplicationUser>().HasMany(p => p.Claims).WithOne().HasForeignKey(uc => uc.UserId);
+            //builder.Entity<ApplicationUser>().HasMany(p => p.Logins).WithOne().HasForeignKey(ul => ul.UserId);
+            //builder.Entity<ApplicationUser>().HasMany(p => p.UserRoles).WithOne().HasForeignKey(ur => ur.UserId);
+            //builder.Entity<ApplicationUser>().HasMany(p => p.Tokens).WithOne().HasForeignKey(ut => ut.UserId);
             var client = builder.Entity<Client>();
             client.HasOne(p => p.ClientManager).WithMany().HasForeignKey(p => p.ClientManagerId);
             client.HasOne(p => p.Owner).WithMany().HasForeignKey(p => p.OwnerId);

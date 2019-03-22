@@ -35,7 +35,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebPage", "csharp\WebPage\W
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebTest2", "csharp\WebTest2\WebTest2.csproj", "{A4D01E63-3EA7-4556-A575-978387C22BDA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebMvc", "csharp\WebMvc\WebMvc.csproj", "{7408F8EF-9E54-4ACF-AE3C-DF67B242C4B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebMvc", "csharp\WebMvc\WebMvc.csproj", "{7408F8EF-9E54-4ACF-AE3C-DF67B242C4B0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cookies", "CSharp\sample\security\Cookies\Cookies.csproj", "{1284870C-F739-4A23-8EB3-8F744842FDEF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomPolicyProvider", "CSharp\sample\security\CustomPolicyProvider\CustomPolicyProvider.csproj", "{64DC3305-B6E0-40E0-91CE-2D302407AE79}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +115,14 @@ Global
 		{7408F8EF-9E54-4ACF-AE3C-DF67B242C4B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7408F8EF-9E54-4ACF-AE3C-DF67B242C4B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7408F8EF-9E54-4ACF-AE3C-DF67B242C4B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1284870C-F739-4A23-8EB3-8F744842FDEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1284870C-F739-4A23-8EB3-8F744842FDEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1284870C-F739-4A23-8EB3-8F744842FDEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1284870C-F739-4A23-8EB3-8F744842FDEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64DC3305-B6E0-40E0-91CE-2D302407AE79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64DC3305-B6E0-40E0-91CE-2D302407AE79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64DC3305-B6E0-40E0-91CE-2D302407AE79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64DC3305-B6E0-40E0-91CE-2D302407AE79}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

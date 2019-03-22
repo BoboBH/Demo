@@ -1,0 +1,11 @@
+D:\github\Demo\CSharp\sample\security\CustomPolicyProvider\bin\Debug\netcoreapp2.0\CustomPolicyProvider.deps.json
+D:\github\Demo\CSharp\sample\security\CustomPolicyProvider\bin\Debug\netcoreapp2.0\CustomPolicyProvider.runtimeconfig.json
+D:\github\Demo\CSharp\sample\security\CustomPolicyProvider\bin\Debug\netcoreapp2.0\CustomPolicyProvider.runtimeconfig.dev.json
+D:\github\Demo\CSharp\sample\security\CustomPolicyProvider\bin\Debug\netcoreapp2.0\CustomPolicyProvider.dll
+D:\github\Demo\CSharp\sample\security\CustomPolicyProvider\bin\Debug\netcoreapp2.0\CustomPolicyProvider.pdb
+D:\github\Demo\CSharp\sample\security\CustomPolicyProvider\obj\Debug\netcoreapp2.0\CustomPolicyProvider.csproj.CoreCompileInputs.cache
+D:\github\Demo\CSharp\sample\security\CustomPolicyProvider\obj\Debug\netcoreapp2.0\CustomPolicyProvider.AssemblyInfoInputs.cache
+D:\github\Demo\CSharp\sample\security\CustomPolicyProvider\obj\Debug\netcoreapp2.0\CustomPolicyProvider.AssemblyInfo.cs
+D:\github\Demo\CSharp\sample\security\CustomPolicyProvider\obj\Debug\netcoreapp2.0\CustomPolicyProvider.dll
+D:\github\Demo\CSharp\sample\security\CustomPolicyProvider\obj\Debug\netcoreapp2.0\CustomPolicyProvider.pdb
+D:\github\Demo\CSharp\sample\security\CustomPolicyProvider\obj\Debug\netcoreapp2.0\CustomPolicyProvider.csprojResolveAssemblyReference.cache

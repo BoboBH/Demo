@@ -1,0 +1,11 @@
+D:\github\Demo\CSharp\sample\security\Cookies\obj\Debug\netcoreapp2.0\Cookies.csprojResolveAssemblyReference.cache
+D:\github\Demo\CSharp\sample\security\Cookies\obj\Debug\netcoreapp2.0\Cookies.csproj.CoreCompileInputs.cache
+D:\github\Demo\CSharp\sample\security\Cookies\obj\Debug\netcoreapp2.0\Cookies.AssemblyInfoInputs.cache
+D:\github\Demo\CSharp\sample\security\Cookies\obj\Debug\netcoreapp2.0\Cookies.AssemblyInfo.cs
+D:\github\Demo\CSharp\sample\security\Cookies\bin\Debug\netcoreapp2.0\Cookies.deps.json
+D:\github\Demo\CSharp\sample\security\Cookies\bin\Debug\netcoreapp2.0\Cookies.runtimeconfig.json
+D:\github\Demo\CSharp\sample\security\Cookies\bin\Debug\netcoreapp2.0\Cookies.runtimeconfig.dev.json
+D:\github\Demo\CSharp\sample\security\Cookies\bin\Debug\netcoreapp2.0\Cookies.dll
+D:\github\Demo\CSharp\sample\security\Cookies\bin\Debug\netcoreapp2.0\Cookies.pdb
+D:\github\Demo\CSharp\sample\security\Cookies\obj\Debug\netcoreapp2.0\Cookies.dll
+D:\github\Demo\CSharp\sample\security\Cookies\obj\Debug\netcoreapp2.0\Cookies.pdb

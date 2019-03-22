@@ -12,6 +12,11 @@ namespace MyApp.Controllers
     [Route("api/user")]
     public class UserController : Controller
     {
+        MyAppContext context;
+        public UserController(MyAppContext context)
+        {
+            this.context = context;
+        }
         // GET api/values
         [HttpGet]
         public IEnumerable<string> Get()
@@ -23,7 +28,6 @@ namespace MyApp.Controllers
         [HttpGet("{id}")]
         public User Get(string id)
         {
-            MyAppContext context = new MyAppContext();
             User user = null;
             user = context.User.FirstOrDefault(u => u.Id == id);
             //user = context.User.Find(id);

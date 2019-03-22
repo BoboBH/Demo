@@ -29,6 +29,17 @@ namespace WebPage
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            #region Config Session
+            services.AddDistributedMemoryCache();
+            services.AddSession(options =>
+            {
+                // Set a short timeout for easy testing.
+                options.IdleTimeout = TimeSpan.FromHours(10);
+                options.Cookie.HttpOnly = true;
+                // Make the session cookie essential
+                //options.Cookie.IsEssential = true;
+            });
+            #endregion
             services.AddDbContext<ApplicationDbContext>(options =>
                 //options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
                 options.UseMySQL(Configuration.GetConnectionString("MysqlConnection")));
@@ -74,6 +85,7 @@ namespace WebPage
             app.UseStaticFiles();
 
             app.UseAuthentication();
+            app.UseSession();
 
             app.UseMvc(routes =>
             {

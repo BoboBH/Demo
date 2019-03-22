@@ -69,7 +69,7 @@ namespace WebPage.Pages.Account
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)
                 {
-                    _logger.LogInformation("User created a new account with password.");
+                    _logger.LogInformation("User£¨{0}£© created a new account with password.",user.UserName);
 
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                     var callbackUrl = Url.EmailConfirmationLink(user.Id, code, Request.Scheme);
@@ -86,6 +86,7 @@ namespace WebPage.Pages.Account
 
             // If we got this far, something failed, redisplay form
             return Page();
+
         }
     }
 }

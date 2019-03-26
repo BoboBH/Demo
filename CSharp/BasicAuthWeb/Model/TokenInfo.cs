@@ -11,5 +11,6 @@ namespace BasicAuthWeb.Model
         public string UserName { get; set; }
         public string ApplicationId { get; set; }
         public string Expiry { get; set; }
+        public string Nonce { get; set; }
     }
 }

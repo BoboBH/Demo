@@ -32,7 +32,7 @@ namespace BasicAuthWeb.Controllers
         [HttpPost("login")]
         public IActionResult Login(string username, string password)
         {
-
+            Random random = new Random();
             if (this.userService.Auth(username,password))
             {
                 var identity = new ClaimsIdentity(CookieAuthenticationDefaults.AuthenticationScheme);
@@ -55,9 +55,10 @@ namespace BasicAuthWeb.Controllers
                 {
                     UserName = username,
                     ApplicationId = "BOBO",
-                    Expiry = (token.Expiry.Value.ToUniversalTime()-new DateTime(1970,1,1)).TotalSeconds.ToString()
+                    Nonce = random.Next(100000, 999999).ToString(),
+                    Expiry = Math.Ceiling((token.Expiry.Value.ToUniversalTime()-new DateTime(1970,1,1)).TotalSeconds).ToString()
                 };
-                tm.Token = AESCoding.Encrypt($"{tm.UserName}-{tm.ApplicationId}-{tm.Expiry}");
+                tm.Token = AESCoding.Encrypt($"{tm.UserName}-{tm.ApplicationId}-{tm.Expiry}-{tm.Nonce}");
                 token.Token = tm.Token;
                 this.tokenInfoService.SaveToken(token);
                 return Ok(tm);

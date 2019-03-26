@@ -50,7 +50,7 @@ namespace BasicAuthWeb.Auth
             TokenModel token = this.GetTokenInfo(context);
             if (token == null)
                 return;
-            String info = $"{token.UserName}-{token.ApplicationId}-{token.Expiry}";
+            String info = $"{token.UserName}-{token.ApplicationId}-{token.Expiry}-{token.Nonce}";
             if(!info.Equals(AESCoding.Decrypt(token.Token)))
             {
                 ReturnNoAuthorized(context);
@@ -113,6 +113,7 @@ namespace BasicAuthWeb.Auth
             if (context.Request.Headers.ContainsKey("Authorization")
                 && context.Request.Headers.ContainsKey("UserName")
                 && context.Request.Headers.ContainsKey("Expiry")
+                && context.Request.Headers.ContainsKey("Nonce")
                 && context.Request.Headers.ContainsKey("ApplicationId"))
             {
                 return new TokenModel()
@@ -120,7 +121,8 @@ namespace BasicAuthWeb.Auth
                     Token = context.Request.Headers["Authorization"].ToString(),
                     ApplicationId = context.Request.Headers["ApplicationId"].ToString(),
                     UserName = context.Request.Headers["UserName"].ToString(),
-                    Expiry = context.Request.Headers["Expiry"].ToString()
+                    Expiry = context.Request.Headers["Expiry"].ToString(),
+                    Nonce = context.Request.Headers["Nonce"].ToString()
                 };
             }
             return null;

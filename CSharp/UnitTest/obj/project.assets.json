@@ -5697,7 +5697,6 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
-      "D:\\github\\Demo\\Csharp\\BasicAuthWeb\\BasicAuthWeb.csproj",
       "MSTest.TestAdapter >= 1.2.0",
       "MSTest.TestFramework >= 1.2.0",
       "Microsoft.NET.Test.Sdk >= 15.5.0",
@@ -5736,11 +5735,7 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {
-            "D:\\github\\Demo\\Csharp\\BasicAuthWeb\\BasicAuthWeb.csproj": {
-              "projectPath": "D:\\github\\Demo\\Csharp\\BasicAuthWeb\\BasicAuthWeb.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -5777,16 +5772,5 @@
         "warn": true
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1105",
-      "level": "Error",
-      "message": "找不到“D:\\github\\Demo\\Csharp\\BasicAuthWeb\\BasicAuthWeb.csproj”的项目信息。项目文件可能无效或可能缺少还原必需的目标。",
-      "libraryId": "D:\\github\\Demo\\Csharp\\BasicAuthWeb\\BasicAuthWeb.csproj",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v2.0"
-      ]
-    }
-  ]
+  }
 }

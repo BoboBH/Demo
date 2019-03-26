@@ -1,13 +1,16 @@
 ﻿using BasicAuthWeb.Entity;
 using BasicAuthWeb.Model;
 using BasicAuthWeb.Service;
+using BasicAuthWeb.Utility;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Threading.Tasks;
 
@@ -39,37 +42,52 @@ namespace BasicAuthWeb.Auth
                         return;
                 }
             }
-
-            await next.Invoke(context);
+            CheckSignature(context);
+            await next(context);
         }
-
-        public async Task Check(HttpContext context)
+        private void CheckSignature(HttpContext context)
         {
             TokenModel token = this.GetTokenInfo(context);
-            if (token != null)
+            if (token == null)
+                return;
+            String info = $"{token.UserName}-{token.ApplicationId}-{token.Expiry}";
+            if(!info.Equals(AESCoding.Decrypt(token.Token)))
             {
-                string signature = HMACMD5Helper.GetEncryptResult($"{token.ApplicationId}-{token.ApplicationPassword}-{token.UserName}-{this.options.Value.EncryptKey}");
-                if (!signature.Equals(token.Token))
-                    await ReturnNoAuthorized(context);
-                else
+                ReturnNoAuthorized(context);
+                return;
+            }
+            if (!String.IsNullOrEmpty(token.Expiry))
+            {
+                double current_stamp = (DateTime.UtcNow - new DateTime(1970, 1, 1)).TotalSeconds;
+                double expiry = 0;
+                if (double.TryParse(token.Expiry,out expiry))
                 {
-                    //check if token is timeout; get token info from redis/database and compare the timestamp
-                    await CheckSignature(context, token);
+                    if(expiry < current_stamp)
+                    {
+                        ReturnTimeOut(context);
+                        return;
+                    }
                 }
             }
-            else
-                await ReturnNoAuthorized(context);
-        }
-        private async Task CheckSignature(HttpContext context, TokenModel token)
-        {
             ITokenInfoService tokenSerivce = context.RequestServices.GetService(typeof(ITokenInfoService)) as ITokenInfoService;
             TokenInfo tInfo = tokenSerivce.GetTokenInfo(token.Token);
             if (tInfo == null)
-                await ReturnNoAuthorized(context);
-            if (tInfo.Expiry == null || tInfo.Expiry.Value.CompareTo(DateTime.Now) < 0)
-                await ReturnTimeOut(context);
+            {
+                return;
+            }
+
+            IUserService userService = context.RequestServices.GetService(typeof(IUserService)) as IUserService;
+            User user = userService.GetUser(token.UserName);
+            var identity = new ClaimsIdentity(CookieAuthenticationDefaults.AuthenticationScheme);
+            var claims = new List<Claim>
+                {
+                    new Claim(ClaimTypes.Name, user.UserName),
+                    new Claim(ClaimTypes.Role, "Member")
+                };
+            identity.AddClaims(claims);
+            context.User = new ClaimsPrincipal(identity);
         }
-        private async Task ReturnNoAuthorized(HttpContext context)
+        private void ReturnNoAuthorized(HttpContext context)
         {
             BaseResponseResult response = new BaseResponseResult
             {
@@ -77,9 +95,9 @@ namespace BasicAuthWeb.Auth
                 Message = "You are not authorized!"
             };
             context.Response.StatusCode = 401;
-            await context.Response.WriteAsync(JsonConvert.SerializeObject(response));
+            context.Response.WriteAsync(JsonConvert.SerializeObject(response));
         }
-        private async Task ReturnTimeOut(HttpContext context)
+        private void ReturnTimeOut(HttpContext context)
         {
             BaseResponseResult response = new BaseResponseResult
             {
@@ -87,14 +105,14 @@ namespace BasicAuthWeb.Auth
                 Message = "Time Out!"
             };
             context.Response.StatusCode = 408;
-            await context.Response.WriteAsync(JsonConvert.SerializeObject(response));
+            context.Response.WriteAsync(JsonConvert.SerializeObject(response));
         }
 
         private TokenModel GetTokenInfo(HttpContext context)
         {
             if (context.Request.Headers.ContainsKey("Authorization")
                 && context.Request.Headers.ContainsKey("UserName")
-                && context.Request.Headers.ContainsKey("ApplicationPassword")
+                && context.Request.Headers.ContainsKey("Expiry")
                 && context.Request.Headers.ContainsKey("ApplicationId"))
             {
                 return new TokenModel()
@@ -102,7 +120,7 @@ namespace BasicAuthWeb.Auth
                     Token = context.Request.Headers["Authorization"].ToString(),
                     ApplicationId = context.Request.Headers["ApplicationId"].ToString(),
                     UserName = context.Request.Headers["UserName"].ToString(),
-                    ApplicationPassword = context.Request.Headers["ApplicationPassword"].ToString()
+                    Expiry = context.Request.Headers["Expiry"].ToString()
                 };
             }
             return null;

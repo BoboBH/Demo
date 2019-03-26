@@ -43,6 +43,7 @@ namespace BasicAuthWeb
             services.AddUnitOfWork<DBContext>();
             services.AddScoped(typeof(IUserService), typeof(UserService));
             services.AddScoped(typeof(ITokenInfoService), typeof(TokenInfoService));
+            services.AddSession();
             services.AddMvc();
         }
 
@@ -58,6 +59,7 @@ namespace BasicAuthWeb
                 app.UseExceptionHandler("/Home/Error");
             }
             app.UseStaticFiles();
+            app.UseSession();
             app.UseApiAuthorized(new ApiAuthorizedOptions
             {
                 EncryptKey = "1235",

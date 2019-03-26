@@ -1,0 +1,16 @@
+D:\github\Demo\Csharp\UnitTest\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\github\Demo\Csharp\UnitTest\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\github\Demo\Csharp\UnitTest\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\github\Demo\Csharp\UnitTest\bin\Debug\netcoreapp2.0\UnitTest.deps.json
+D:\github\Demo\Csharp\UnitTest\bin\Debug\netcoreapp2.0\UnitTest.runtimeconfig.json
+D:\github\Demo\Csharp\UnitTest\bin\Debug\netcoreapp2.0\UnitTest.runtimeconfig.dev.json
+D:\github\Demo\Csharp\UnitTest\bin\Debug\netcoreapp2.0\UnitTest.dll
+D:\github\Demo\Csharp\UnitTest\bin\Debug\netcoreapp2.0\UnitTest.pdb
+D:\github\Demo\Csharp\UnitTest\obj\Debug\netcoreapp2.0\UnitTest.csproj.CoreCompileInputs.cache
+D:\github\Demo\Csharp\UnitTest\obj\Debug\netcoreapp2.0\UnitTest.AssemblyInfoInputs.cache
+D:\github\Demo\Csharp\UnitTest\obj\Debug\netcoreapp2.0\UnitTest.AssemblyInfo.cs
+D:\github\Demo\Csharp\UnitTest\obj\Debug\netcoreapp2.0\UnitTest.dll
+D:\github\Demo\Csharp\UnitTest\obj\Debug\netcoreapp2.0\UnitTest.pdb
+D:\github\Demo\Csharp\UnitTest\obj\Debug\netcoreapp2.0\UnitTest.csprojResolveAssemblyReference.cache
+D:\github\Demo\Csharp\UnitTest\bin\Debug\netcoreapp2.0\BasicAuthWeb.dll
+D:\github\Demo\Csharp\UnitTest\bin\Debug\netcoreapp2.0\BasicAuthWeb.pdb

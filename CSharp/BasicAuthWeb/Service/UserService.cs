@@ -16,9 +16,16 @@ namespace BasicAuthWeb.Service
         }
         public bool Auth(string username, string password)
         {
+            
             var repo = _unitOfWork.GetRepository<User>();
             var user = repo.FromSql($"select * from user where user_name = '{username}' and password='{password}'", username, password).FirstOrDefault();
             return user != null;
+        }
+        public User GetUser(string username)
+        {
+            var repo = _unitOfWork.GetRepository<User>();
+            var user = repo.FromSql($"select * from user where user_name = '{username}'").FirstOrDefault();
+            return user;
         }
     }
 }

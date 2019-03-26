@@ -10,6 +10,6 @@ namespace BasicAuthWeb.Model
         public string Token { get; set; }
         public string UserName { get; set; }
         public string ApplicationId { get; set; }
-        public string ApplicationPassword { get; set; }
+        public string Expiry { get; set; }
     }
 }

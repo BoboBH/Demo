@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "BackendService": {
+      "commandName": "Project",
+      "commandLineArgs": "downstockperffromsohu"
+    }
+  }
+}

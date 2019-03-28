@@ -1,0 +1,11 @@
+D:\github\demo\csharp\Finance\Business\bin\Debug\netcoreapp2.0\Business.deps.json
+D:\github\demo\csharp\Finance\Business\bin\Debug\netcoreapp2.0\Business.dll
+D:\github\demo\csharp\Finance\Business\bin\Debug\netcoreapp2.0\Business.pdb
+D:\github\demo\csharp\Finance\Business\bin\Debug\netcoreapp2.0\Common.dll
+D:\github\demo\csharp\Finance\Business\bin\Debug\netcoreapp2.0\Common.pdb
+D:\github\demo\csharp\Finance\Business\obj\Debug\netcoreapp2.0\Business.csprojResolveAssemblyReference.cache
+D:\github\demo\csharp\Finance\Business\obj\Debug\netcoreapp2.0\Business.csproj.CoreCompileInputs.cache
+D:\github\demo\csharp\Finance\Business\obj\Debug\netcoreapp2.0\Business.AssemblyInfoInputs.cache
+D:\github\demo\csharp\Finance\Business\obj\Debug\netcoreapp2.0\Business.AssemblyInfo.cs
+D:\github\demo\csharp\Finance\Business\obj\Debug\netcoreapp2.0\Business.dll
+D:\github\demo\csharp\Finance\Business\obj\Debug\netcoreapp2.0\Business.pdb

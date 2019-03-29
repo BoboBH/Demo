@@ -2,7 +2,7 @@
   "profiles": {
     "BackendService": {
       "commandName": "Project",
-      "commandLineArgs": "downstockperffromsohu"
+      "commandLineArgs": "downloadstockinfofromsina -pupdate"
     }
   }
 }

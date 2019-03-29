@@ -1,0 +1,16 @@
+D:\github\Demo\csharp\EmptyNUnit\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\github\Demo\csharp\EmptyNUnit\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\github\Demo\csharp\EmptyNUnit\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\github\Demo\csharp\EmptyNUnit\bin\Debug\netcoreapp2.0\EmptyNUnit.deps.json
+D:\github\Demo\csharp\EmptyNUnit\bin\Debug\netcoreapp2.0\EmptyNUnit.runtimeconfig.json
+D:\github\Demo\csharp\EmptyNUnit\bin\Debug\netcoreapp2.0\EmptyNUnit.runtimeconfig.dev.json
+D:\github\Demo\csharp\EmptyNUnit\bin\Debug\netcoreapp2.0\EmptyNUnit.dll
+D:\github\Demo\csharp\EmptyNUnit\bin\Debug\netcoreapp2.0\EmptyNUnit.pdb
+D:\github\Demo\csharp\EmptyNUnit\bin\Debug\netcoreapp2.0\EmptyClassLibrary.dll
+D:\github\Demo\csharp\EmptyNUnit\bin\Debug\netcoreapp2.0\EmptyClassLibrary.pdb
+D:\github\Demo\csharp\EmptyNUnit\obj\Debug\netcoreapp2.0\EmptyNUnit.csprojResolveAssemblyReference.cache
+D:\github\Demo\csharp\EmptyNUnit\obj\Debug\netcoreapp2.0\EmptyNUnit.csproj.CoreCompileInputs.cache
+D:\github\Demo\csharp\EmptyNUnit\obj\Debug\netcoreapp2.0\EmptyNUnit.AssemblyInfoInputs.cache
+D:\github\Demo\csharp\EmptyNUnit\obj\Debug\netcoreapp2.0\EmptyNUnit.AssemblyInfo.cs
+D:\github\Demo\csharp\EmptyNUnit\obj\Debug\netcoreapp2.0\EmptyNUnit.dll
+D:\github\Demo\csharp\EmptyNUnit\obj\Debug\netcoreapp2.0\EmptyNUnit.pdb

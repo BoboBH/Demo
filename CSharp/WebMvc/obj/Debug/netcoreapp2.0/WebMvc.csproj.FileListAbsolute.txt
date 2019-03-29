@@ -3,10 +3,10 @@ D:\github\Demo\csharp\WebMvc\bin\Debug\netcoreapp2.0\WebMvc.runtimeconfig.json
 D:\github\Demo\csharp\WebMvc\bin\Debug\netcoreapp2.0\WebMvc.runtimeconfig.dev.json
 D:\github\Demo\csharp\WebMvc\bin\Debug\netcoreapp2.0\WebMvc.dll
 D:\github\Demo\csharp\WebMvc\bin\Debug\netcoreapp2.0\WebMvc.pdb
-D:\github\Demo\csharp\WebMvc\obj\Debug\netcoreapp2.0\WebMvc.csprojResolveAssemblyReference.cache
 D:\github\Demo\csharp\WebMvc\obj\Debug\netcoreapp2.0\WebMvc.csproj.CoreCompileInputs.cache
 D:\github\Demo\csharp\WebMvc\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
 D:\github\Demo\csharp\WebMvc\obj\Debug\netcoreapp2.0\WebMvc.AssemblyInfoInputs.cache
 D:\github\Demo\csharp\WebMvc\obj\Debug\netcoreapp2.0\WebMvc.AssemblyInfo.cs
 D:\github\Demo\csharp\WebMvc\obj\Debug\netcoreapp2.0\WebMvc.dll
 D:\github\Demo\csharp\WebMvc\obj\Debug\netcoreapp2.0\WebMvc.pdb
+D:\github\Demo\csharp\WebMvc\obj\Debug\netcoreapp2.0\WebMvc.csprojResolveAssemblyReference.cache

@@ -12,5 +12,5 @@ D:\github\Demo\Csharp\UnitTest\obj\Debug\netcoreapp2.0\UnitTest.AssemblyInfo.cs
 D:\github\Demo\Csharp\UnitTest\obj\Debug\netcoreapp2.0\UnitTest.dll
 D:\github\Demo\Csharp\UnitTest\obj\Debug\netcoreapp2.0\UnitTest.pdb
 D:\github\Demo\Csharp\UnitTest\obj\Debug\netcoreapp2.0\UnitTest.csprojResolveAssemblyReference.cache
-D:\github\Demo\Csharp\UnitTest\bin\Debug\netcoreapp2.0\BasicAuthWeb.dll
-D:\github\Demo\Csharp\UnitTest\bin\Debug\netcoreapp2.0\BasicAuthWeb.pdb
+D:\github\Demo\CSharp\UnitTest\bin\Debug\netcoreapp2.0\StockBusiness.dll
+D:\github\Demo\CSharp\UnitTest\bin\Debug\netcoreapp2.0\StockBusiness.pdb

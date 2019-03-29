@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using StrategyApp.Data;
 using StrategyApp.Models;
 using StrategyApp.Services;
+using Business.Data;
 
 namespace StrategyApp
 {
@@ -27,7 +28,9 @@ namespace StrategyApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+                options.UseMySQL(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<StockDBContext>(options =>
+                options.UseMySQL(Configuration.GetConnectionString("StockDBConnection")));
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()

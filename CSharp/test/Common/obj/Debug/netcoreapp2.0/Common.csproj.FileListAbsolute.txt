@@ -1,0 +1,9 @@
+d:\github\demo\csharp\test\Common\bin\Debug\netcoreapp2.0\Common.deps.json
+d:\github\demo\csharp\test\Common\bin\Debug\netcoreapp2.0\Common.dll
+d:\github\demo\csharp\test\Common\bin\Debug\netcoreapp2.0\Common.pdb
+d:\github\demo\csharp\test\Common\obj\Debug\netcoreapp2.0\Common.csprojResolveAssemblyReference.cache
+d:\github\demo\csharp\test\Common\obj\Debug\netcoreapp2.0\Common.csproj.CoreCompileInputs.cache
+d:\github\demo\csharp\test\Common\obj\Debug\netcoreapp2.0\Common.AssemblyInfoInputs.cache
+d:\github\demo\csharp\test\Common\obj\Debug\netcoreapp2.0\Common.AssemblyInfo.cs
+d:\github\demo\csharp\test\Common\obj\Debug\netcoreapp2.0\Common.dll
+d:\github\demo\csharp\test\Common\obj\Debug\netcoreapp2.0\Common.pdb

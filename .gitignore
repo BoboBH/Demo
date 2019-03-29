@@ -363,3 +363,11 @@
 /java/.metadata/.plugins/org.eclipse.search/dialog_settings.xml
 /java/.metadata/.plugins/org.eclipse.ui.editors/dialog_settings.xml
 /java/.metadata/.plugins/org.eclipse.ui.workbench.texteditor/dialog_settings.xml
+/CSharp/Finance/BackendService/obj/Debug/netcoreapp2.0/*.dll
+/CSharp/Finance/BackendService/*.log
+*.dll
+*.pdb
+*.lock
+/CSharp/Finance/.vs/Finance/v15/Server/sqlite3/*.ide
+*.ide-shm
+*.ide-wal

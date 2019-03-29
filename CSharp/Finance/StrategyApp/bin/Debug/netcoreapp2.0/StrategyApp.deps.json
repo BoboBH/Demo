@@ -26,9 +26,11 @@
           "Business": "1.0.0",
           "Common": "1.0.0",
           "Microsoft.AspNetCore.All": "2.0.3",
+          "Microsoft.EntityFrameworkCore": "2.2.3",
           "Microsoft.EntityFrameworkCore.Tools": "2.0.1",
           "Microsoft.NETCore.App": "2.0.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.1"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.1",
+          "MySql.Data.EntityFrameworkCore": "8.0.15"
         },
         "runtime": {
           "StrategyApp.dll": {}
@@ -4347,6 +4349,10 @@
         }
       },
       "Common/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "2.2.3",
+          "log4net": "2.0.8"
+        },
         "runtime": {
           "Common.dll": {}
         },

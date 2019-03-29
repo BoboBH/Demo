@@ -1,0 +1,15 @@
+d:\github\demo\csharp\test\ConsoleApp1\bin\Debug\netcoreapp2.0\ConsoleApp1.deps.json
+d:\github\demo\csharp\test\ConsoleApp1\bin\Debug\netcoreapp2.0\ConsoleApp1.runtimeconfig.json
+d:\github\demo\csharp\test\ConsoleApp1\bin\Debug\netcoreapp2.0\ConsoleApp1.runtimeconfig.dev.json
+d:\github\demo\csharp\test\ConsoleApp1\bin\Debug\netcoreapp2.0\ConsoleApp1.dll
+d:\github\demo\csharp\test\ConsoleApp1\bin\Debug\netcoreapp2.0\ConsoleApp1.pdb
+d:\github\demo\csharp\test\ConsoleApp1\obj\Debug\netcoreapp2.0\ConsoleApp1.csprojResolveAssemblyReference.cache
+d:\github\demo\csharp\test\ConsoleApp1\obj\Debug\netcoreapp2.0\ConsoleApp1.csproj.CoreCompileInputs.cache
+d:\github\demo\csharp\test\ConsoleApp1\obj\Debug\netcoreapp2.0\ConsoleApp1.AssemblyInfoInputs.cache
+d:\github\demo\csharp\test\ConsoleApp1\obj\Debug\netcoreapp2.0\ConsoleApp1.AssemblyInfo.cs
+d:\github\demo\csharp\test\ConsoleApp1\obj\Debug\netcoreapp2.0\ConsoleApp1.dll
+d:\github\demo\csharp\test\ConsoleApp1\obj\Debug\netcoreapp2.0\ConsoleApp1.pdb
+d:\github\demo\csharp\test\ConsoleApp1\bin\Debug\netcoreapp2.0\Business.dll
+d:\github\demo\csharp\test\ConsoleApp1\bin\Debug\netcoreapp2.0\Common.dll
+d:\github\demo\csharp\test\ConsoleApp1\bin\Debug\netcoreapp2.0\Business.pdb
+d:\github\demo\csharp\test\ConsoleApp1\bin\Debug\netcoreapp2.0\Common.pdb

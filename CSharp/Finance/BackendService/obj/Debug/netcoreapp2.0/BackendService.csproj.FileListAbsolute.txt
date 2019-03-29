@@ -13,3 +13,5 @@ D:\github\demo\csharp\Finance\BackendService\bin\Debug\netcoreapp2.0\Business.dl
 D:\github\demo\csharp\Finance\BackendService\bin\Debug\netcoreapp2.0\Common.dll
 D:\github\demo\csharp\Finance\BackendService\bin\Debug\netcoreapp2.0\Business.pdb
 D:\github\demo\csharp\Finance\BackendService\bin\Debug\netcoreapp2.0\Common.pdb
+D:\github\demo\csharp\Finance\BackendService\bin\Debug\netcoreapp2.0\appsettings.json
+D:\github\demo\csharp\Finance\BackendService\bin\Debug\netcoreapp2.0\log4net.config

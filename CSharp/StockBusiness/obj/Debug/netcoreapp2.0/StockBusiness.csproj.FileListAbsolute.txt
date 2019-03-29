@@ -1,0 +1,9 @@
+D:\github\Demo\CSharp\StockBusiness\bin\Debug\netcoreapp2.0\StockBusiness.deps.json
+D:\github\Demo\CSharp\StockBusiness\bin\Debug\netcoreapp2.0\StockBusiness.dll
+D:\github\Demo\CSharp\StockBusiness\obj\Debug\netcoreapp2.0\StockBusiness.csprojResolveAssemblyReference.cache
+D:\github\Demo\CSharp\StockBusiness\obj\Debug\netcoreapp2.0\StockBusiness.csproj.CoreCompileInputs.cache
+D:\github\Demo\CSharp\StockBusiness\obj\Debug\netcoreapp2.0\StockBusiness.AssemblyInfoInputs.cache
+D:\github\Demo\CSharp\StockBusiness\obj\Debug\netcoreapp2.0\StockBusiness.AssemblyInfo.cs
+D:\github\Demo\CSharp\StockBusiness\bin\Debug\netcoreapp2.0\StockBusiness.pdb
+D:\github\Demo\CSharp\StockBusiness\obj\Debug\netcoreapp2.0\StockBusiness.dll
+D:\github\Demo\CSharp\StockBusiness\obj\Debug\netcoreapp2.0\StockBusiness.pdb

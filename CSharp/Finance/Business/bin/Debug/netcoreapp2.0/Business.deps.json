@@ -1265,6 +1265,7 @@
       },
       "Common/1.0.0": {
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": "2.2.3",
           "log4net": "2.0.8"
         },
         "runtime": {

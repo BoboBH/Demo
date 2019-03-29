@@ -1,8 +1,0 @@
-D:\github\Demo\csharp\ClassLibrary\bin\Debug\netcoreapp2.0\ClassLibrary.deps.json
-D:\github\Demo\csharp\ClassLibrary\bin\Debug\netcoreapp2.0\ClassLibrary.dll
-D:\github\Demo\csharp\ClassLibrary\bin\Debug\netcoreapp2.0\ClassLibrary.pdb
-D:\github\Demo\csharp\ClassLibrary\obj\Debug\netcoreapp2.0\ClassLibrary.csproj.CoreCompileInputs.cache
-D:\github\Demo\csharp\ClassLibrary\obj\Debug\netcoreapp2.0\ClassLibrary.AssemblyInfoInputs.cache
-D:\github\Demo\csharp\ClassLibrary\obj\Debug\netcoreapp2.0\ClassLibrary.AssemblyInfo.cs
-D:\github\Demo\csharp\ClassLibrary\obj\Debug\netcoreapp2.0\ClassLibrary.dll
-D:\github\Demo\csharp\ClassLibrary\obj\Debug\netcoreapp2.0\ClassLibrary.pdb

@@ -5713,11 +5713,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "D:\\github\\Demo\\Csharp\\UnitTest\\UnitTest.csproj",
+      "projectUniqueName": "D:\\github\\Demo\\CSharp\\UnitTest\\UnitTest.csproj",
       "projectName": "UnitTest",
-      "projectPath": "D:\\github\\Demo\\Csharp\\UnitTest\\UnitTest.csproj",
+      "projectPath": "D:\\github\\Demo\\CSharp\\UnitTest\\UnitTest.csproj",
       "packagesPath": "C:\\Users\\bobo.huang.MHS\\.nuget\\packages\\",
-      "outputPath": "D:\\github\\Demo\\Csharp\\UnitTest\\obj\\",
+      "outputPath": "D:\\github\\Demo\\CSharp\\UnitTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

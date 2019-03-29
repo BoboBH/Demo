@@ -1,0 +1,16 @@
+D:\github\Demo\Csharp\StrategyApp\bin\Debug\netcoreapp2.0\StrategyApp.deps.json
+D:\github\Demo\Csharp\StrategyApp\bin\Debug\netcoreapp2.0\StrategyApp.runtimeconfig.json
+D:\github\Demo\Csharp\StrategyApp\bin\Debug\netcoreapp2.0\StrategyApp.runtimeconfig.dev.json
+D:\github\Demo\Csharp\StrategyApp\bin\Debug\netcoreapp2.0\StrategyApp.dll
+D:\github\Demo\Csharp\StrategyApp\bin\Debug\netcoreapp2.0\StrategyApp.pdb
+D:\github\Demo\Csharp\StrategyApp\bin\Debug\netcoreapp2.0\FinanceBusiness.dll
+D:\github\Demo\Csharp\StrategyApp\bin\Debug\netcoreapp2.0\FinanceBusiness.pdb
+D:\github\Demo\Csharp\StrategyApp\obj\Debug\netcoreapp2.0\StrategyApp.csprojResolveAssemblyReference.cache
+D:\github\Demo\Csharp\StrategyApp\obj\Debug\netcoreapp2.0\StrategyApp.csproj.CoreCompileInputs.cache
+D:\github\Demo\Csharp\StrategyApp\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+D:\github\Demo\Csharp\StrategyApp\obj\Debug\netcoreapp2.0\StrategyApp.AssemblyInfoInputs.cache
+D:\github\Demo\Csharp\StrategyApp\obj\Debug\netcoreapp2.0\StrategyApp.AssemblyInfo.cs
+D:\github\Demo\Csharp\StrategyApp\obj\Debug\netcoreapp2.0\StrategyApp.dll
+D:\github\Demo\Csharp\StrategyApp\obj\Debug\netcoreapp2.0\StrategyApp.pdb
+D:\github\Demo\Csharp\StrategyApp\bin\Debug\netcoreapp2.0\Common.dll
+D:\github\Demo\Csharp\StrategyApp\bin\Debug\netcoreapp2.0\Common.pdb

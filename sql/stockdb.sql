@@ -17,8 +17,7 @@ createdon datetime,
  modifiedon datetime); 
  alter table stock add type int;
  
-select * from stock where symbol='000001';
-update stock set type = 1 where type is null;
+select * from stock where date is null OR date < '2019-03-29'
 
  #drop table stockdailyperf;
  create table stockdailyperf(

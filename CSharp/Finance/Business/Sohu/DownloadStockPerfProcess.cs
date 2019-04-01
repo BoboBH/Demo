@@ -6,59 +6,17 @@ using Business.Model;
 using Common.Process;
 using System.Linq;
 using System.Threading.Tasks;
+using Business.Process;
 
 namespace Business.Sohu
 {
-    [ProcessAttribute("downstockperffromsohu","download stock perf data from Sohu", "BankendService downstockperffromsohu")]
-    public class DownloadStockPerfProcess: AbsProcess
+    [ProcessAttribute("downloadstockperffromsohu","download stock perf data from Sohu", "BankendService downloadstockperffromsohu")]
+    public class DownloadStockPerfProcess: AbsPendingRecordProcess<StockInfo>
     {
-        public StockDBContext dbContext;
         public SohuHttpAPI api;
-        public DownloadStockPerfProcess():base()
+        public DownloadStockPerfProcess():base(DataContextPool.GetDataContext<StockDBContext>())
         {
             api = new SohuHttpAPI();
-            dbContext = DataContextPool.GetDataContext<StockDBContext>();
-            if (dbContext == null)
-                throw new Exception("StockDBContext is not in DataContextPool");
-        }
-        public override void Run()
-        {
-            int count = dbContext.StockInfos.Count();
-            int pageSize = 500;
-            int totalPage = (int) decimal.Ceiling(count * 1.0m / pageSize);
-            for(int i = 0;i < count;i++)
-            {
-                List<StockInfo> list =  dbContext.StockInfos.Skip(i * pageSize).Take(pageSize).ToList();
-                foreach(StockInfo si in list)
-                {
-                    try
-                    {
-                        log.InfoFormat("retrieve StockPerf data....");
-                        string symbol = "cn_" + si.Symbol;
-                        if (si.Type == StockType.Index)
-                            symbol = "zs_" + si.Symbol;
-                        StockPerf lastPerf =  dbContext.StockPerfs.Where(p => p.StockId == si.Id).OrderByDescending(p => p.Date).FirstOrDefault();
-                        DateTime startDate = DateTime.Today.AddYears(-5);
-                        if (lastPerf != null)
-                            startDate = lastPerf.Date;
-                        DateTime endDate = DateTime.Today;
-                        log.InfoFormat("retrieve Perf between {0} and {1} for stock({2})", startDate, endDate,si);
-                        ResponseHistoryData[] data = api.GetHistoryData(symbol, startDate, endDate);
-                        if (data == null && data.Length == 0)
-                        {
-                            log.InfoFormat("can not get anny data from SOHU");
-                            continue;
-                        }
-                        ProcessPerfData(si, data);
-                        log.InfoFormat("download perform data successfully for stock({0})", si);
-                    }
-                    catch (Exception ex)
-                    {
-                        log.ErrorFormat("Can not download process for stock({0})", si);
-                        log.Error(ex);
-                    }
-                }
-            }
         }
 
         public void ProcessPerfData(StockInfo si, ResponseHistoryData[] datas)
@@ -71,19 +29,44 @@ namespace Business.Sohu
                     ProcessData(si,item);
                 }
             }
-            dbContext.SaveChanges();
+            this.stockDBContext.SaveChanges();
+        }
+
+        protected override void ProcessData(StockInfo data)
+        {
+            string symbol = "cn_" + data.Symbol;
+            if (data.Type == StockType.Index)
+                symbol = "zs_" + data.Symbol;
+            StockPerf lastPerf = stockDBContext.StockPerfs.Where(p => p.StockId == data.Id).OrderByDescending(p => p.Date).FirstOrDefault();
+            DateTime startDate = DateTime.Today.AddYears(-5);
+            if (lastPerf != null)
+                startDate = lastPerf.Date;
+            DateTime endDate = DateTime.Today;
+            log.InfoFormat("retrieve Perf between {0} and {1} for stock({2})", startDate, endDate, data);
+            ResponseHistoryData[] perfdata = api.GetHistoryData(symbol, startDate, endDate);
+            if (data == null && perfdata.Length == 0)
+            {
+                log.InfoFormat("can not get anny data from SOHU");
+                return; ;
+            }
+            ProcessPerfData(data, perfdata);
+            log.InfoFormat("download perform data successfully for stock({0})", data);
+        }
+        protected override List<StockInfo> GetPendingData()
+        {
+            return this.stockDBContext.StockInfos.Skip((this.pageInfo.PageIndex-1) * this.pageInfo.PageSize).Take(this.pageInfo.PageSize).ToList();
         }
 
         public void ProcessData(StockInfo si, StockPerf perfData)
         {
             string id = string.Format("{0}_{1}", si.Id, perfData.Date.ToString("yyyyMMdd"));
-            StockPerf dbVal = dbContext.StockPerfs.Find(id);
+            StockPerf dbVal = stockDBContext.StockPerfs.Find(id);
             if (dbVal == null)
             {
                 dbVal = new StockPerf();
                 dbVal.Id = id;
                 dbVal.StockId = si.Id;
-                dbContext.StockPerfs.Add(dbVal);
+                stockDBContext.StockPerfs.Add(dbVal);
                 dbVal.CreatedOn = DateTime.Now;
             }
             dbVal.Date = perfData.Date;

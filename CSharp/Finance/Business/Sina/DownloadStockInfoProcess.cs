@@ -7,11 +7,12 @@ using System.Text;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using Business.Process;
 
 namespace Business.Sina
 {
     [ProcessAttribute("downloadstockinfofromsina", "download stock info data from Sina", "BankendService downloadstockinfofromsina")]
-    public class DownloadStockInfoProcess : Common.Process.AbsProcess
+    public class DownloadStockInfoProcess : AbsStockProcess
     {
         public static string[] MARKETS = new string[] { "sz", "sh" };
         public string BASEN = "000000";
@@ -19,10 +20,9 @@ namespace Business.Sina
         public StockDBContext stockDb;
         public bool viaStockInfo=false;
         public bool isInit = true;
-        public DownloadStockInfoProcess(string param):base()
+        public DownloadStockInfoProcess(string param):base(DataContextPool.GetDataContext<StockDBContext>())
         {
             api = new SinaHttpAPI();
-            stockDb = DataContextPool.GetDataContext<StockDBContext>();
             if (!String.IsNullOrEmpty(param))
             {
                if("-pupdate".Equals(param))
@@ -51,6 +51,7 @@ namespace Business.Sina
             var source = stockDb.StockInfos.Where(s => s.Status == StockStatus.Active);
             foreach(StockInfo si in source.ToList())
             {
+                Thread.Sleep(100);
                 try
                 {
                     ProcessDataAsync(si.Market, si.Symbol);

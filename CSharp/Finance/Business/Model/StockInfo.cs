@@ -16,7 +16,7 @@ namespace Business.Model
         public string Market { get; set; }
         public decimal? Price { get; set; }
         public DateTime? Date { get; set; }
-        public StockStatus? Status { get; set; }
+        public StockStatus Status { get; set; }
 
         public override string ToString()
         {

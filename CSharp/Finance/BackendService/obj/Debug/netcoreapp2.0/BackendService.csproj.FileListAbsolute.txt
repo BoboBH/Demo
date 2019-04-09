@@ -3,7 +3,6 @@ D:\github\Demo\CSharp\Finance\BackendService\bin\Debug\netcoreapp2.0\BackendServ
 D:\github\Demo\CSharp\Finance\BackendService\bin\Debug\netcoreapp2.0\BackendService.runtimeconfig.dev.json
 D:\github\Demo\CSharp\Finance\BackendService\bin\Debug\netcoreapp2.0\BackendService.dll
 D:\github\Demo\CSharp\Finance\BackendService\bin\Debug\netcoreapp2.0\BackendService.pdb
-D:\github\Demo\CSharp\Finance\BackendService\obj\Debug\netcoreapp2.0\BackendService.csprojResolveAssemblyReference.cache
 D:\github\Demo\CSharp\Finance\BackendService\obj\Debug\netcoreapp2.0\BackendService.csproj.CoreCompileInputs.cache
 D:\github\Demo\CSharp\Finance\BackendService\obj\Debug\netcoreapp2.0\BackendService.AssemblyInfoInputs.cache
 D:\github\Demo\CSharp\Finance\BackendService\obj\Debug\netcoreapp2.0\BackendService.AssemblyInfo.cs
@@ -15,3 +14,5 @@ D:\github\demo\csharp\Finance\BackendService\bin\Debug\netcoreapp2.0\Business.pd
 D:\github\demo\csharp\Finance\BackendService\bin\Debug\netcoreapp2.0\Common.pdb
 D:\github\demo\csharp\Finance\BackendService\bin\Debug\netcoreapp2.0\appsettings.json
 D:\github\demo\csharp\Finance\BackendService\bin\Debug\netcoreapp2.0\log4net.config
+D:\github\demo\csharp\Finance\BackendService\obj\Debug\netcoreapp2.0\BackendService.csprojAssemblyReference.cache
+D:\github\demo\csharp\Finance\BackendService\obj\Debug\netcoreapp2.0\BackendService.csproj.CopyComplete

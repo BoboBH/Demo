@@ -33,10 +33,10 @@ namespace Business.Process
             int total = 0;
             while (list != null)
             {
-                index++;
                 total = total + list.Count;
                 foreach (T data in list)
                 {
+                    index++;
                     try
                     {
                         log.InfoFormat("start process {0} at line {1}/{2}", data, index, total);
@@ -59,7 +59,7 @@ namespace Business.Process
                 log.InfoFormat("try to get pending data at pageIndex={0}",this.pageInfo.PageIndex);
             }
         }
-        protected abstract List<T> GetPendingData();
-        protected abstract void ProcessData(T data);
+        public  abstract List<T> GetPendingData();
+        public abstract void ProcessData(T data);
     }
 }

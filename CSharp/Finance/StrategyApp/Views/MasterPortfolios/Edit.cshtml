@@ -1,0 +1,81 @@
+﻿@using Business.Model
+@model Business.Model.MasterPortfolio
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Edit</h2>
+
+<h4>MasterPortfolio</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Date" class="control-label"></label>
+                <input asp-for="Date" class="form-control" />
+                <span asp-validation-for="Date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Benchmark" class="control-label"></label>
+                <input asp-for="Benchmark" class="form-control" />
+                <span asp-validation-for="Benchmark" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BaseAmount" class="control-label"></label>
+                <input asp-for="BaseAmount" class="form-control" />
+                <span asp-validation-for="BaseAmount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Status" class="control-label"></label>
+                <select asp-for="Status" class="form-control" asp-items="@Html.GetEnumSelectList(typeof(MasterPortfolioStatus))"></select>
+                <span asp-validation-for="Status" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ReturnDay1" class="control-label"></label>
+                <input asp-for="ReturnDay1" class="form-control" />
+                <span asp-validation-for="ReturnDay1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ReturnDay2" class="control-label"></label>
+                <input asp-for="ReturnDay2" class="form-control" />
+                <span asp-validation-for="ReturnDay2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ReturnDay3" class="control-label"></label>
+                <input asp-for="ReturnDay3" class="form-control" />
+                <span asp-validation-for="ReturnDay3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ReturnDay5" class="control-label"></label>
+                <input asp-for="ReturnDay5" class="form-control" />
+                <span asp-validation-for="ReturnDay5" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ReturnDay10" class="control-label"></label>
+                <input asp-for="ReturnDay10" class="form-control" />
+                <span asp-validation-for="ReturnDay10" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

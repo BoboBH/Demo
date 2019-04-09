@@ -3,17 +3,19 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - StrategyApp</title>
+    <title>@ViewData["Title"] - Strategy App</title>
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href="~/css/site.css" />
+        <script src="/lib/jquery/dist/jquery.js"></script>
     </environment>
     <environment exclude="Development">
         <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
               asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+        <script src="/lib/jquery/dist/jquery.js"></script>
     </environment>
 </head>
 <body>
@@ -26,7 +28,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">StrategyApp</a>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Strategy App</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -37,6 +39,9 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li><a asp-area="" asp-controller="StockInfoes" asp-action="Index">Stock</a></li>
+                            <li><a asp-area="" asp-controller="StockPerfs" asp-route-stockId="sz000001" asp-action="Index">Benchmark</a></li>
+                            <li><a asp-area="" asp-controller="MasterPortfolios" asp-action="Index">Master Portfolio</a></li>
+                            <li><a asp-area="" asp-controller="PortfolioHoldings" asp-action="Index">Holdings</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -48,7 +53,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 2019 - StrategyApp</p>
+            <p>&copy; 2019 - Strategy App</p>
         </footer>
     </div>
 

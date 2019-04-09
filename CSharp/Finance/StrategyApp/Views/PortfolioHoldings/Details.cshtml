@@ -1,0 +1,55 @@
+﻿@model Business.Model.PortfolioHolding
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PortfolioHolding</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MasterPortfolioId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MasterPortfolioId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.StockId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.StockId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Shares)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Shares)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Weight)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Weight)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedOn)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CreatedOn)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ModifiedOn)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ModifiedOn)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

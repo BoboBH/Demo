@@ -14,3 +14,4 @@ D:\github\demo\csharp\Finance\StrategyApp\obj\Debug\netcoreapp2.0\StrategyApp.As
 D:\github\demo\csharp\Finance\StrategyApp\obj\Debug\netcoreapp2.0\StrategyApp.dll
 D:\github\demo\csharp\Finance\StrategyApp\obj\Debug\netcoreapp2.0\StrategyApp.pdb
 D:\github\demo\csharp\Finance\StrategyApp\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+D:\github\demo\csharp\Finance\StrategyApp\obj\Debug\netcoreapp2.0\StrategyApp.csprojAssemblyReference.cache

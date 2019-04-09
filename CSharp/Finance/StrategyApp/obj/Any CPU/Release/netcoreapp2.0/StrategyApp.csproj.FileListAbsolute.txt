@@ -1,0 +1,16 @@
+D:\github\demo\csharp\Finance\StrategyApp\bin\Any CPU\Release\netcoreapp2.0\StrategyApp.deps.json
+D:\github\demo\csharp\Finance\StrategyApp\bin\Any CPU\Release\netcoreapp2.0\StrategyApp.runtimeconfig.json
+D:\github\demo\csharp\Finance\StrategyApp\bin\Any CPU\Release\netcoreapp2.0\StrategyApp.runtimeconfig.dev.json
+D:\github\demo\csharp\Finance\StrategyApp\bin\Any CPU\Release\netcoreapp2.0\StrategyApp.dll
+D:\github\demo\csharp\Finance\StrategyApp\bin\Any CPU\Release\netcoreapp2.0\StrategyApp.pdb
+D:\github\demo\csharp\Finance\StrategyApp\bin\Any CPU\Release\netcoreapp2.0\Business.dll
+D:\github\demo\csharp\Finance\StrategyApp\bin\Any CPU\Release\netcoreapp2.0\Common.dll
+D:\github\demo\csharp\Finance\StrategyApp\bin\Any CPU\Release\netcoreapp2.0\Business.pdb
+D:\github\demo\csharp\Finance\StrategyApp\bin\Any CPU\Release\netcoreapp2.0\Common.pdb
+D:\github\demo\csharp\Finance\StrategyApp\obj\Any CPU\Release\netcoreapp2.0\StrategyApp.csprojResolveAssemblyReference.cache
+D:\github\demo\csharp\Finance\StrategyApp\obj\Any CPU\Release\netcoreapp2.0\StrategyApp.csproj.CoreCompileInputs.cache
+D:\github\demo\csharp\Finance\StrategyApp\obj\Any CPU\Release\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+D:\github\demo\csharp\Finance\StrategyApp\obj\Any CPU\Release\netcoreapp2.0\StrategyApp.AssemblyInfoInputs.cache
+D:\github\demo\csharp\Finance\StrategyApp\obj\Any CPU\Release\netcoreapp2.0\StrategyApp.AssemblyInfo.cs
+D:\github\demo\csharp\Finance\StrategyApp\obj\Any CPU\Release\netcoreapp2.0\StrategyApp.dll
+D:\github\demo\csharp\Finance\StrategyApp\obj\Any CPU\Release\netcoreapp2.0\StrategyApp.pdb

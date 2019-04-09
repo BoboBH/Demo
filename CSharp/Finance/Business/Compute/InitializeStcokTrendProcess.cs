@@ -17,18 +17,13 @@ namespace Business.Compute
         public InitializeStcokTrendProcess() : base(DataContextPool.GetDataContext<StockDBContext>())
         {
             this.needLoop = true;
-            this.pageInfo = new Common.Data.PageInfo()
-            {
-                PageIndex = 1,
-                PageSize = 3
-            };
         }
 
-        protected override List<StockInfo> GetPendingData()
+        public override List<StockInfo> GetPendingData()
         {
             return this.stockDBContext.StockInfos.Skip((this.pageInfo.PageIndex - 1) * this.pageInfo.PageSize).Take(this.pageInfo.PageSize).ToList();
         }
-        protected override void ProcessData(StockInfo data)
+        public override void ProcessData(StockInfo data)
         {
             log.InfoFormat("try to initialize continue trend for stock({0})",data);
             List<StockPerf> prices = this.stockDBContext.StockPerfs.Where(p=>p.StockId==data.Id).OrderBy(p => p.Date).ToList();
@@ -57,6 +52,8 @@ namespace Business.Compute
             }
             this.stockDBContext.SaveChanges();
             log.InfoFormat("initialize continue trend successfully for stock({0})", data);
+            prices = null;
+            GC.Collect();
         }
     }
 }

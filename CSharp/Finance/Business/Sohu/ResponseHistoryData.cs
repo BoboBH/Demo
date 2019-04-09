@@ -33,7 +33,8 @@ namespace Business.Sohu
                 item.High = decimal.Parse(arrays[6]);
                 item.Volume = decimal.Parse(arrays[7]);
                 item.Amount = decimal.Parse(arrays[8]);
-                item.TurnoverRate = decimal.Parse(arrays[9].Replace("%",""));
+                if(!"-".Equals(arrays[9]))
+                  item.TurnoverRate = decimal.Parse(arrays[9].Replace("%",""));
                 item.LastClose = item.Close + item.Change;
                 item.Id = String.Format("{0}_{1}", this.Code, item.Date.ToString("yyyyMMdd"));
                 list.Add(item);

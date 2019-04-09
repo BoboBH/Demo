@@ -31,10 +31,15 @@ namespace Business.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<PortfolioHolding>().HasOne(p => p.MasterPortfolio).WithMany().HasForeignKey(p => p.MasterPortfolioId);
+            modelBuilder.Entity<PortfolioHolding>().HasOne(p => p.HoldingInfo).WithMany().HasForeignKey(p => p.StockId);
+            modelBuilder.Entity<MasterPortfolio>().HasOne(p => p.BenchmarkInfo).WithMany().HasForeignKey(p => p.Benchmark);
             base.OnModelCreating(modelBuilder);
         }
 
         public virtual DbSet<StockInfo> StockInfos { get; set; }
         public virtual DbSet<StockPerf> StockPerfs { get; set; }
+        public virtual DbSet<MasterPortfolio> MasterPortfolios { get; set; }
+        public virtual DbSet<PortfolioHolding> PortfolioHoldings { get; set; }
     }
 }

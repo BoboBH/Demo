@@ -16,23 +16,26 @@ namespace Business.Sohu
         public SohuHttpAPI api;
         public DownloadStockPerfProcess():base(DataContextPool.GetDataContext<StockDBContext>())
         {
+            this.needLoop = true;
             api = new SohuHttpAPI();
         }
 
         public void ProcessPerfData(StockInfo si, ResponseHistoryData[] datas)
         {
+            List<StockPerf> perfList = null;
             foreach (ResponseHistoryData dataItem in datas)
             {
-                List<StockPerf> perfList = dataItem.GetStockPerf();
+                perfList = dataItem.GetStockPerf();
                 foreach (StockPerf item in perfList)
                 {
                     ProcessData(si,item);
                 }
             }
             this.stockDBContext.SaveChanges();
+            perfList = null;
         }
 
-        protected override void ProcessData(StockInfo data)
+        public override void ProcessData(StockInfo data)
         {
             string symbol = "cn_" + data.Symbol;
             if (data.Type == StockType.Index)
@@ -51,8 +54,10 @@ namespace Business.Sohu
             }
             ProcessPerfData(data, perfdata);
             log.InfoFormat("download perform data successfully for stock({0})", data);
+            perfdata = null;
+            GC.Collect();
         }
-        protected override List<StockInfo> GetPendingData()
+        public override List<StockInfo> GetPendingData()
         {
             return this.stockDBContext.StockInfos.Skip((this.pageInfo.PageIndex-1) * this.pageInfo.PageSize).Take(this.pageInfo.PageSize).ToList();
         }

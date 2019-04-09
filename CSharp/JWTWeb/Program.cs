@@ -19,7 +19,7 @@ namespace JWTWeb
          .AddJsonFile(Path.Combine("config", "host.json"), true)
          .Build();
             var host = WebHost.CreateDefaultBuilder(args)
-                .UseConfiguration(config)
+                .UseConfiguration(config)                
                 .UseStartup<Startup>()
                 .Build();
             host.Run();

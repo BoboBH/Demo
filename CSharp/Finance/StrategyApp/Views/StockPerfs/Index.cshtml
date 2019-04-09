@@ -1,4 +1,5 @@
-﻿@model IEnumerable<Business.Model.StockPerf>
+﻿@using Common.Data
+@model PaginatedList<Business.Model.StockPerf>
 
 @{
     ViewData["Title"] = "Index";
@@ -8,64 +9,85 @@
 <h2>Index</h2>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Create New</a> | 
+    <a id="link_create_portfolio" asp-controller="/MasterPortfolios" asp-action="Create">Create Portfolio</a>    
 </p>
+
+<form asp-action="Index" method="get">
+    <div class="form-actions no-color">
+        <p>
+            Filter:
+            <select id="benchmarkId" name="benchmarkId" value="@ViewData["benchmarkId"]" asp-items="@ViewBag.BenchmarkList as IEnumerable<SelectListItem>">
+                <option value="">None</option>
+            </select>
+            <label>Change(%) Between:</label>
+            <input type="number" max="10" min="-10" name="minChange" value="@ViewData["minChange"]" />
+            <label>and</label>
+            <input type="number" max="10" min="-10" name="maxChange" value="@ViewData["maxChange"]" />
+                <label class="control-label">Date</label>
+                <input name="date" value="@ViewData["date"]"/>
+            <input type="submit" value="Search" class="btn btn-default" /> |
+            <a asp-action="Index">Back to Full List</a>
+        </p>
+    </div>
+</form>
 <table class="table">
     <thead>
         <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.Date)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.StockId)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Open)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.High)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Low)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Close)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.LastClose)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Volume)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Amount)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Change)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.ChangePercentage)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.ContinueTrend)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.TurnoverRate)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.CreatedOn)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.ModifiedOn)
-                </th>
+            <th>
+                <input type="checkbox" name="chkAllInGrid" />
+            </th>
+            <th>
+                Date
+            </th>
+            <th>
+                StockId
+            </th>
+            <th>
+                Open
+            </th>
+            <th>
+                Hihg
+            </th>
+            <th>
+                Low
+            </th>
+            <th>
+                Close
+            </th>
+            <th>
+                Last Close
+            </th>
+            <th>
+                Volume
+            </th>
+            <th>
+                Amount
+            </th>
+            <th>
+                Change
+            </th>
+            <th>
+                Chg Pert(%)
+            </th>
+            <th>
+                Trend
+            </th>
+            <th>
+                Tov Rate(%)
+            </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+        @foreach (var item in Model)
+        {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Date)
+                <input type="checkbox" name="chkItemInGrid" value="@item.Id" />
+            </td>
+            <td>
+                @item.Date.ToString("M/d/yyyy")
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.StockId)
@@ -104,17 +126,100 @@
                 @Html.DisplayFor(modelItem => item.TurnoverRate)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.CreatedOn)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ModifiedOn)
-            </td>
-            <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a> |
+                <a asp-controller="MasterPortfolios" asp-action="Create" asp-route-benchmark="@item.StockId" asp-route-date="@item.Date">New Mst Port</a>
             </td>
         </tr>
-}
+        }
     </tbody>
 </table>
+
+@{
+    var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+    var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+}
+<a asp-action="Index"
+   asp-route-sortOrder="@ViewData["CurrentSort"]"
+   asp-route-page="1"
+   asp-route-search="@ViewData["searchFilter"]"
+   asp-route-benchmark="@ViewData["benchmark"]"
+   asp-route-minChange="@ViewData["minChange"]"
+   asp-route-maxChange="@ViewData["maxChange"]"
+   asp-route-date="@ViewData["date"]"
+   class="btn btn-default @prevDisabled">
+    Frist
+
+</a>
+<a asp-action="Index"
+   asp-route-sortOrder="@ViewData["CurrentSort"]"
+   asp-route-page="@(Model.PageIndex - 1)"
+   asp-route-search="@ViewData["searchFilter"]"
+   asp-route-benchmark="@ViewData["benchmark"]"
+   asp-route-minChange="@ViewData["minChange"]"
+   asp-route-maxChange="@ViewData["maxChange"]"
+   asp-route-date="@ViewData["date"]"
+   class="btn btn-default @prevDisabled">
+    Previous
+</a>
+
+<a asp-action="Index"
+   asp-route-sortOrder="@ViewData["CurrentSort"]"
+   asp-route-page="@(Model.PageIndex + 1)"
+   asp-route-search="@ViewData["searchFilter"]"
+   asp-route-benchmark="@ViewData["benchmark"]"
+   asp-route-minChange="@ViewData["minChange"]"
+   asp-route-maxChange="@ViewData["maxChange"]"
+   asp-route-date="@ViewData["date"]"
+   class="btn btn-default @nextDisabled">
+    Next
+</a>
+<a asp-action="Index"
+   asp-route-sortOrder="@ViewData["CurrentSort"]"
+   asp-route-page="@Model.TotalPages"
+   asp-route-search="@ViewData["searchFilter"]"
+   asp-route-benchmark="@ViewData["benchmark"]"
+   asp-route-minChange="@ViewData["minChange"]"
+   asp-route-maxChange="@ViewData["maxChange"]"
+   asp-route-date="@ViewData["date"]"
+   class="btn btn-default @nextDisabled">
+    Last
+</a>
+<script>
+    $("input[name=chkAllInGrid]").click(function () {
+        if(this.checked) {
+            $("input[name=chkItemInGrid]").prop("checked", true);
+        }
+        else{
+            $("input[name=chkItemInGrid]").prop("checked", false);
+        }
+        alert(getCheckIds());
+        setcreateMstPortthref();
+    });
+
+    $("input[name=chkItemInGrid").change(function () {
+        setcreateMstPortthref();
+    });
+
+    
+    function getCheckIds() {
+        var ids = "";
+        $("input[name=chkItemInGrid").each(function (index, item) {
+            if (item.checked)
+                ids = ids + item.value + ";";
+        });
+        return ids;
+    }
+    function setcreateMstPortthref() {
+        url = "/MasterPortfolios/Create?date=" + $("input[name=date]").val();
+        var ids = getCheckIds();
+        if (ids.length > 0)
+            url = url + "&holdings=" + ids;
+        if ($("select[name=benchmarkId]"))
+            url = url + "&benchmarkId=" + $("select[name=benchmarkId]").val();
+        $("#link_create_portfolio").prop("href", url);
+        //link_create_portfolio
+    }
+
+</script>

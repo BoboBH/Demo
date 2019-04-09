@@ -1,0 +1,97 @@
+﻿@model IEnumerable<Business.Model.MasterPortfolio>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <input type="checkbox" name="chkAll" />
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BaseAmount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReturnDay1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReturnDay2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReturnDay3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReturnDay5)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReturnDay10)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreatedOn)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ModifiedOn)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                <input type="checkbox" name="chkItem" value="@item.Id" />
+            </td>
+
+            <td>
+                @item.Date.ToString("yyyy/M/d")
+            </td>
+            <td>
+                <a asp-controller="PortfolioHoldings" asp-action="Index" asp-route-masterPortfolioId="@item.Id">@item.Name</a>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BaseAmount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReturnDay1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReturnDay2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReturnDay3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReturnDay5)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReturnDay10)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

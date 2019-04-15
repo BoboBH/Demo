@@ -9,4 +9,4 @@ D:\github\Demo\csharp\AuthWeb\obj\Debug\netcoreapp2.0\AuthWeb.AssemblyInfoInputs
 D:\github\Demo\csharp\AuthWeb\obj\Debug\netcoreapp2.0\AuthWeb.AssemblyInfo.cs
 D:\github\Demo\csharp\AuthWeb\obj\Debug\netcoreapp2.0\AuthWeb.dll
 D:\github\Demo\csharp\AuthWeb\obj\Debug\netcoreapp2.0\AuthWeb.pdb
-D:\github\Demo\CSharp\AuthWeb\obj\Debug\netcoreapp2.0\AuthWeb.csprojResolveAssemblyReference.cache
+D:\github\Demo\CSharp\AuthWeb\obj\Debug\netcoreapp2.0\AuthWeb.csprojAssemblyReference.cache

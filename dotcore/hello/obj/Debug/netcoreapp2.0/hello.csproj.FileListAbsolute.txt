@@ -8,3 +8,4 @@ D:\github\Demo\dotcore\hello\obj\Debug\netcoreapp2.0\hello.AssemblyInfoInputs.ca
 D:\github\Demo\dotcore\hello\obj\Debug\netcoreapp2.0\hello.AssemblyInfo.cs
 D:\github\Demo\dotcore\hello\obj\Debug\netcoreapp2.0\hello.dll
 D:\github\Demo\dotcore\hello\obj\Debug\netcoreapp2.0\hello.pdb
+D:\github\Demo\dotcore\hello\obj\Debug\netcoreapp2.0\hello.csprojAssemblyReference.cache

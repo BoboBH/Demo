@@ -3,9 +3,9 @@ D:\github\Demo\ccsharp\WebTest\bin\Debug\netcoreapp2.0\WebTest.runtimeconfig.jso
 D:\github\Demo\ccsharp\WebTest\bin\Debug\netcoreapp2.0\WebTest.runtimeconfig.dev.json
 D:\github\Demo\ccsharp\WebTest\bin\Debug\netcoreapp2.0\WebTest.dll
 D:\github\Demo\ccsharp\WebTest\bin\Debug\netcoreapp2.0\WebTest.pdb
-D:\github\Demo\ccsharp\WebTest\obj\Debug\netcoreapp2.0\WebTest.csprojResolveAssemblyReference.cache
 D:\github\Demo\ccsharp\WebTest\obj\Debug\netcoreapp2.0\WebTest.csproj.CoreCompileInputs.cache
 D:\github\Demo\ccsharp\WebTest\obj\Debug\netcoreapp2.0\WebTest.AssemblyInfoInputs.cache
 D:\github\Demo\ccsharp\WebTest\obj\Debug\netcoreapp2.0\WebTest.AssemblyInfo.cs
 D:\github\Demo\ccsharp\WebTest\obj\Debug\netcoreapp2.0\WebTest.dll
 D:\github\Demo\ccsharp\WebTest\obj\Debug\netcoreapp2.0\WebTest.pdb
+D:\github\Demo\ccsharp\WebTest\obj\Debug\netcoreapp2.0\WebTest.csprojAssemblyReference.cache

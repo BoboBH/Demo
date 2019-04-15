@@ -9,4 +9,4 @@ D:\github\Demo\csharp\WebAuth1\obj\Debug\netcoreapp2.0\WebAuth1.AssemblyInfoInpu
 D:\github\Demo\csharp\WebAuth1\obj\Debug\netcoreapp2.0\WebAuth1.AssemblyInfo.cs
 D:\github\Demo\csharp\WebAuth1\obj\Debug\netcoreapp2.0\WebAuth1.dll
 D:\github\Demo\csharp\WebAuth1\obj\Debug\netcoreapp2.0\WebAuth1.pdb
-D:\github\Demo\csharp\WebAuth1\obj\Debug\netcoreapp2.0\WebAuth1.csprojResolveAssemblyReference.cache
+D:\github\Demo\csharp\WebAuth1\obj\Debug\netcoreapp2.0\WebAuth1.csprojAssemblyReference.cache

@@ -36,6 +36,7 @@ namespace BasicAuthWeb
                    o.LoginPath = new PathString("/Account/Login");
                    o.LogoutPath = new PathString("/Account/Logout");
                    o.AccessDeniedPath = new PathString("/Error/Forbidden");
+                   
                });
             
             services.AddDbContext<DBContext>(options =>

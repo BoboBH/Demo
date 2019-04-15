@@ -9,3 +9,6 @@ D:\github\Demo\CSharp\sample\security\Cookies\bin\Debug\netcoreapp2.0\Cookies.dl
 D:\github\Demo\CSharp\sample\security\Cookies\bin\Debug\netcoreapp2.0\Cookies.pdb
 D:\github\Demo\CSharp\sample\security\Cookies\obj\Debug\netcoreapp2.0\Cookies.dll
 D:\github\Demo\CSharp\sample\security\Cookies\obj\Debug\netcoreapp2.0\Cookies.pdb
+D:\github\Demo\CSharp\sample\security\Cookies\obj\Debug\netcoreapp2.0\Cookies.csprojAssemblyReference.cache
+D:\github\Demo\CSharp\sample\security\Cookies\obj\Debug\netcoreapp2.0\Cookies.RazorAssemblyInfo.cache
+D:\github\Demo\CSharp\sample\security\Cookies\obj\Debug\netcoreapp2.0\Cookies.RazorAssemblyInfo.cs

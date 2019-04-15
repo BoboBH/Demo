@@ -1,9 +1,9 @@
 D:\github\Demo\Csharp\Common\bin\Debug\netcoreapp2.0\Common.deps.json
 D:\github\Demo\Csharp\Common\bin\Debug\netcoreapp2.0\Common.dll
 D:\github\Demo\Csharp\Common\bin\Debug\netcoreapp2.0\Common.pdb
-D:\github\Demo\Csharp\Common\obj\Debug\netcoreapp2.0\Common.csprojResolveAssemblyReference.cache
 D:\github\Demo\Csharp\Common\obj\Debug\netcoreapp2.0\Common.csproj.CoreCompileInputs.cache
 D:\github\Demo\Csharp\Common\obj\Debug\netcoreapp2.0\Common.AssemblyInfoInputs.cache
 D:\github\Demo\Csharp\Common\obj\Debug\netcoreapp2.0\Common.AssemblyInfo.cs
 D:\github\Demo\Csharp\Common\obj\Debug\netcoreapp2.0\Common.dll
 D:\github\Demo\Csharp\Common\obj\Debug\netcoreapp2.0\Common.pdb
+D:\github\Demo\Csharp\Common\obj\Debug\netcoreapp2.0\Common.csprojAssemblyReference.cache

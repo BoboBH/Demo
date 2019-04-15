@@ -44,6 +44,7 @@ namespace BasicAuthWeb.Auth
             }
             CheckSignature(context);
             await next(context);
+            return;
         }
         private void CheckSignature(HttpContext context)
         {

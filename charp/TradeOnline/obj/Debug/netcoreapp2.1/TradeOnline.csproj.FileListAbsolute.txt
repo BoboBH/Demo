@@ -1,0 +1,8 @@
+D:\github\Demo\charp\TradeOnline\obj\Debug\netcoreapp2.1\TradeOnline.csprojAssemblyReference.cache
+D:\github\Demo\charp\TradeOnline\obj\Debug\netcoreapp2.1\TradeOnline.csproj.CoreCompileInputs.cache
+D:\github\Demo\charp\TradeOnline\obj\Debug\netcoreapp2.1\TradeOnline.RazorAssemblyInfo.cache
+D:\github\Demo\charp\TradeOnline\obj\Debug\netcoreapp2.1\TradeOnline.RazorAssemblyInfo.cs
+D:\github\Demo\charp\TradeOnline\obj\Debug\netcoreapp2.1\TradeOnline.AssemblyInfoInputs.cache
+D:\github\Demo\charp\TradeOnline\obj\Debug\netcoreapp2.1\TradeOnline.AssemblyInfo.cs
+D:\github\Demo\charp\TradeOnline\obj\Debug\netcoreapp2.1\TradeOnline.dll
+D:\github\Demo\charp\TradeOnline\obj\Debug\netcoreapp2.1\TradeOnline.pdb

@@ -4,4 +4,4 @@ D:\github\Demo\csharp\WcfService\bin\WcfService.pdb
 D:\github\Demo\csharp\WcfService\obj\Debug\WcfService.csproj.CoreCompileInputs.cache
 D:\github\Demo\csharp\WcfService\obj\Debug\WcfService.dll
 D:\github\Demo\csharp\WcfService\obj\Debug\WcfService.pdb
-D:\github\Demo\csharp\WcfService\obj\Debug\WcfService.csprojResolveAssemblyReference.cache
+D:\github\Demo\csharp\WcfService\obj\Debug\WcfService.csprojAssemblyReference.cache

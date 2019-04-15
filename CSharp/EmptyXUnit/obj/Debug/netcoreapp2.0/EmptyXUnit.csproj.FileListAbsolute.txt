@@ -1,0 +1,14 @@
+D:\github\Demo\Csharp\EmptyXUnit\bin\Debug\netcoreapp2.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+D:\github\Demo\Csharp\EmptyXUnit\bin\Debug\netcoreapp2.0\xunit.runner.reporters.netcoreapp10.dll
+D:\github\Demo\Csharp\EmptyXUnit\bin\Debug\netcoreapp2.0\xunit.runner.utility.netcoreapp10.dll
+D:\github\Demo\Csharp\EmptyXUnit\bin\Debug\netcoreapp2.0\EmptyXUnit.deps.json
+D:\github\Demo\Csharp\EmptyXUnit\bin\Debug\netcoreapp2.0\EmptyXUnit.runtimeconfig.json
+D:\github\Demo\Csharp\EmptyXUnit\bin\Debug\netcoreapp2.0\EmptyXUnit.runtimeconfig.dev.json
+D:\github\Demo\Csharp\EmptyXUnit\bin\Debug\netcoreapp2.0\EmptyXUnit.dll
+D:\github\Demo\Csharp\EmptyXUnit\bin\Debug\netcoreapp2.0\EmptyXUnit.pdb
+D:\github\Demo\Csharp\EmptyXUnit\obj\Debug\netcoreapp2.0\EmptyXUnit.csprojAssemblyReference.cache
+D:\github\Demo\Csharp\EmptyXUnit\obj\Debug\netcoreapp2.0\EmptyXUnit.csproj.CoreCompileInputs.cache
+D:\github\Demo\Csharp\EmptyXUnit\obj\Debug\netcoreapp2.0\EmptyXUnit.AssemblyInfoInputs.cache
+D:\github\Demo\Csharp\EmptyXUnit\obj\Debug\netcoreapp2.0\EmptyXUnit.AssemblyInfo.cs
+D:\github\Demo\Csharp\EmptyXUnit\obj\Debug\netcoreapp2.0\EmptyXUnit.dll
+D:\github\Demo\Csharp\EmptyXUnit\obj\Debug\netcoreapp2.0\EmptyXUnit.pdb

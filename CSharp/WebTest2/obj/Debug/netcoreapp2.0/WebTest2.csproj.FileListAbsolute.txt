@@ -9,4 +9,4 @@ D:\github\Demo\csharp\WebTest2\bin\Debug\netcoreapp2.0\WebTest2.pdb
 D:\github\Demo\csharp\WebTest2\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
 D:\github\Demo\csharp\WebTest2\obj\Debug\netcoreapp2.0\WebTest2.dll
 D:\github\Demo\csharp\WebTest2\obj\Debug\netcoreapp2.0\WebTest2.pdb
-D:\github\Demo\csharp\WebTest2\obj\Debug\netcoreapp2.0\WebTest2.csprojResolveAssemblyReference.cache
+D:\github\Demo\csharp\WebTest2\obj\Debug\netcoreapp2.0\WebTest2.csprojAssemblyReference.cache

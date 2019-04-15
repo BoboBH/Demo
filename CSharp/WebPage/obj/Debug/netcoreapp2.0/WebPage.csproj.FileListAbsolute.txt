@@ -8,5 +8,5 @@ D:\github\Demo\csharp\WebPage\obj\Debug\netcoreapp2.0\WebPage.AssemblyInfoInputs
 D:\github\Demo\csharp\WebPage\obj\Debug\netcoreapp2.0\WebPage.AssemblyInfo.cs
 D:\github\Demo\csharp\WebPage\obj\Debug\netcoreapp2.0\WebPage.dll
 D:\github\Demo\csharp\WebPage\obj\Debug\netcoreapp2.0\WebPage.pdb
-D:\github\Demo\csharp\WebPage\obj\Debug\netcoreapp2.0\WebPage.csprojResolveAssemblyReference.cache
 D:\github\Demo\csharp\WebPage\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+D:\github\Demo\csharp\WebPage\obj\Debug\netcoreapp2.0\WebPage.csprojAssemblyReference.cache

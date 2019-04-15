@@ -9,7 +9,6 @@ d:\github\demo\ccharp\EF\bin\Debug\EntityFramework.xml
 d:\github\demo\ccharp\EF\bin\Debug\EntityFramework.SqlServer.xml
 d:\github\demo\ccharp\EF\bin\Debug\Google.Protobuf.xml
 d:\github\demo\ccharp\EF\bin\Debug\MySql.Data.xml
-d:\github\demo\ccharp\EF\obj\Debug\EF.csprojResolveAssemblyReference.cache
 d:\github\demo\ccharp\EF\obj\Debug\EF.csproj.CoreCompileInputs.cache
 d:\github\demo\ccharp\EF\obj\Debug\EF.exe
 d:\github\demo\ccharp\EF\obj\Debug\EF.pdb
@@ -17,3 +16,5 @@ d:\github\demo\ccharp\EF\bin\Debug\MySql.Data.EntityFramework.dll
 d:\github\demo\ccharp\EF\bin\Debug\MySql.Data.EntityFramework.xml
 d:\github\demo\ccharp\EF\bin\Debug\zh-Hans\EntityFramework.resources.dll
 d:\github\demo\ccharp\EF\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+d:\github\demo\ccharp\EF\obj\Debug\EF.csprojAssemblyReference.cache
+d:\github\demo\ccharp\EF\obj\Debug\EF.csproj.CopyComplete

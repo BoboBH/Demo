@@ -8,4 +8,4 @@ D:\github\Demo\WebCoreEF\obj\Debug\netcoreapp2.0\WebCoreEF.AssemblyInfo.cs
 D:\github\Demo\WebCoreEF\bin\Debug\netcoreapp2.0\WebCoreEF.pdb
 D:\github\Demo\WebCoreEF\obj\Debug\netcoreapp2.0\WebCoreEF.dll
 D:\github\Demo\WebCoreEF\obj\Debug\netcoreapp2.0\WebCoreEF.pdb
-D:\github\Demo\WebCoreEF\obj\Debug\netcoreapp2.0\WebCoreEF.csprojResolveAssemblyReference.cache
+D:\github\Demo\WebCoreEF\obj\Debug\netcoreapp2.0\WebCoreEF.csprojAssemblyReference.cache

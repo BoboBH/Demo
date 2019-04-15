@@ -1,0 +1,8 @@
+D:\github\Demo\charp\WebAppBasicAuth\obj\Debug\netcoreapp2.1\WebAppBasicAuth.csprojAssemblyReference.cache
+D:\github\Demo\charp\WebAppBasicAuth\obj\Debug\netcoreapp2.1\WebAppBasicAuth.csproj.CoreCompileInputs.cache
+D:\github\Demo\charp\WebAppBasicAuth\obj\Debug\netcoreapp2.1\WebAppBasicAuth.RazorAssemblyInfo.cache
+D:\github\Demo\charp\WebAppBasicAuth\obj\Debug\netcoreapp2.1\WebAppBasicAuth.RazorAssemblyInfo.cs
+D:\github\Demo\charp\WebAppBasicAuth\obj\Debug\netcoreapp2.1\WebAppBasicAuth.AssemblyInfoInputs.cache
+D:\github\Demo\charp\WebAppBasicAuth\obj\Debug\netcoreapp2.1\WebAppBasicAuth.AssemblyInfo.cs
+D:\github\Demo\charp\WebAppBasicAuth\obj\Debug\netcoreapp2.1\WebAppBasicAuth.dll
+D:\github\Demo\charp\WebAppBasicAuth\obj\Debug\netcoreapp2.1\WebAppBasicAuth.pdb

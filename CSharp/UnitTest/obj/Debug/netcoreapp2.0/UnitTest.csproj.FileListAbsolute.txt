@@ -14,3 +14,4 @@ D:\github\Demo\Csharp\UnitTest\obj\Debug\netcoreapp2.0\UnitTest.pdb
 D:\github\Demo\Csharp\UnitTest\obj\Debug\netcoreapp2.0\UnitTest.csprojResolveAssemblyReference.cache
 D:\github\Demo\CSharp\UnitTest\bin\Debug\netcoreapp2.0\StockBusiness.dll
 D:\github\Demo\CSharp\UnitTest\bin\Debug\netcoreapp2.0\StockBusiness.pdb
+D:\github\Demo\CSharp\UnitTest\obj\Debug\netcoreapp2.0\UnitTest.csprojAssemblyReference.cache

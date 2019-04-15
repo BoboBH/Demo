@@ -2,10 +2,10 @@ D:\github\Demo\EFCore\bin\Debug\netcoreapp2.0\EFCore.deps.json
 D:\github\Demo\EFCore\bin\Debug\netcoreapp2.0\EFCore.runtimeconfig.json
 D:\github\Demo\EFCore\bin\Debug\netcoreapp2.0\EFCore.runtimeconfig.dev.json
 D:\github\Demo\EFCore\bin\Debug\netcoreapp2.0\EFCore.dll
-D:\github\Demo\EFCore\obj\Debug\netcoreapp2.0\EFCore.csprojResolveAssemblyReference.cache
 D:\github\Demo\EFCore\obj\Debug\netcoreapp2.0\EFCore.csproj.CoreCompileInputs.cache
 D:\github\Demo\EFCore\obj\Debug\netcoreapp2.0\EFCore.AssemblyInfoInputs.cache
 D:\github\Demo\EFCore\obj\Debug\netcoreapp2.0\EFCore.AssemblyInfo.cs
 D:\github\Demo\EFCore\bin\Debug\netcoreapp2.0\EFCore.pdb
 D:\github\Demo\EFCore\obj\Debug\netcoreapp2.0\EFCore.dll
 D:\github\Demo\EFCore\obj\Debug\netcoreapp2.0\EFCore.pdb
+D:\github\Demo\EFCore\obj\Debug\netcoreapp2.0\EFCore.csprojAssemblyReference.cache

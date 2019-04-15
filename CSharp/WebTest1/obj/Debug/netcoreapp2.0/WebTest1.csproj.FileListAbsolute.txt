@@ -8,5 +8,5 @@ D:\github\Demo\csharp\WebTest1\obj\Debug\netcoreapp2.0\WebTest1.AssemblyInfoInpu
 D:\github\Demo\csharp\WebTest1\obj\Debug\netcoreapp2.0\WebTest1.AssemblyInfo.cs
 D:\github\Demo\csharp\WebTest1\obj\Debug\netcoreapp2.0\WebTest1.dll
 D:\github\Demo\csharp\WebTest1\obj\Debug\netcoreapp2.0\WebTest1.pdb
-D:\github\Demo\csharp\WebTest1\obj\Debug\netcoreapp2.0\WebTest1.csprojResolveAssemblyReference.cache
 D:\github\Demo\CSharp\WebTest1\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+D:\github\Demo\csharp\WebTest1\obj\Debug\netcoreapp2.0\WebTest1.csprojAssemblyReference.cache

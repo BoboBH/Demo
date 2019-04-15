@@ -8,4 +8,4 @@ D:\github\Demo\csharp\BasicAuthWeb\obj\Debug\netcoreapp2.0\BasicAuthWeb.Assembly
 D:\github\Demo\csharp\BasicAuthWeb\obj\Debug\netcoreapp2.0\BasicAuthWeb.AssemblyInfo.cs
 D:\github\Demo\csharp\BasicAuthWeb\obj\Debug\netcoreapp2.0\BasicAuthWeb.dll
 D:\github\Demo\csharp\BasicAuthWeb\obj\Debug\netcoreapp2.0\BasicAuthWeb.pdb
-D:\github\Demo\csharp\BasicAuthWeb\obj\Debug\netcoreapp2.0\BasicAuthWeb.csprojResolveAssemblyReference.cache
+D:\github\Demo\csharp\BasicAuthWeb\obj\Debug\netcoreapp2.0\BasicAuthWeb.csprojAssemblyReference.cache

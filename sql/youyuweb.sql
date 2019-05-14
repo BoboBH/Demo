@@ -130,6 +130,7 @@ create table security(
 	 security_product_id varchar(20) comment 'interal security product id',
 	 security_type int comment 'enum vlaue,1:stock;2:fund;3:ICP',
 	 symbol varchar(20),
+   currency char(3),
 	 isin char(12),
 	 price decimal(11,4) comment 'price/nave/unit value',
 	 date datetime comment 'price date',
@@ -138,8 +139,8 @@ create table security(
 	 modifiedon datetime not null	 
 );
 #initialize security table
-insert into security(id,market,name,security_type,symbol,date,price,createdon,modifiedon)
-select id,market,name, 1,symbol,date,price,now(),now() from stock.stock where id not in (select id from security);
+insert into security(id,market,name,security_type,symbol,currency,date,price,createdon,modifiedon)
+select id,market,name, 1,symbol,'CNY',date,price,now(),now() from stock.stock where id not in (select id from security);
 select * from security;
 
 drop table if exists user;
@@ -154,3 +155,5 @@ create table user(
 	 unique(username)
 );
 select *  from user;
+
+select * from security;

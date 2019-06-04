@@ -49,6 +49,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmptyClassLibrary", "CSharp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TradeOnline", "CSharp\TradeOnline\TradeOnline\TradeOnline.csproj", "{5C0E2411-C723-44E6-AF4D-559E81674F3E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebMvc3", "csharp\WebMvc3\WebMvc3.csproj", "{A6DC203B-D259-46DF-94AB-FABE1D019DA9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -147,6 +149,10 @@ Global
 		{5C0E2411-C723-44E6-AF4D-559E81674F3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C0E2411-C723-44E6-AF4D-559E81674F3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C0E2411-C723-44E6-AF4D-559E81674F3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6DC203B-D259-46DF-94AB-FABE1D019DA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6DC203B-D259-46DF-94AB-FABE1D019DA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6DC203B-D259-46DF-94AB-FABE1D019DA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6DC203B-D259-46DF-94AB-FABE1D019DA9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

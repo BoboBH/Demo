@@ -371,3 +371,11 @@
 /CSharp/Finance/.vs/Finance/v15/Server/sqlite3/*.ide
 *.ide-shm
 *.ide-wal
+/CSharp/AuthoringTagHelpers/obj
+/CSharp/AuthoringTagHelpers/bin
+/CSharp/AuthWeb/obj
+/CSharp/AuthWeb/bin
+/CSharp/BasicAuthWeb/obj
+/CSharp/BasicAuthWeb/bin
+/CSharp/Common/obj
+/CSharp/Common/bin

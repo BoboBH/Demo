@@ -17,5 +17,7 @@ namespace WebMvc2.Models
         public DbSet<WebMvc2.Models.Movie> Movie { get; set; }
 
         public DbSet<WebMvc2.Models.ToDo> ToDo { get; set; }
+
+        public DbSet<WebMvc2.Models.Contact> Contact { get; set; }
     }
 }

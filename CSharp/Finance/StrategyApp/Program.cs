@@ -2,6 +2,7 @@
 using System.IO;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
 
 namespace StrategyApp
 {
@@ -9,16 +10,14 @@ namespace StrategyApp
     {
         public static void Main(string[] args)
         {
-            var host = new WebHostBuilder()
-              .UseContentRoot(Directory.GetCurrentDirectory())
-              .UseKestrel()
-              .UseIISIntegration()
-              .UseStartup<Startup>()
-              //.ConfigureKestrel((context, options) =>
-              //{
-              //    // Set properties and call methods on options
-              //})
-              .Build();
+            var config = new ConfigurationBuilder()
+             .SetBasePath(Directory.GetCurrentDirectory())
+             .AddJsonFile(Path.Combine("config", "host.json"), true)
+             .Build();
+            var host = WebHost.CreateDefaultBuilder(args)
+                .UseConfiguration(config)
+                .UseStartup<Startup>()
+                .Build();
             host.Run();
         }
 

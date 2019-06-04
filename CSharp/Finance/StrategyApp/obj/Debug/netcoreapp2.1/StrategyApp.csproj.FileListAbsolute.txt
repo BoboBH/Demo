@@ -15,3 +15,4 @@ D:\github\demo\csharp\Finance\StrategyApp\obj\Debug\netcoreapp2.1\StrategyApp.As
 D:\github\demo\csharp\Finance\StrategyApp\obj\Debug\netcoreapp2.1\StrategyApp.csproj.CopyComplete
 D:\github\demo\csharp\Finance\StrategyApp\obj\Debug\netcoreapp2.1\StrategyApp.dll
 D:\github\demo\csharp\Finance\StrategyApp\obj\Debug\netcoreapp2.1\StrategyApp.pdb
+D:\github\demo\csharp\Finance\StrategyApp\bin\Debug\netcoreapp2.1\appsettings.json

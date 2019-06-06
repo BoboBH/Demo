@@ -1,8 +1,0 @@
-package com.bobo.dao;
-
-import com.bobo.bean.User;
-
-public interface UserDao {
-
-	User getUserById(int id);
-}

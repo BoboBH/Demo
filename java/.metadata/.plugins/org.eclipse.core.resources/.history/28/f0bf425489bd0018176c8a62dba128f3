@@ -1,7 +1,0 @@
-package com.bobo.impl;
-
-import com.bobo.service.UserService;
-
-public class UserServiceImpl extends UserService {
-
-}

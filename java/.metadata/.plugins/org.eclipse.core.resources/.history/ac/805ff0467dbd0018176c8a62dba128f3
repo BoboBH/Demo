@@ -1,5 +1,0 @@
-package com.bobo.mapper;
-
-public interface UserMapper {
-
-}

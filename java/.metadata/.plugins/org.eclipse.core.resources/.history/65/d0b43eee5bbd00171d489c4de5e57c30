@@ -1,9 +1,0 @@
-package com.bobo.mybatis.bean;
-
-import system;
-
-public class UserMassage {
-	private int id;
-	private String message;
-
-}

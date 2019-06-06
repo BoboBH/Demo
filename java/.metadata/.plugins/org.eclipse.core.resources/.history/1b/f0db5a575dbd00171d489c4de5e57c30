@@ -1,5 +1,0 @@
-package com.bobo.mybatis.bean;
-
-public class UserMessageController {
-
-}

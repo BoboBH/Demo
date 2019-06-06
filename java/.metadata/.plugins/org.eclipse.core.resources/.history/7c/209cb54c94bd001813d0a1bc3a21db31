@@ -1,5 +1,0 @@
-
-progress:
-1.正常运行spring application;
-2.支持服务和restful;
-3.无法加载properties,无法database drive;

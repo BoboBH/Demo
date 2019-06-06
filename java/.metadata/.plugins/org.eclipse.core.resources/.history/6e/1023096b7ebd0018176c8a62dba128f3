@@ -1,7 +1,0 @@
-package com.bobo.mapper;
-
-import com.bobo.bean;
-import org.apache.ibatis.annotations.Delete;
-public interface UserMapper {
-
-}

@@ -1,4 +1,0 @@
-#Tomcat publish data
-#Fri Oct 20 19:07:09 CST 2017
-org.eclipse.jst.j2ee.server\:/binary\:C\:\\Users\\bobo.huang.MHS\\.m2\\repository\\org\\springframework\\spring-web\\4.3.12.RELEASE\\spring-web-4.3.12.RELEASE.jar=WEB-INF/lib/spring-web-4.3.12.RELEASE.jar
-org.eclipse.jst.j2ee.server\:/binary\:C\:\\Users\\bobo.huang.MHS\\.m2\\repository\\org\\apache\\tomcat\\embed\\tomcat-embed-websocket\\8.5.23\\tomcat-embed-websocket-8.5.23.jar=WEB-INF/lib/tomcat-embed-websocket-8.5.23.jar

@@ -8,3 +8,6 @@ progress：
 3.controller读取配置文件并注入；
 4.数据库操作，JPA自动更新数据表；
 5.遇到问题：StudentRepository无法注入：
+增加注解：@SpringBootTest(classes=FristsbaApplication.class)
+FristsbaApplication是主程序入口，包括SpringApplication.run(FristsbaApplication.class, args);
+6:springboot + mybatis 多数据源最简解决方案：导致repository无法注入，暂时未验证

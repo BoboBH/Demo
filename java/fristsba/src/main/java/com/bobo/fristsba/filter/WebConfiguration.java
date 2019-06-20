@@ -12,7 +12,7 @@ public class WebConfiguration {
 		 return new RemoteIpFilter();
 	 }
    @SuppressWarnings("unchecked")
-@Bean
+   @Bean
     public FilterRegistrationBean<MyFilter> testFilterRegistration() {	
 		@SuppressWarnings("rawtypes")
 		FilterRegistrationBean registration = new FilterRegistrationBean();

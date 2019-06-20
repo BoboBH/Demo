@@ -1,18 +1,16 @@
-package com.bobo.fristsba;
+package com.bobo.demo_thymeleaf;
 
-import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes=FristsbaApplication.class)
-public class FristsbaApplicationTests {
+@SpringBootTest
+public class DemoThymeleafApplicationTests {
 
 	@Test
 	public void contextLoads() {
-		Assert.assertTrue(true);
 	}
 
 }

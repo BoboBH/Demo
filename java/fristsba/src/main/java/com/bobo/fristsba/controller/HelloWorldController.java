@@ -8,17 +8,32 @@
 package com.bobo.fristsba.controller;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.locks.Lock;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.integration.redis.util.RedisLockRegistry;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.bobo.fristsba.config.NeoProperties;
 import com.bobo.fristsba.domain.Student;
+import com.bobo.fristsba.service.StudentRepository;
 
 @RestController
 public class HelloWorldController{
 	
+	 
+
+	   
+	@Autowired
+	private RedisLockRegistry redisLockRegistry;
+	@Autowired
+	private StudentRepository studentRepository;
 	@Autowired
 	private NeoProperties neoConfig;
 	@RequestMapping("hello")
@@ -30,18 +45,29 @@ public class HelloWorldController{
 		return this.neoConfig;
 	}
 	@RequestMapping("students")
-	public ArrayList<Student> getAllStudent(){
-		
-		ArrayList<Student> list = new ArrayList<Student>();
-		Student st1 = new Student();
-		st1.setId("1");
-		st1.setName("bobo Huang");
-		Student st2 = new Student();
-		st2.setId("2");
-		st2.setName("黄晓乐");
-		list.add(st1);
-		list.add(st2);
-		return list;
+	public List<Student> getAllStudent(){			
+		return studentRepository.findAll();
 	}
+	@RequestMapping("students/{id}")
+	public Student getStudent(@PathVariable String id){		
+		Optional<Student> result = studentRepository.findById(id);
+		if(result.isPresent())
+			return result.get();
+		return null;
+	}
+	
+	@GetMapping("test/lock")
+	public String TestLock() throws InterruptedException{
+		Lock lock = redisLockRegistry.obtain("lock");
+		boolean b1 = lock.tryLock(3, TimeUnit.SECONDS);
+		String result = "";
+		if(b1)
+			result = "Got Lock";
+		else
+			result =  "Could not get Lock";
+		lock.unlock();
+		return result;
+	}
+	
 	
 }

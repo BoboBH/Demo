@@ -41,7 +41,7 @@ public class HelloController {
 	public School getSchool(@PathVariable String id){
 		School school = new School();
 		school.setId(id);
-		school.setName("3rd School Of Hanchan");
+		school.setName("3rd Middle School Of Hanchan");
 		return school;
 	}
 }

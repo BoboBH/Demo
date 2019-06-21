@@ -379,3 +379,5 @@
 /CSharp/BasicAuthWeb/bin
 /CSharp/Common/obj
 /CSharp/Common/bin
+/java/.metadata
+/java/.recommenders

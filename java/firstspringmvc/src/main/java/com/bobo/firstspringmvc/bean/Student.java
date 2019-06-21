@@ -3,11 +3,18 @@ package com.bobo.firstspringmvc.bean;
 import java.io.Serializable;
 
 public class Student implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String id;
 	private String name;
 	private Integer age;
 	public String getId() {
 		return id;
+	}
+	public Student(){
+		
 	}
 	public Student(String id, String name, Integer age){
 		this.id = id;

@@ -14851,11 +14851,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\github\\demo\\csharp\\TradeOnline\\TradeOnline\\TradeOnline.csproj",
+      "projectUniqueName": "D:\\github\\Demo\\CSharp\\TradeOnline\\TradeOnline\\TradeOnline.csproj",
       "projectName": "TradeOnline",
-      "projectPath": "d:\\github\\demo\\csharp\\TradeOnline\\TradeOnline\\TradeOnline.csproj",
+      "projectPath": "D:\\github\\Demo\\CSharp\\TradeOnline\\TradeOnline\\TradeOnline.csproj",
       "packagesPath": "C:\\Users\\bobo.huang.MHS\\.nuget\\packages\\",
-      "outputPath": "d:\\github\\demo\\csharp\\TradeOnline\\TradeOnline\\obj\\",
+      "outputPath": "D:\\github\\Demo\\CSharp\\TradeOnline\\TradeOnline\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -14905,6 +14905,7 @@
             "version": "[2.1.2, )"
           },
           "Microsoft.NETCore.App": {
+            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true

@@ -51,7 +51,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TradeOnline", "CSharp\Trade
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebMvc3", "csharp\WebMvc3\WebMvc3.csproj", "{A6DC203B-D259-46DF-94AB-FABE1D019DA9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingalRChat", "SingalRChat\SingalRChat.csproj", "{FE3F09D9-45F8-4673-88B8-267904D5522A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingalRChat", "SingalRChat\SingalRChat.csproj", "{FE3F09D9-45F8-4673-88B8-267904D5522A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadApp", "csharp\ThreadApp\ThreadApp.csproj", "{275FC1EC-7492-4DA2-A64C-8D4C12753AED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -159,6 +161,10 @@ Global
 		{FE3F09D9-45F8-4673-88B8-267904D5522A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE3F09D9-45F8-4673-88B8-267904D5522A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE3F09D9-45F8-4673-88B8-267904D5522A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{275FC1EC-7492-4DA2-A64C-8D4C12753AED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{275FC1EC-7492-4DA2-A64C-8D4C12753AED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{275FC1EC-7492-4DA2-A64C-8D4C12753AED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{275FC1EC-7492-4DA2-A64C-8D4C12753AED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

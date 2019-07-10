@@ -22,17 +22,6 @@ public class StudentController {
 	@Autowired IStudentService studentService;
 	@RequestMapping(value="/student",method=RequestMethod.GET)  
     public String test(HttpServletRequest request,Model model){  
-       /* Student student= new Student();  
-    	student.setId("10001");
-    	student.setName("bobo Huang");
-    	student.setAge(18);
-    	Student t2= new Student();  
-    	t2.setId("10002");
-    	t2.setName("happy Huang");
-    	t2.setAge(3);
-    	List<Student> list  = new ArrayList<Student>();
-    	list.add(student);
-    	list.add(t2);*/
         model.addAttribute("students", studentService.getAllStudent());  
         return "studentlist";  
     }  

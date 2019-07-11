@@ -3,6 +3,8 @@ package com.bobo.firstspringmvc.bean;
 public class School {
 	private String id;
 	private String name;
+	private String address;
+	private Integer level;
 	public String getId() {
 		return id;
 	}
@@ -14,6 +16,18 @@ public class School {
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	public Integer getLevel() {
+		return level;
+	}
+	public void setLevel(Integer level) {
+		this.level = level;
 	}
 	
 

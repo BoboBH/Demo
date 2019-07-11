@@ -21,6 +21,6 @@ public interface StudentMapper {
 			}
 			)
 	List<Student> getAllStudent();
-	@Select("select id,name,age from student where id=${id}")
+	@Select("select id,user_name as name,age from student where id=${id}")
 	Student getStudentById(String id);
 }

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"    
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+<mapper namespace="com.bobo.firstspringmvc.mapper.SchoolMapper">
+	<resultMap id="schoolResult" type="com.bobo.firstspringmvc.bean.School">
+		<id property="id" column="id"></id>
+		<result property="name" column="name"></result>
+		<result property="address" column="address"></result>
+		<result property="level" column="level"></result>
+	</resultMap>
+	<select id="getSchools" resultMap="schoolResult">
+	   select id,name, address,level from school
+	</select>
+	<select id="getSchoolById" resultMap="schoolResult" parameterType="String">
+	   select id,name, address,level from school where id=#{id}
+	</select>
+	<select id="searchSchool" resultMap="schoolResult" parameterType="com.bobo.firstspringmvc.bean.School">
+	   select id,name, address,level from school where  1=1 
+	   <if test="name != null" >
+	   	 AND name like '${name}%'
+	   </if>
+	   <if test="address != null" >
+	   	 AND address like '${address}%'
+	   </if>
+	</select>
+	<insert id="addSchool" parameterType="com.bobo.firstspringmvc.bean.School">
+	  insert into school(id, name, address, level) select #{id},#{name},#{address},#{level} from dual where not exists (select id from school where id=#{id})
+	</insert>
+	<insert id="updateSchool" parameterType="com.bobo.firstspringmvc.bean.School">
+	   update school set name = #{name},address=#{address},level = #{level} where id = #{id}
+	</insert>
+</mapper>

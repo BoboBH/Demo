@@ -381,3 +381,6 @@
 /CSharp/Common/bin
 /java/.metadata
 /java/.recommenders
+/ccharp/EF/bin
+/CSharp/ThreadApp/bin
+/CSharp/Finance/Business/bin

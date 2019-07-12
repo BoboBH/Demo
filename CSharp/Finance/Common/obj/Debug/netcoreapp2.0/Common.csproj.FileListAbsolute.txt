@@ -1,9 +1,0 @@
-D:\github\demo\csharp\Finance\Common\bin\Debug\netcoreapp2.0\Common.deps.json
-D:\github\demo\csharp\Finance\Common\bin\Debug\netcoreapp2.0\Common.dll
-D:\github\demo\csharp\Finance\Common\bin\Debug\netcoreapp2.0\Common.pdb
-D:\github\demo\csharp\Finance\Common\obj\Debug\netcoreapp2.0\Common.csproj.CoreCompileInputs.cache
-D:\github\demo\csharp\Finance\Common\obj\Debug\netcoreapp2.0\Common.AssemblyInfoInputs.cache
-D:\github\demo\csharp\Finance\Common\obj\Debug\netcoreapp2.0\Common.AssemblyInfo.cs
-D:\github\demo\csharp\Finance\Common\obj\Debug\netcoreapp2.0\Common.dll
-D:\github\demo\csharp\Finance\Common\obj\Debug\netcoreapp2.0\Common.pdb
-D:\github\demo\csharp\Finance\Common\obj\Debug\netcoreapp2.0\Common.csprojAssemblyReference.cache

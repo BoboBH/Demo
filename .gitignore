@@ -384,3 +384,15 @@
 /ccharp/EF/bin
 /CSharp/ThreadApp/bin
 /CSharp/Finance/Business/bin
+/CSharp/Finance/BackendService/bin
+/CSharp/Finance/BackendService/obj
+/CSharp/Finance/BS/obj
+/CSharp/Finance/BS/bin
+/CSharp/Finance/Common/bin
+/CSharp/Finance/Common/obj
+/CSharp/Finance/StrategyApp/bin
+/CSharp/Finance/StrategyApp/obj
+/CSharp/Finance/XUnitTest/bin
+/CSharp/Finance/XUnitTest/obj
+/CSharp/ClassLibrary1/obj
+/CSharp/ClassLibrary1/bin

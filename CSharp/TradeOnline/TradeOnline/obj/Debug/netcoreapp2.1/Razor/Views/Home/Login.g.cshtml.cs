@@ -67,7 +67,7 @@ using TradeOnline.Models;
             WriteLiteral("\r\n<h2>Login</h2>\r\n");
             EndContext();
             BeginContext(108, 328, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4683d1fd6067489db1975f3df341ce94", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5c20bdf16c214505964bc4a7c19c97af", async() => {
                 BeginContext(169, 43, true);
                 WriteLiteral("\r\n    <input type=\"hidden\" name=\"returnUrl\"");
                 EndContext();

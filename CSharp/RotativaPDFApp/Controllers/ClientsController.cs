@@ -20,6 +20,26 @@ namespace RotativaPDFApp.Controllers
             _context = context;
         }
 
+        [HttpPost("{id}")]
+        public String DeltaUpdateClient(string id, [FromBody] Dictionary<string, object> data)
+        {
+            Client client = this._context.Client.Find(id);
+            if (client != null)
+                return "Success";
+            else
+                return "Failed";
+        }
+
+        [HttpPost("{id}/deltaUpdate")]
+        public String DeltaUpdateClient(string id, [FromBody] Client data)
+        {
+            Client client = this._context.Client.Find(id);
+            if (client != null)
+                return "Success";
+            else
+                return "Failed";
+        }
+
         // GET: Clients
         public async Task<IActionResult> Index()
         {

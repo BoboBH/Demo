@@ -4,4 +4,3 @@ D:\github\Demo\csharp\ThreadApp\bin\Debug\ThreadApp.pdb
 D:\github\Demo\csharp\ThreadApp\obj\Debug\ThreadApp.csproj.CoreCompileInputs.cache
 D:\github\Demo\csharp\ThreadApp\obj\Debug\ThreadApp.exe
 D:\github\Demo\csharp\ThreadApp\obj\Debug\ThreadApp.pdb
-D:\github\Demo\csharp\ThreadApp\obj\Debug\ThreadApp.csprojAssemblyReference.cache

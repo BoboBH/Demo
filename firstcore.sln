@@ -55,7 +55,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingalRChat", "SingalRChat\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadApp", "csharp\ThreadApp\ThreadApp.csproj", "{275FC1EC-7492-4DA2-A64C-8D4C12753AED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RotativaPDFApp", "csharp\RotativaPDFApp\RotativaPDFApp.csproj", "{94F567AB-5DB8-497D-9611-FFA7427DC496}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RotativaPDFApp", "csharp\RotativaPDFApp\RotativaPDFApp.csproj", "{94F567AB-5DB8-497D-9611-FFA7427DC496}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csharp", "aspdocker\csharp\csharp.csproj", "{F947F564-5080-4EE6-856E-E19B4FFEA651}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppDocker", "csharp\AppDocker\AppDocker.csproj", "{2E22F6D7-2494-4314-BCBA-6BA01AA87EB1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -171,6 +175,14 @@ Global
 		{94F567AB-5DB8-497D-9611-FFA7427DC496}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94F567AB-5DB8-497D-9611-FFA7427DC496}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94F567AB-5DB8-497D-9611-FFA7427DC496}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F947F564-5080-4EE6-856E-E19B4FFEA651}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F947F564-5080-4EE6-856E-E19B4FFEA651}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F947F564-5080-4EE6-856E-E19B4FFEA651}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F947F564-5080-4EE6-856E-E19B4FFEA651}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E22F6D7-2494-4314-BCBA-6BA01AA87EB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E22F6D7-2494-4314-BCBA-6BA01AA87EB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E22F6D7-2494-4314-BCBA-6BA01AA87EB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E22F6D7-2494-4314-BCBA-6BA01AA87EB1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

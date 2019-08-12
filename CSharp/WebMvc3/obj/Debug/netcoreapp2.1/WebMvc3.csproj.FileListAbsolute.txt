@@ -45,3 +45,4 @@ D:\github\Demo\csharp\WebMvc3\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Ad
 D:\github\Demo\csharp\WebMvc3\obj\Debug\netcoreapp2.1\Razor\_ViewImports.g.cshtml.cs
 D:\github\Demo\csharp\WebMvc3\obj\Debug\netcoreapp2.1\Razor\_ViewStart.g.cshtml.cs
 D:\github\Demo\csharp\WebMvc3\obj\Debug\netcoreapp2.1\WebMvc3.csprojAssemblyReference.cache
+D:\github\Demo\csharp\WebMvc3\obj\Debug\netcoreapp2.1\Razor\Views\Components\XXXView.g.cshtml.cs

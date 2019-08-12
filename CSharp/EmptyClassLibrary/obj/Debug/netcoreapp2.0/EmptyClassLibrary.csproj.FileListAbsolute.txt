@@ -6,3 +6,4 @@ D:\github\Demo\CSharp\EmptyClassLibrary\obj\Debug\netcoreapp2.0\EmptyClassLibrar
 D:\github\Demo\CSharp\EmptyClassLibrary\obj\Debug\netcoreapp2.0\EmptyClassLibrary.AssemblyInfo.cs
 D:\github\Demo\CSharp\EmptyClassLibrary\obj\Debug\netcoreapp2.0\EmptyClassLibrary.dll
 D:\github\Demo\CSharp\EmptyClassLibrary\obj\Debug\netcoreapp2.0\EmptyClassLibrary.pdb
+D:\github\Demo\CSharp\EmptyClassLibrary\obj\Debug\netcoreapp2.0\EmptyClassLibrary.csprojAssemblyReference.cache

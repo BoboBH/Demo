@@ -20,6 +20,7 @@ namespace SocketApp
         private Timer Timer;
         public void Start()
         {
+            Console.WriteLine("start client");
             Socket clientSocket  = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             IPAddress address = IPAddress.Parse(this.config.IP);
             IPEndPoint iep = new IPEndPoint(address, this.config.Port);

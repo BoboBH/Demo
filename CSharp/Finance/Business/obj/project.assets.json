@@ -1981,6 +1981,7 @@
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "2.2.3",
+          "System.Text.Encoding.CodePages": "4.5.1",
           "log4net": "2.0.8"
         },
         "compile": {

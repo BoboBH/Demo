@@ -60,7 +60,10 @@ namespace Common.Http
                 }
                 using (HttpWebResponse response = request.GetResponse() as HttpWebResponse)
                 {
-                    StreamReader reader = new StreamReader(response.GetResponseStream(), !String.IsNullOrEmpty(encoding) ? Encoding.GetEncoding(encoding) : Encoding.UTF8);
+                    Encoding coding = Encoding.UTF8;
+                    if (!String.IsNullOrEmpty(encoding))
+                        coding = Encoding.GetEncoding(encoding);
+                    StreamReader reader = new StreamReader(response.GetResponseStream(), coding);
                     return reader.ReadToEnd();
                 }
             }

@@ -3,7 +3,7 @@ using Common.Http;
 using System;
 using System.Collections.Generic;
 using System.Text;
-
+using Newtonsoft.Json;
 namespace Business.Sina
 {
     public class SinaHttpAPI:HttpAPI
@@ -11,7 +11,7 @@ namespace Business.Sina
         public static string STOCK_INFO_URL = "http://hq.sinajs.cn/list={0}";
 
         public static string FUND_NAV_URL = "http://stock.finance.sina.com.cn/fundInfo/api/openapi.php/CaihuiFundInfoService.getNav?symbol={0}&datefrom={1}&dateto={2}&page={3}";
-
+        public static string FUND_LIST_URL = "http://vip.stock.finance.sina.com.cn/fund_center/data/jsonp.php/IO.XSRV2.CallbackList['6XxbX6h4CED0ATvW']/NetValue_Service.getNetValueOpen?page={0}&num={1}&sort=nav_date&asc=0&ccode=&type2=0&type3=";
 
         public string GetStockInfo(string symbol)
         {
@@ -57,6 +57,17 @@ namespace Business.Sina
                 }
             }
             return list;
+        }
+
+        public FundInfoList GetFundList(int pageIndex, int pageSize)
+        {
+            string url = String.Format(FUND_LIST_URL, pageIndex, pageSize);
+            string content = this.GetStringContent(url, HttpMethod.GET, String.Empty, "gb2312");
+            content = content.Replace("//<script>location.href='http://sina.com.cn'; </script>", "");
+            content = content.Replace("\nIO.XSRV2.CallbackList['6XxbX6h4CED0ATvW']((", "");
+            if (content.EndsWith("))"))
+                content = content.Substring(0, content.Length - 2);
+            return JsonConvert.DeserializeObject<FundInfoList>(content);
         }
     }
 }

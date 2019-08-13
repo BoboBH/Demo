@@ -18,6 +18,7 @@ namespace BackendService
     {
         static void Main(string[] args)
         {
+            Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
             string env =  Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
             ILog log = LogUtils.GetLogger(typeof(Program));
             log.Info("Start running Backend Service...");

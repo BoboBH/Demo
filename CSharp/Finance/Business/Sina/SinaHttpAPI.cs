@@ -1,4 +1,5 @@
-﻿using Common.Http;
+﻿using Business.Sina.Model;
+using Common.Http;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,7 +9,10 @@ namespace Business.Sina
     public class SinaHttpAPI:HttpAPI
     {
         public static string STOCK_INFO_URL = "http://hq.sinajs.cn/list={0}";
-        
+
+        public static string FUND_NAV_URL = "http://stock.finance.sina.com.cn/fundInfo/api/openapi.php/CaihuiFundInfoService.getNav?symbol={0}&datefrom={1}&dateto={2}&page={3}";
+
+
         public string GetStockInfo(string symbol)
         {
             string url = string.Format(STOCK_INFO_URL, symbol);
@@ -18,6 +22,41 @@ namespace Business.Sina
             if (content.EndsWith("\";"))
                 content = content.Substring(0, content.Length - 2);
             return content;
+        }
+
+        public List<FundNAV> GetFundNAVData(string symbol, DateTime? startDate, DateTime? endDate)
+        {
+            List<FundNAV> list = new List<FundNAV>();
+            DateTime sd = DateTime.Today.AddYears(-5);
+            DateTime ed = DateTime.Today;
+            if (startDate.HasValue)
+                sd = startDate.Value;
+            if (endDate.HasValue)
+                ed = startDate.Value;
+            int index = 1;
+            string url = String.Empty;
+            while (true)
+            {
+                url = String.Format(FUND_NAV_URL, symbol, sd.ToString("yyyy-MM-dd"), ed.ToString("yyyy-MM-dd"), index);
+                var result = this.SendRequest<NAVRespsonse>(url, HttpMethod.GET, String.Empty);
+                if(result.Result != null && result.Result.Status != null && result.Result.Status.Code == 0)
+                {
+                    if(result.Result.NAVData != null && result.Result.NAVData.NAVs != null && result.Result.NAVData.NAVs.Length > 0)
+                    {
+                        list.AddRange(result.Result.NAVData.NAVs);
+                        index++;
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+                else
+                {
+                    break;
+                }
+            }
+            return list;
         }
     }
 }

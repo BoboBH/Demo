@@ -28,6 +28,7 @@ namespace Business.Model
     {
         Stock = 1,
         Index = 2,
+        Fund = 3,
     }
     public enum StockStatus
     {

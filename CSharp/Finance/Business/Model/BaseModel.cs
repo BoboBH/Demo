@@ -6,7 +6,7 @@ namespace Business.Model
 {
     public abstract class BaseModel
     {
-        public DateTime CreatedOn { get; set; }
-        public DateTime ModifiedOn { get; set; }
+        public DateTime CreatedOn { get; set; } = DateTime.Now;
+        public DateTime ModifiedOn { get; set; } = DateTime.Now;
     }
 }

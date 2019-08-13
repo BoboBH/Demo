@@ -16,7 +16,7 @@ namespace Business.Sina
     {
         public static string[] MARKETS = new string[] { "sz", "sh" };
         public string BASEN = "000000";
-        SinaHttpAPI api;
+        protected SinaHttpAPI api;
         public StockDBContext stockDb;
         public bool viaStockInfo=false;
         public bool isInit = true;

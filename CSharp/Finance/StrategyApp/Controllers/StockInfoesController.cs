@@ -104,7 +104,7 @@ namespace StrategyApp.Controllers
         {
             if (ModelState.IsValid)
             {
-                string id = string.Format("{0}_{1}", stockInfo.Market, stockInfo.Symbol);
+                string id = string.Format("{0}{1}", stockInfo.Market, stockInfo.Symbol);
                 StockInfo exist =  _context.StockInfos.Find(id);
                 if(exist != null)
                 {

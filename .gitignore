@@ -403,3 +403,13 @@
 /csharp/TagHelpWebPage2/obj
 /csharp/TagHelpWebPage2/bin
 /csharp/AppDocker.zip
+/csharp/EmptyClassLibrary/obj
+/csharp/EmptyClassLibrary/bin
+/csharp/EmptyNUnit/obj
+/csharp/EmptyNUnit/bin
+/csharp/EmptyXUnit/obj
+/csharp/EmptyXUnit/bin
+/csharp/WebApp/bin
+/csharp/WebAuth/bin
+/csharp/WcfService/bin
+/csharp/WcfService/obj

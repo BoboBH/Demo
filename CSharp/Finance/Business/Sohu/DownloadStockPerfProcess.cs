@@ -59,7 +59,7 @@ namespace Business.Sohu
         }
         public override List<StockInfo> GetPendingData()
         {
-            return this.stockDBContext.StockInfos.Skip((this.pageInfo.PageIndex-1) * this.pageInfo.PageSize).Take(this.pageInfo.PageSize).ToList();
+            return this.stockDBContext.StockInfos.Where(s=>s.Type != StockType.Fund).Skip((this.pageInfo.PageIndex-1) * this.pageInfo.PageSize).Take(this.pageInfo.PageSize).ToList();
         }
 
         public void ProcessData(StockInfo si, StockPerf perfData)

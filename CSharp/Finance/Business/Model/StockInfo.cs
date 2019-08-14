@@ -18,6 +18,8 @@ namespace Business.Model
         public DateTime? Date { get; set; }
         public StockStatus Status { get; set; }
 
+        public List<StockPerf> Perfromances { get; set; }
+
         public override string ToString()
         {
             return $"Stock Info:Market={Market}, Symbol={Symbol},Name={Name};";

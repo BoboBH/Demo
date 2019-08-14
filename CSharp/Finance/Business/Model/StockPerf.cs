@@ -22,5 +22,7 @@ namespace Business.Model
         public decimal? ChangePercentage { get; set; }
         public int? ContinueTrend { get; set; }
         public decimal? TurnoverRate { get; set; }
+
+        public StockInfo StockInfo { get; set; }
     }
 }

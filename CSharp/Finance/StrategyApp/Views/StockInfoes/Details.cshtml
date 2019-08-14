@@ -65,3 +65,102 @@
     <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
     <a asp-action="Index">Back to List</a>
 </div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Date
+            </th>
+            <th>
+                StockId
+            </th>
+            <th>
+                Open
+            </th>
+            <th>
+                Hihg
+            </th>
+            <th>
+                Low
+            </th>
+            <th>
+                Close
+            </th>
+            <th>
+                Last Close
+            </th>
+            <th>
+                Volume
+            </th>
+            <th>
+                Amount
+            </th>
+            <th>
+                Change
+            </th>
+            <th>
+                Chg Pert(%)
+            </th>
+            <th>
+                Trend
+            </th>
+            <th>
+                Tov Rate(%)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Perfromances)
+        {
+            <tr>
+                <td>
+                    @item.Date.ToString("M/d/yyyy")
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StockId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Open)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.High)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Low)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Close)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LastClose)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Volume)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Amount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Change)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ChangePercentage)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ContinueTrend)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TurnoverRate)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a> |
+                    <a asp-controller="MasterPortfolios" asp-action="Create" asp-route-benchmark="@item.StockId" asp-route-date="@item.Date">New Mst Port</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

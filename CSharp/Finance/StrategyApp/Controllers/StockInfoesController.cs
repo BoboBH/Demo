@@ -79,8 +79,9 @@ namespace StrategyApp.Controllers
                 return NotFound();
             }
 
-            var stockInfo = await _context.StockInfos
+            var stockInfo = await _context.StockInfos.Include(s=>s.Perfromances)
                 .SingleOrDefaultAsync(m => m.Id == id);
+            stockInfo.Perfromances.Sort(delegate (StockPerf a, StockPerf b) { return -1 * a.Date.CompareTo(b.Date); });
             if (stockInfo == null)
             {
                 return NotFound();

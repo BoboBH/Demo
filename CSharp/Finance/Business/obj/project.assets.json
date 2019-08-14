@@ -6779,11 +6779,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\github\\demo\\csharp\\Finance\\Business\\Business.csproj",
+      "projectUniqueName": "D:\\github\\Demo\\CSharp\\Finance\\Business\\Business.csproj",
       "projectName": "Business",
-      "projectPath": "D:\\github\\demo\\csharp\\Finance\\Business\\Business.csproj",
+      "projectPath": "D:\\github\\Demo\\CSharp\\Finance\\Business\\Business.csproj",
       "packagesPath": "C:\\Users\\bobo.huang.MHS\\.nuget\\packages\\",
-      "outputPath": "D:\\github\\demo\\csharp\\Finance\\Business\\obj\\",
+      "outputPath": "D:\\github\\Demo\\CSharp\\Finance\\Business\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6797,13 +6797,19 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore-tooling/index.json": {},
+        "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore/index.json": {},
+        "https://dotnetfeed.blob.core.windows.net/aspnet-entityframeworkcore/index.json": {},
+        "https://dotnetfeed.blob.core.windows.net/aspnet-extensions/index.json": {},
+        "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
+        "https://dotnetfeed.blob.core.windows.net/dotnet-windowsdesktop/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "D:\\github\\demo\\csharp\\Finance\\Common\\Common.csproj": {
-              "projectPath": "D:\\github\\demo\\csharp\\Finance\\Common\\Common.csproj"
+            "D:\\github\\Demo\\CSharp\\Finance\\Common\\Common.csproj": {
+              "projectPath": "D:\\github\\Demo\\CSharp\\Finance\\Common\\Common.csproj"
             }
           }
         }

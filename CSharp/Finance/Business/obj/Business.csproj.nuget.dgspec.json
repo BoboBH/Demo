@@ -21,7 +21,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp2.1"
+          "netcoreapp2.2"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -34,7 +34,7 @@
           "https://dotnetfeed.blob.core.windows.net/dotnet-windowsdesktop/index.json": {}
         },
         "frameworks": {
-          "netcoreapp2.1": {
+          "netcoreapp2.2": {
             "projectReferences": {
               "D:\\github\\Demo\\CSharp\\Finance\\Common\\Common.csproj": {
                 "projectPath": "D:\\github\\Demo\\CSharp\\Finance\\Common\\Common.csproj"
@@ -49,7 +49,7 @@
         }
       },
       "frameworks": {
-        "netcoreapp2.1": {
+        "netcoreapp2.2": {
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -62,7 +62,7 @@
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.1.0, )",
+              "version": "[2.2.0, )",
               "autoReferenced": true
             },
             "MySql.Data.EntityFrameworkCore": {
@@ -107,7 +107,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp2.1"
+          "netcoreapp2.2"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -120,7 +120,7 @@
           "https://dotnetfeed.blob.core.windows.net/dotnet-windowsdesktop/index.json": {}
         },
         "frameworks": {
-          "netcoreapp2.1": {
+          "netcoreapp2.2": {
             "projectReferences": {}
           }
         },
@@ -131,7 +131,7 @@
         }
       },
       "frameworks": {
-        "netcoreapp2.1": {
+        "netcoreapp2.2": {
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -140,7 +140,7 @@
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.1.0, )",
+              "version": "[2.2.0, )",
               "autoReferenced": true
             },
             "System.Text.Encoding.CodePages": {

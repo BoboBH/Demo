@@ -13,5 +13,9 @@ namespace Business.Process
         {
             this.stockDBContext = stockdbContext;
         }
+        public AbsStockProcess()
+        {
+            this.stockDBContext = DataContextPool.GetDataContext<StockDBContext>();
+        }
     }
 }

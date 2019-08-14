@@ -20,6 +20,11 @@ namespace Business.Process
             this.needLoop = false;
         }
 
+        public AbsPendingRecordProcess():this(DataContextPool.GetDataContext<StockDBContext>())
+        {
+
+        }
+
         public override void Run()
         {
             log.InfoFormat("retrieving pending data ...");

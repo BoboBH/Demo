@@ -37,13 +37,13 @@ namespace Business.Data
             modelBuilder.Entity<StockPerf>().HasOne(p => p.StockInfo).WithMany().HasForeignKey(p => p.StockId);
             modelBuilder.Entity<StockInfo>().HasMany(s => s.Perfromances).WithOne(p=>p.StockInfo).HasForeignKey(p => p.StockId);
 
-            //modelBuilder.Entity<StrategySubject>().HasOne(p => p.StockInfo).WithMany().HasForeignKey(p => p.StockId);
-            //modelBuilder.Entity<StrategySubject>().HasOne(p => p.Strategy).WithMany().HasForeignKey(p => p.StrategyId);
-            //modelBuilder.Entity<Statement>().HasOne(p => p.StockInfo).WithMany().HasForeignKey(p => p.StockId);
-            //modelBuilder.Entity<Statement>().HasOne(p => p.Strategy).WithMany().HasForeignKey(p => p.StrategyId);
+            modelBuilder.Entity<StrategySubject>().HasOne(p => p.StockInfo).WithMany().HasForeignKey(p => p.StockId);
+            modelBuilder.Entity<StrategySubject>().HasOne(p => p.Strategy).WithMany().HasForeignKey(p => p.StrategyId);
+            modelBuilder.Entity<Statement>().HasOne(p => p.StockInfo).WithMany().HasForeignKey(p => p.StockId);
+            modelBuilder.Entity<Statement>().HasOne(p => p.Strategy).WithMany().HasForeignKey(p => p.StrategyId);
 
 
-            //modelBuilder.Entity<Strategy>().HasMany(s => s.Subjects).WithOne(p => p.Strategy).HasForeignKey(p => p.StrategyId);
+            modelBuilder.Entity<Strategy>().HasMany(s => s.Subjects).WithOne(p => p.Strategy).HasForeignKey(p => p.StrategyId);
 
             base.OnModelCreating(modelBuilder);
         }

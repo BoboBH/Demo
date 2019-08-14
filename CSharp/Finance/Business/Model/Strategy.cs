@@ -18,7 +18,16 @@ namespace Business.Model
         public string BenchmarkId { get; set; }
         [Column("description")]
         public string Description { get; set; }
-
+        [Column("status")]
+        public StrategyStatus Status { get; set; } = StrategyStatus.Pending;
         public List<StrategySubject> Subjects { get; set; }
+    }
+
+    public enum StrategyStatus
+    {
+        Pending = 1,
+        Submitted = 2,
+        Completed = 3,
+        Error = 4,
     }
 }

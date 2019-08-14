@@ -1,4 +1,5 @@
 ﻿using Common.Utility;
+using log4net;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -9,6 +10,7 @@ namespace Common.Http
 {
     public class HttpAPI
     {
+        protected ILog log;
         protected string domain;
         protected string userName;
         protected string password;
@@ -31,7 +33,7 @@ namespace Common.Http
 
         public HttpAPI():this(String.Empty, String.Empty, String.Empty,10000)
         {
-
+            log = LogUtils.GetLogger(this.GetType());
         }
         public HttpAPI(string userName, string password,string domain,int timeoutSeconds)
         {
@@ -69,6 +71,8 @@ namespace Common.Http
             }
             catch(Exception ex)
             {
+                log.ErrorFormat("Can not access {0} due to error:{1}", url, ex.Message);
+                log.Error(ex);
                 return String.Empty;
             }
         }

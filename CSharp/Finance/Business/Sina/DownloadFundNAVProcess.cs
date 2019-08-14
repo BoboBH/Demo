@@ -18,6 +18,7 @@ namespace Business.Sina
         public DownloadFundNAVProcess() : base(DataContextPool.GetDataContext<StockDBContext>())
         {
             api = new SinaHttpAPI();
+            this.needLoop = true;
         }
 
         public override List<StockInfo> GetPendingData()

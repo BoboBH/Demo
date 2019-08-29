@@ -37,11 +37,11 @@ BEGIN
 	create table #tmp_col(TransactionId uniqueidentifier,id int,  val nvarchar(max), colname varchar(max))
 	create table #tmp_change(id int IDENTITY(1,1), TransactionId uniqueidentifier,val nvarchar(max),colname varchar(max),CreatedOn datetime, UserId uniqueidentifier, ObjectId uniqueidentifier, ObjectTypeCode int)
 	create table #tmp_lastest(ObjectId uniqueidentifier,val nvarchar(max),colname varchar(max))
-	create table #tmp_report(ObjectId uniqueidentifier,ObjectTypeCode int,oldval nvarchar(max),newval nvarchar(max),colname varchar(max))
+	create table #tmp_report(ObjectId uniqueidentifier,ObjectTypeCode int,oldval nvarchar(max),newval nvarchar(max),colname varchar(max),coldisplayname varchar(max))
 	create table #tmp_STRINGMAPBASE(ObjectTypeCode int, AttributeName varchar(max),AttributeValue nvarchar(max),value nvarchar(max))	
-	create table #tmp_finalreport(ObjectId uniqueidentifier,objectName NVARCHAR(MAX),colname varchar(max),oldval nvarchar(max),newval nvarchar(max))
-	create table #tmp_changeby(CreatedOn datetime, UserId uniqueidentifier, ObjectId uniqueidentifier)
-	create table #tmp_finalchangeby(id int IDENTITY(1,1),CreatedOn datetime, UserId uniqueidentifier, ObjectId uniqueidentifier)
+	create table #tmp_finalreport(ObjectId uniqueidentifier,objectName NVARCHAR(MAX),colname varchar(max),oldval nvarchar(max),newval nvarchar(max),coldisplayname varchar(max))
+	create table #tmp_changeby(CreatedOn datetime, UserId uniqueidentifier, ObjectId uniqueidentifier,colname varchar(max))
+	create table #tmp_finalchangeby(id int IDENTITY(1,1),CreatedOn datetime, UserId uniqueidentifier, ObjectId uniqueidentifier,colname varchar(max))
 	--initialize tmp attr table
 	truncate table #tmp_attr
 	insert into #tmp_attr(entname,entdisplayname, colname, dispalyname)
@@ -80,11 +80,6 @@ BEGIN
 	 AND u.FullName NOT IN('Reo Admin','spdev1 Reo') 
 	 AND a.AttributeMask  LIKE ',%,'
 
-	 
-	 truncate table #tmp_changeby
-	 insert into #tmp_changeby(ObjectId, CreatedOn, UserId)
-	 select ObjectId, CreatedOn, UserId from #tmp_val
-
 	 --change history data
 	 truncate table #tmp_change
 	 insert into #tmp_change(TransactionId,UserId,ObjectId,CreatedOn,ObjectTypeCode, val,colname)
@@ -97,8 +92,11 @@ BEGIN
 	 where e.LogicalName = 'new_yffclientinfo' and  d.LogicalName in
 	 ('new_clientname','new_clienttype','new_clientstatus','new_expectedclosedate','new_chinesename','new_firstname','new_lastname','new_middle_name','new_idtype','new_idnumber','new_idexpiry','new_idissuecountrycode','new_birthday','new_gender','emailaddress','new_mobilephone','new_statementreportemail','new_countryofbirthcode','new_allow_ad','new_v2addresscountrycode','new_v2addressdetail','new_residentialcountry','new_residentialdetail','new_postalcountry','new_postaldetail','new_jobstatus','new_company','new_position')
 	 order by b.CreatedOn asc
-
-
+	 
+	 truncate table #tmp_changeby
+	 insert into #tmp_changeby(ObjectId, CreatedOn, UserId,colname)
+	 select ObjectId, CreatedOn, UserId,colname from #tmp_change
+	 
 	 --Lastest data
 	 truncate table #tmp_lastest
 	 insert into #tmp_lastest(ObjectId,colname,val)
@@ -161,18 +159,17 @@ BEGIN
 	where colName in ('new_birthday','new_idexpiry') 
 
 	update #tmp_report 
-	set colname = b.dispalyname
+	set coldisplayname = b.dispalyname
 	from #tmp_report a
 	inner join #tmp_attr b on a.colname = b.colname
-
+	
 	--get result except for lookup values
-	insert into #tmp_finalreport(ObjectId,objectName,colName,oldVal, newVal)
+	insert into #tmp_finalreport(ObjectId,objectName,colName,oldVal, newVal,coldisplayname)
 	select  a.ObjectId, ISNULL(b.new_chinesename, CONCAT(b.new_firstname,' ', b.new_enlastname)) AS ClientName, a.colName,
 	CASE WHEN dbo.string_split_first(a.oldval,',') IN('new_reoisocountry','systemuser','new_aecode_settings') THEN dbo.getLookupName(dbo.string_split_first(a.oldval,','), replace(a.oldval,concat(dbo.string_split_first(a.oldval,','),','),'')) ELSE  ISNULL(oldmap.value,a.oldval) END as oldValue, 
-	CASE WHEN dbo.string_split_first(a.oldval,',') IN('new_reoisocountry','systemuser','new_aecode_settings') THEN dbo.getLookupName(dbo.string_split_first(a.oldval,','), a.newval) ELSE  ISNULL(newmap.value,a.newval) END as newValue
-	--ISNULL(newmap.value,a.newval) as newValue,
-	--dbo.string_split_first(a.oldval,',') as lookupentity,
-	--replace(a.oldval,concat(dbo.string_split_first(a.oldval,','),','),'') as lkid
+	CASE WHEN dbo.string_split_first(a.oldval,',') IN('new_reoisocountry','systemuser','new_aecode_settings') THEN dbo.getLookupName(dbo.string_split_first(a.oldval,','), a.newval) ELSE  ISNULL(newmap.value,a.newval) END as newValue,
+	a.coldisplayname
+	 
 	  from #tmp_report a
 	inner join dev02.reohk_mscrm.dbo.new_yffclientinfoBase b  with(nolock) on a.ObjectId = b.new_yffclientinfoId
 	left join #tmp_STRINGMAPBASE oldmap   on a.ObjectTypeCode = oldmap.ObjectTypeCode and a.colname = oldmap.AttributeName   and  a.oldval = oldmap.AttributeValue
@@ -207,6 +204,8 @@ BEGIN
 	 where a.CreatedOn >= DATEADD(hh,-8,ISNULL(@p_EndDate,GETDATE()))
 	 AND u.FullName NOT IN('Reo Admin','spdev1 Reo')
 
+	 --select * from #tmp_val;
+
 	truncate table #tmp_col
 	insert into #tmp_col(TransactionId, id, val,colname)
 	select a.TransactionId , v.id, null as val, v.val as colname
@@ -216,7 +215,7 @@ BEGIN
 	INNER JOIN dev02.reohk_mscrm.dbo.systemuser u  with(nolock) on a.UserId = u.SystemUserId
 	 CROSS APPLY dbo.string_split(LEFT(RIGHT(AttributeMask, (LEN(AttributeMask)-1)), (LEN(RIGHT(AttributeMask, (LEN(AttributeMask)-1)))-1)),',')v
 	 where a.CreatedOn >= DATEADD(hh,-8,ISNULL(@p_EndDate,GETDATE()))
-	 AND u.FullName NOT IN('Reo Admin','spdev1 Reo')
+	 AND u.FullName NOT IN('Reo Admin','spdev1 Reo') AND LEN(AttributeMask) > 0
 
 
 	 --change history data
@@ -233,13 +232,16 @@ BEGIN
 	 order by b.CreatedOn asc
 	 
 	 --merge client change and client contact change, donot truncate changeby table
-	 insert into #tmp_changeby(ObjectId, CreatedOn, UserId)
-	 select b.new_clientId, a.CreatedOn, a.UserId from #tmp_val a
-	 inner join	dev02.reohk_mscrm.dbo.new_yffclientcontactBase b on a.ObjectId = b.new_yffclientcontactId
-
+	 insert into #tmp_changeby(ObjectId, CreatedOn, UserId,colname)
+	 select b.new_clientId, a.CreatedOn, a.UserId,CONCAT('Contact','_', contmap.value ,'_', a.colName)
+	 from #tmp_change a
+	 inner join	dev02.reohk_mscrm.dbo.new_yffclientcontactBase b on a.ObjectId = b.new_yffclientcontactId	 
+	 LEFT JOIN #tmp_STRINGMAPBASE contmap  on a.ObjectTypeCode = contmap.ObjectTypeCode and 'new_contacttype' = contmap.AttributeName  and  b.new_contacttype = contmap.AttributeValue
+	 --select * from #tmp_change;
 	 --Lastest data
 	 truncate table #tmp_lastest
 	 insert into #tmp_lastest(ObjectId,colname,val)
+	 select * from (
 	 select new_yffclientcontactId as ObjectId,CAST(colname as varchar(max)) as colname, val from( 
 	 select a.new_yffclientcontactId, 
 		CAST(a.new_contactstatus                   AS NVARCHAR(MAX)) AS new_contactstatus                 ,               
@@ -253,7 +255,8 @@ BEGIN
 	 ) as src  
 	UNPIVOT (
 			val FOR colname IN 
-			(new_contactstatus,new_countrycode,new_detail,new_firstname,new_lastname,new_phone)) AS UNPVT;
+			(new_contactstatus,new_countrycode,new_detail,new_firstname,new_lastname,new_phone)) AS UNPVT) as mm
+
 
 	--get entity change record 
 	truncate table #tmp_report
@@ -265,18 +268,22 @@ BEGIN
 	 group by ObjectId, colname) as b  on a.id = b.id) as od
 	 inner join #tmp_lastest nd on od.ObjectId=nd.ObjectId and od.colname = nd.colname
 	 where od.val <> nd.val;
-
+	 --select * from #tmp_report;
 	update #tmp_report 
-	set colname = b.dispalyname
+	set coldisplayname = CONCAT('Contact','_', contmap.value ,'_', b.dispalyname),
+	colname = CONCAT('Contact','_', contmap.value ,'_', a.colName)
 	from #tmp_report a
 	inner join #tmp_attr b on a.colname = b.colname
-
+	inner join dev02.reohk_mscrm.dbo.new_yffclientcontactBase c on a.ObjectId = c.new_yffclientcontactId
+	LEFT JOIN #tmp_STRINGMAPBASE contmap  on a.ObjectTypeCode = contmap.ObjectTypeCode and 'new_contacttype' = contmap.AttributeName  and  c.new_contacttype = contmap.AttributeValue
+	--select * from #tmp_finalreport;
 	--get result except for lookup values
-	insert into #tmp_finalreport(ObjectId,objectName,colName,oldVal, newVal)
+	insert into #tmp_finalreport(ObjectId,objectName,colName,oldVal, newVal,coldisplayname)
 	select  c.new_yffclientinfoId as ObjectId,ISNULL(c.new_chinesename,CONCAT(c.new_enfirstname,' ',c.new_enlastname)) as Client_Name, 
-	CONCAT('Contact','_', contmap.value ,'_', a.colName) AS colName,
+	a.colname AS colName,
 	CASE WHEN dbo.string_split_first(a.oldval,',') IN('new_reoisocountry','systemuser','new_aecode_settings') THEN dbo.getLookupName(dbo.string_split_first(a.oldval,','), replace(a.oldval,concat(dbo.string_split_first(a.oldval,','),','),'')) ELSE  ISNULL(oldmap.value,a.oldval) END as oldValue, 
-	CASE WHEN dbo.string_split_first(a.oldval,',') IN('new_reoisocountry','systemuser','new_aecode_settings') THEN dbo.getLookupName(dbo.string_split_first(a.oldval,','), a.newval) ELSE  ISNULL(newmap.value,a.newval) END as newValue
+	CASE WHEN dbo.string_split_first(a.oldval,',') IN('new_reoisocountry','systemuser','new_aecode_settings') THEN dbo.getLookupName(dbo.string_split_first(a.oldval,','), a.newval) ELSE  ISNULL(newmap.value,a.newval) END as newValue,
+	a.coldisplayname
 	--ISNULL(newmap.value,a.newval) as newValue,
 	--dbo.string_split_first(a.oldval,',') as lookupentity,
 	--replace(a.oldval,concat(dbo.string_split_first(a.oldval,','),','),'') as lkid
@@ -287,24 +294,27 @@ BEGIN
 	left join #tmp_STRINGMAPBASE newmap   on a.ObjectTypeCode = newmap.ObjectTypeCode and a.colname = newmap.AttributeName   and  a.newval = newmap.AttributeValue
 	LEFT JOIN #tmp_STRINGMAPBASE contmap  on a.ObjectTypeCode = contmap.ObjectTypeCode and 'new_contacttype' = contmap.AttributeName  and  b.new_contacttype = contmap.AttributeValue
 	order by c.new_yffclientinfoId ASC
-
+	--select * from #tmp_finalchangeby;
 	 truncate table #tmp_finalchangeby
-	 insert into #tmp_finalchangeby(ObjectId, CreatedOn, UserId)
-	 select ObjectId, CreatedOn, UserId from #tmp_changeby
+	 insert into #tmp_finalchangeby(ObjectId, CreatedOn, UserId,colname)
+	 select ObjectId, CreatedOn, UserId,colname from #tmp_changeby
 	 order by CreatedOn DESC
 
-	 select fr.ObjectId,fr.objectName,fr.colname,fr.oldval,fr.newval,DATEADD(hh,8,fcb.createdon) as LastModifiedOn,su.FullName as LastModifiedBy from #tmp_finalreport fr
+	 --select * from #tmp_finalreport;
+
+	 --TODO:Column name is different
+	 select fr.ObjectId,fr.objectName,fr.coldisplayname,fr.oldval,fr.newval,DATEADD(hh,8,fcb.createdon) as LastModifiedOn,su.FullName as LastModifiedBy from #tmp_finalreport fr
 	 inner join(
 		select a.* from #tmp_finalchangeby a
 		 INNER JOIN(
-			 select ObjectId,min(Id) as Id from #tmp_finalchangeby group by ObjectId
+			 select ObjectId,min(Id) as Id,colname from #tmp_finalchangeby group by ObjectId,colname
 		 ) b on a.ObjectId = b.ObjectId and a.id = b.Id
-	 ) fcb on fr.ObjectId = fcb.ObjectId
+	 ) fcb on fr.ObjectId = fcb.ObjectId and fr.colname = fcb.colname
 	 inner join dev02.reohk_mscrm.dbo.SystemUserBase su on su.SystemUserId = fcb.UserId
-
+	 order by fr.ObjectId , LastModifiedOn desc
 	 
 END
 GO
 GRANT EXEC ON  dbo.sp_ClientAuditReport TO cdbdev
 GO
---exec sp_ClientAuditReport '2019-02-01'
+--exec sp_ClientAuditReport '2019-08-29'

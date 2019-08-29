@@ -140,11 +140,11 @@ BEGIN
 
 	SELECT fr.ObjectId,fr.objectName,att.dispalyname as colname,fr.oldval,fr.newval, DATEADD(hh,8,bcu.createdon) as LastModifiedOn,su.FullName as LastModifiedBy FROM #tmp_finalreport fr
 	INNER JOIN(
-		select a.ObjectId, a.CreatedOn,a.UserId from #tmp_change a
+		select a.ObjectId, a.CreatedOn,a.UserId,b.colname from #tmp_change a
 		INNER JOIN(
-		  SELECT ObjectId, MAX(Id) AS Id from #tmp_change group by ObjectId
+		  SELECT ObjectId, MAX(Id) AS Id,colname from #tmp_change group by ObjectId,colname
 		) b ON a.ObjectId = b.ObjectId AND a.id = b.Id
-	) bcu on fr.ObjectId = bcu.ObjectId
+	) bcu on fr.ObjectId = bcu.ObjectId and fr.colname = bcu.colname
 	INNER JOIN dev02.reohk_mscrm.dbo.SystemUserBase su on su.SystemUserId = bcu.UserId
 	INNER JOIN #tmp_attr att on att.colname = fr.colname
 
@@ -153,4 +153,4 @@ GO
 GRANT EXEC ON  dbo.sp_BrokerAccountAuditReport TO cdbdev
 GO
 
---exec dbo.sp_BrokerAccountAuditReport '2019-01-01';
+--exec dbo.sp_BrokerAccountAuditReport '2019-08-29';

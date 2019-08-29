@@ -1,0 +1,13 @@
+2019-08-28 17:02:30,849 [14] INFO  MongoLogTest [(null)] - This is info log
+2019-08-28 17:02:33,408 [14] DEBUG MongoLogTest [(null)] - this is debug log
+2019-08-28 17:02:33,409 [14] ERROR MongoLogTest [(null)] - System.Exception: this is exception log
+2019-08-28 17:03:23,239 [14] INFO  MongoLogTest [(null)] - This is info log
+2019-08-28 17:04:17,863 [14] INFO  MongoLogTest [(null)] - This is info log
+2019-08-28 17:04:20,136 [14] DEBUG MongoLogTest [(null)] - this is debug log
+2019-08-28 17:04:21,418 [14] ERROR MongoLogTest [(null)] - System.Exception: this is exception log
+2019-08-28 17:11:19,381 [13] INFO  MongoLogTest [(null)] - This is info log
+2019-08-28 17:11:27,105 [13] DEBUG MongoLogTest [(null)] - this is debug log
+2019-08-28 17:11:27,892 [13] ERROR MongoLogTest [(null)] - System.Exception: this is exception log
+2019-08-28 17:14:53,664 [13] INFO  MongoLogTest [(null)] - This is info log
+2019-08-28 17:15:14,184 [13] DEBUG MongoLogTest [(null)] - this is debug log
+2019-08-28 17:15:16,118 [13] ERROR MongoLogTest [(null)] - System.Exception: this is exception log

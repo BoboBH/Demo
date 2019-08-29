@@ -59,7 +59,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TagerHelperWebPage", "cshar
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TagHelpWebPage2", "csharp\TagHelpWebPage2\TagHelpWebPage2.csproj", "{08FEA4B5-ED22-4B64-A87A-1C8802212C8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketApp", "csharp\SocketApp\SocketApp.csproj", "{6145F3F0-58F4-4632-8E03-BD9F41F8B7C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SocketApp", "csharp\SocketApp\SocketApp.csproj", "{6145F3F0-58F4-4632-8E03-BD9F41F8B7C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebMvcViaMongo", "csharp\WebMvcViaMongo\WebMvcViaMongo.csproj", "{C8B14A27-07BE-494D-B99D-22355151B9F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitForMongod", "csharp\XUnitForMongod\XUnitForMongod.csproj", "{CA0AF987-000F-4C13-996B-360D31C06940}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -183,6 +187,14 @@ Global
 		{6145F3F0-58F4-4632-8E03-BD9F41F8B7C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6145F3F0-58F4-4632-8E03-BD9F41F8B7C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6145F3F0-58F4-4632-8E03-BD9F41F8B7C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8B14A27-07BE-494D-B99D-22355151B9F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8B14A27-07BE-494D-B99D-22355151B9F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8B14A27-07BE-494D-B99D-22355151B9F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8B14A27-07BE-494D-B99D-22355151B9F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA0AF987-000F-4C13-996B-360D31C06940}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA0AF987-000F-4C13-996B-360D31C06940}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA0AF987-000F-4C13-996B-360D31C06940}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA0AF987-000F-4C13-996B-360D31C06940}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -5,7 +5,9 @@ import java.util.List;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class IndexController {
@@ -16,11 +18,12 @@ public class IndexController {
     }
 	
 	@RequestMapping("/list")
-	 public String list(Model model) {
+	 public String list(Model model,@RequestParam String key) {
         ArrayList<String> users= new ArrayList<String>();
         users.add("bobo Huang");
         users.add("happy Huang");
         model.addAttribute("users", users);
+        model.addAttribute("key", key);
         return "list";
     }
 }

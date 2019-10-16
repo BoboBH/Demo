@@ -4,6 +4,11 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
+/**
+ * test configuration bind with a bean;
+ * @author bobo.huang
+ *
+ */
 @Component
 @PropertySource(value="classpath:application.properties",encoding = "UTF-8")
 public class NeoProperties {

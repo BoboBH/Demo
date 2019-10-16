@@ -1,10 +1,23 @@
+
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:shiro="http://www.w3.org/1999/xhtml">
 <head>
 <meta charset="UTF-8">
 <title>Index-test</title>
 </head>
 <body>
-	This is Index Page Of First SBA
+	<span>This is Index Page Of First SBA</span><br>
+	<shiro:guest>
+	  <p>Please <a href="/login">login</a> first.</p>
+	</shiro:guest>
+	<shiro:user>
+	<span><span th:text="${username}"></span>,欢迎您登录！</span>
+	<span>[<a href="/logoutm">Logout</a>]</span>
+	</shiro:user>
+	<span shiro:authenticated="true">
+	<br/><span>Welcome <span th:text="${username}"></span>,[<a href="/logoutm">Logout</a>]</span>
+	</span>
+	<br/>
+	<span>Principal is :<shiro:principal/></span>
 </body>
 </html>

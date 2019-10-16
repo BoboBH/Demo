@@ -18,6 +18,7 @@ public class SchoolMapperTest extends BaseUnitTest {
 	public void TestSchoolMapper(){
 	
 		School school = schoolMapper.getSchoolById("12234");
+		
 		TestCase.assertNotNull(school);
 		List<School> searchResult = schoolMapper.searchSchool(school);
 		TestCase.assertTrue(searchResult.size() > 0);

@@ -17,6 +17,8 @@ public class FristsbaApplication  extends SpringBootServletInitializer{
     }
 	public static void main(String[] args) {
 		System.out.println("bobo. huang");
+		//Do not stop at SilentExitException in Debug Model;
+		System.setProperty("spring.devtools.restart.enabled", "false");
 		SpringApplication.run(FristsbaApplication.class, args);
 	}
 

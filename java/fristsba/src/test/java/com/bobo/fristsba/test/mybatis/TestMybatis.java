@@ -12,8 +12,12 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
 
 import com.bobo.fristsba.FristsbaApplication;
+import com.bobo.fristsba.domain.Role;
 import com.bobo.fristsba.domain.Student;
+import com.bobo.fristsba.mapper.RoleMapper;
 import com.bobo.fristsba.mapper.StudentMapper;
+import com.bobo.fristsba.stock.domain.Stock;
+import com.bobo.fristsba.stock.mapper.StockMapper;
 
 
 
@@ -25,6 +29,10 @@ import com.bobo.fristsba.mapper.StudentMapper;
 @SpringBootTest(classes=FristsbaApplication.class)
 public class TestMybatis {
 	
+	@Autowired
+	private RoleMapper roleMapper;
+	@Autowired
+	private StockMapper stockMapper;
 	@Autowired
 	private StudentMapper studentMapper;
 	@Test
@@ -45,6 +53,20 @@ public class TestMybatis {
 		existSt = studentMapper.getStudentById(id);
 		Assert.assertNotNull(existSt);
 		Assert.assertEquals("Huang Happy", existSt.getName());
+	}
+	
+	@Test
+	public void TestRoleMapper(){
+		String id = "R_123456";
+		Role role = roleMapper.getRoleById(id);
+		Assert.assertNotNull(role);
+	}
+	
+	@Test
+	public void TestStockMapper(){
+		String id = "sz000422";
+		Stock stock = stockMapper.getStockById(id);
+		Assert.assertNotNull(stock);
 	}
 
 }

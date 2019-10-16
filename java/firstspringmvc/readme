@@ -5,4 +5,5 @@ Spring MVC + Shiro
 https://www.cnblogs.com/xiaohouzai/p/7795980.html
 
 Spring MVC:
-Xml Mapper + Sql(注入式) Mapper
+Xml Mapper + Sql(注入) Mapper
+Spring + Shiro + Shiro Tag

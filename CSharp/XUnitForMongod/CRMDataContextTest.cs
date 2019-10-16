@@ -15,7 +15,7 @@ namespace WebMvcViaMongo.Test
         private CRMDataContext dataContext;
         public CRMDataContextTest()
         {
-            this.dataContext = new CRMDataContext("mongodb://192.168.126.133:27017");
+            this.dataContext = new CRMDataContext("mongodb://192.168.126.134:27017");
         }
 
         [Fact]
@@ -55,6 +55,10 @@ namespace WebMvcViaMongo.Test
         {
             string id = "cfc2bfb1-4336-48b1-98ec-73ab8a3a063a";
             var log = this.dataContext.GetDbSet<LogModel>().Find(l => l.Id.Equals(id)).FirstOrDefault();
+            Assert.NotNull(log);
+            log.Timestamp = DateTime.Now;
+            this.dataContext.GetDbSet<LogModel>().ReplaceOne(l => l.Id == log.Id, log);
+            log = this.dataContext.GetDbSet<LogModel>().Find(l => l.Id.Equals(id)).FirstOrDefault();
             Assert.NotNull(log);
         }
 

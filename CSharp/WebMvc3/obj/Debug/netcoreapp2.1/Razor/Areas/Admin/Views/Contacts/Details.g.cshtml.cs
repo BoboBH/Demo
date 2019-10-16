@@ -225,7 +225,7 @@ using WebMvc3.Models;
             WriteLiteral("\r\n        </dd>\r\n    </dl>\r\n</div>\r\n<div>\r\n    ");
             EndContext();
             BeginContext(1578, 54, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6cd3f0e70b7848c1ba32af524b5c6b19", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2d5ad4b26e3b4698b88733d70bf015b8", async() => {
                 BeginContext(1624, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -260,7 +260,7 @@ using WebMvc3.Models;
             WriteLiteral(" |\r\n    ");
             EndContext();
             BeginContext(1640, 38, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "91a1adbcb9b64301ab99f94d5da364d9", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fc794adcb73b422490d24fbf2ff9aa59", async() => {
                 BeginContext(1662, 12, true);
                 WriteLiteral("Back to List");
                 EndContext();

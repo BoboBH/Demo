@@ -6,6 +6,7 @@ public class User {
 	private String email;
 	private String mobile;
 	private String password;
+	private boolean rememberme;
 	public Integer getId() {
 		return id;
 	}
@@ -35,6 +36,12 @@ public class User {
 	}
 	public void setPassword(String password) {
 		this.password = password;
+	}
+	public boolean getRememberme() {
+		return rememberme;
+	}
+	public void setRememberme(boolean rememberme) {
+		this.rememberme = rememberme;
 	}
 
 }

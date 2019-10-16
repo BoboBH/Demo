@@ -414,3 +414,15 @@
 /csharp/WcfService/bin
 /csharp/WcfService/obj
 /csharp/Finance/Business/obj
+/CSharp/WebPage/bin
+/CSharp/WebPage/obj
+/CSharp/WebMvcViaMongo/obj
+/CSharp/WebMvcViaMongo/bin
+/CSharp/WebMvcViaMongo/Log
+/EFCore/bin
+/EFCore/obj
+/dotcore
+/EFCore
+/ccsharp
+/CSharp/JWTWeb/obj
+/CSharp/JWTWeb/bin

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"    
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+<mapper namespace="com.bobo.firstspringmvc.mapper.UserMapper">
+	<resultMap id="userResult" type="com.bobo.firstspringmvc.bean.User">
+		<id property="id" column="id"></id>
+		<result property="name" column="user_name"></result>
+		<result property="email" column="email"></result>
+		<result property="mobile" column="mobile"></result>
+		<result property="password" column="password"></result>
+	</resultMap>
+	<select id="getAllUsers" resultMap="userResult">
+	   select id,user_name, email,mobile,password from user
+	</select>
+	<select id="getUserById" resultMap="userResult" parameterType="Integer">
+	   select id,user_name, email,mobile,password  from user where id=#{id}
+	</select>
+	<select id="getUserByUsername" resultMap="userResult" parameterType="String">
+	   select id,user_name, email,mobile,password  from user where user_name=#{username}
+	</select>
+	<select id="searchUser" resultMap="userResult" parameterType="com.bobo.firstspringmvc.bean.User">
+	   select id,user_name, email,mobile,password from user where  1=1 
+	   <if test="name != null" >
+	   	 AND user_name like '${name}%'
+	   </if>
+	   <if test="mobile != null" >
+	   	 AND mobile like '${mobile}%'
+	   </if>
+	   <if test="email != null" >
+	   	 AND email like '${email}%'
+	   </if>
+	</select>
+	<insert id="addUser" parameterType="com.bobo.firstspringmvc.bean.User">
+	  insert into user(id, user_name, email,mobile,password) select #{id},#{name},#{email},#{mobile},#{password} from dual where not exists (select id from user where id=#{id})
+	</insert>
+	<insert id="updateUser" parameterType="com.bobo.firstspringmvc.bean.User">
+	   update user set user_name = #{name},email=#{email},password = #{password} where id = #{id}
+	</insert>
+	<delete id="deleteUser" parameterType="Integer">
+	   delete from user where id = #{id}
+	</delete>
+</mapper>

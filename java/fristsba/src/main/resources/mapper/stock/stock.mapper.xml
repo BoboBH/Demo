@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"    
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+<mapper namespace="com.bobo.fristsba.stock.mapper.StockMapper">
+	<resultMap id="roleResult" type="com.bobo.fristsba.stock.domain.Stock">
+		<id property="id" column="id"></id>
+		<result property="name" column="name"></result>
+		<result property="symbol" column="symbol"></result>
+		<result property="market" column="market"></result>
+		<result property="briefName" column="briefname"></result>
+	</resultMap>
+	<select id="getAllStocks" resultMap="roleResult">
+	   select id,name,symbol, market,briefname from stock
+	</select>
+	<select id="getStockById" resultMap="roleResult" parameterType="String">
+	   select  id,name,symbol, market,briefname from stock where id=#{id}
+	</select>
+	<delete id="deleteStock" parameterType="String">
+	   delete from stock where id = #{id}
+	</delete>
+</mapper>

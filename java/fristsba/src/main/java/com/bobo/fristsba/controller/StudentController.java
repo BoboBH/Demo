@@ -3,6 +3,10 @@ package com.bobo.fristsba.controller;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -56,7 +60,7 @@ public class StudentController {
 	}
 	
 	@RequestMapping(value="authorize",method={RequestMethod.POST})	
-	public String login(Model model, String username, String password){
+	public String login(Model model, String username, String password, HttpServletRequest request, HttpServletResponse response){
 		User user = new User();
 		user.setUsername(username);
 		user.setPassword(password);
@@ -70,7 +74,12 @@ public class StudentController {
 		JWTToken jwtToken = new JWTToken(token);
 		//UsernamePasswordToken toekn = new UsernamePasswordToken(username, password);
 		try{
+			String jwttoken = TokenUtil.sign(username, password, dbuser.getId(), roleNames);
 			SecurityUtils.getSubject().login(jwtToken);
+			//make it pass JWTFilter
+			Cookie cookie = new Cookie("token", jwttoken);
+			cookie.setMaxAge(60*60*1000);//1 hour
+			response.addCookie(cookie);
 		}
 		catch(Exception ex){
 			return "login";

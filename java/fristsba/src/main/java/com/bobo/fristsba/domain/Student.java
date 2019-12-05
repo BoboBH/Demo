@@ -12,7 +12,9 @@ import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
+@Table(name="student")
 @Entity
 public class Student  implements Serializable{
 	/**
@@ -23,6 +25,16 @@ public class Student  implements Serializable{
 	private String id;
 	@Column(nullable=false, length=100)
 	private String name;
+	@Column(nullable=true,length=300)
+	public String address;
+	
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	
 	public String getName() {
 		return name;
 	}

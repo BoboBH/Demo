@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"    
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+<mapper namespace="com.bobo.firstspringmvc.mapper.UserRoleMapper">
+	<resultMap id="userRoleResult" type="com.bobo.firstspringmvc.bean.UserRole">
+		<id property="id" column="id"></id>
+		<result property="user_id" column="userId"></result>
+		<result property="role_id" column="roleId"></result>
+		<result property="remarks" column="remarks"></result>
+	</resultMap>
+	<select id="getAllUserRoles" resultMap="userRoleResult">
+	   select id,user_id,role_id,remarks from user_role
+	</select>
+	<select id="getUserRoleById" resultMap="userRoleResult" parameterType="String">
+	   select id,user_id,role_id,remarks from user_role where id=#{id}
+	</select>
+	<select id="searchUserRole" resultMap="userRoleResult" parameterType="com.bobo.firstspringmvc.bean.UserRole">
+	   select id,user_id,role_id,remarks from user_role where  1=1 
+	   <if test="userId != null" >
+	   	 AND user_id like '${userId}%'
+	   </if>
+	   <if test="roleId != null" >
+	   	 AND role_id like '${roleId}%'
+	   </if>
+	</select>
+	<insert id="addUserRole" parameterType="com.bobo.firstspringmvc.bean.UserRole">
+	  insert into user_role(id, user_id,role_id,remarks) select #{id},#{userId} ,#{roleId},#{remarks} from dual where not exists (select id from user_role where id=#{id})
+	</insert>
+	<insert id="updateUserRole" parameterType="com.bobo.firstspringmvc.bean.UserRole">
+	   update user_role set user_id = #{userId}, role_id = #{roleId}, remarks=#{remarks} where id = #{id}
+	</insert>
+	<delete id="deleteUserRole" parameterType="String">
+	   delete from user_role  where id = #{id}
+	</delete>
+</mapper>

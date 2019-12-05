@@ -11,7 +11,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EnableScheduling
 public class FristsbaApplication  extends SpringBootServletInitializer{
 
-  @Override
+   @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
         return application.sources(FristsbaApplication.class);
     }

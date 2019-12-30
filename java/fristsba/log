@@ -1,0 +1,52 @@
+10:54:39.072 INFO  c.bobo.fristsba.FristsbaApplication [50] - Starting FristsbaApplication on D076-SZ with PID 49204 (D:\github\Demo\java\fristsba\target\classes started by bobo.huang in D:\github\Demo\java\fristsba)
+10:54:39.074 INFO  c.bobo.fristsba.FristsbaApplication [675] - No active profile set, falling back to default profiles: default
+10:54:39.131 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [227] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+10:54:39.970 WARN  o.m.s.mapper.ClassPathMapperScanner [44] - Skipping MapperFactoryBean with name 'roleMapper' and 'com.bobo.fristsba.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+10:54:39.971 WARN  o.m.s.mapper.ClassPathMapperScanner [44] - Skipping MapperFactoryBean with name 'studentMapper' and 'com.bobo.fristsba.mapper.StudentMapper' mapperInterface. Bean already defined with the same name!
+10:54:39.971 WARN  o.m.s.mapper.ClassPathMapperScanner [44] - Skipping MapperFactoryBean with name 'userMapper' and 'com.bobo.fristsba.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+10:54:39.972 WARN  o.m.s.mapper.ClassPathMapperScanner [44] - No MyBatis mapper was found in '[com.bobo.fristsba.mapper]' package. Please check your configuration.
+10:54:40.234 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [244] - Multiple Spring Data modules found, entering strict repository configuration mode!
+10:54:40.237 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+10:54:40.467 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [182] - Finished Spring Data repository scanning in 216ms. Found 1 repository interfaces.
+10:54:40.484 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [244] - Multiple Spring Data modules found, entering strict repository configuration mode!
+10:54:40.486 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+10:54:40.507 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [363] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.bobo.fristsba.service.StudentRepository.
+10:54:40.507 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [182] - Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
+10:54:40.956 INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [188] - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+10:54:40.967 INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [426] - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+10:54:40.986 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [330] - Bean 'shiroConfig' of type [com.bobo.fristsba.config.ShiroConfig$$EnhancerBySpringCGLIB$$1e7dfcfa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:54:41.412 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [330] - Bean 'defaultDataSourceConfig' of type [com.bobo.fristsba.config.DefaultDataSourceConfig$$EnhancerBySpringCGLIB$$f634c3ef] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:54:41.456 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [330] - Bean 'defaultDataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:54:41.763 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [330] - Bean 'defaultSqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:54:41.779 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [330] - Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:54:41.781 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [330] - Bean 'userMapper' of type [com.sun.proxy.$Proxy67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:54:41.784 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [330] - Bean 'roleMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:54:41.785 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [330] - Bean 'roleMapper' of type [com.sun.proxy.$Proxy68] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:54:41.786 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [330] - Bean 'getShiroAuthorizingRealm' of type [com.bobo.fristsba.service.ShiroAuthorizingRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:54:41.788 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [330] - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:54:41.869 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [330] - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:54:41.922 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$344ac71b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:54:41.980 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [330] - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration$$EnhancerBySpringCGLIB$$9f3c824a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:54:42.003 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [330] - Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:54:42.554 INFO  o.s.b.w.e.tomcat.TomcatWebServer [90] - Tomcat initialized with port(s): 8080 (http)
+10:54:42.576 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Initializing ProtocolHandler ["http-nio-8080"]
+10:54:42.589 INFO  o.a.catalina.core.StandardService [173] - Starting service [Tomcat]
+10:54:42.590 INFO  o.a.catalina.core.StandardEngine [173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+10:54:42.800 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring embedded WebApplicationContext
+10:54:42.800 INFO  o.s.web.context.ContextLoader [296] - Root WebApplicationContext: initialization completed in 3668 ms
+10:54:43.041 INFO  com.zaxxer.hikari.HikariDataSource [110] - HikariPool-1 - Starting...
+10:54:43.234 INFO  com.zaxxer.hikari.HikariDataSource [123] - HikariPool-1 - Start completed.
+10:54:45.381 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [415] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+10:54:45.882 INFO  io.lettuce.core.EpollProvider [68] - Starting without optional epoll library
+10:54:45.885 INFO  io.lettuce.core.KqueueProvider [70] - Starting without optional kqueue library
+10:54:47.518 INFO  o.s.s.c.ThreadPoolTaskExecutor [171] - Initializing ExecutorService 'applicationTaskExecutor'
+10:54:47.588 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [237] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+10:54:47.765 WARN  o.t.templatemode.TemplateMode [150] - [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+10:54:47.811 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping [61] - Adding welcome page template: index
+10:54:48.193 INFO  o.s.s.c.ThreadPoolTaskScheduler [171] - Initializing ExecutorService 'taskScheduler'
+10:54:48.436 INFO  o.s.i.endpoint.EventDrivenConsumer [107] - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+10:54:48.437 INFO  o.s.i.c.PublishSubscribeChannel [64] - Channel 'application.errorChannel' has 1 subscriber(s).
+10:54:48.437 INFO  o.s.i.endpoint.EventDrivenConsumer [159] - started _org.springframework.integration.errorLogger
+10:54:48.452 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Starting ProtocolHandler ["http-nio-8080"]
+10:54:48.479 INFO  o.s.b.w.e.tomcat.TomcatWebServer [204] - Tomcat started on port(s): 8080 (http) with context path ''
+10:54:48.481 INFO  c.bobo.fristsba.FristsbaApplication [59] - Started FristsbaApplication in 10.011 seconds (JVM running for 10.668)

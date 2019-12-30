@@ -15,6 +15,11 @@
 	<select id="getStockById" resultMap="roleResult" parameterType="String">
 	   select  id,name,symbol, market,briefname from stock where id=#{id}
 	</select>
+	
+	
+	<update id="updateStock" parameterType="com.bobo.fristsba.stock.domain.Stock">
+	   update stock set name = #{name} ,symbol=#{symbol} where id = #{id}
+	</update>
 	<delete id="deleteStock" parameterType="String">
 	   delete from stock where id = #{id}
 	</delete>

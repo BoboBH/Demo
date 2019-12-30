@@ -12,4 +12,5 @@ public interface StockMapper {
 	List<Stock> getAllStocks();
 	Stock getStockById(String id);
 	void deleteStock(String id);
+	void updateStock(Stock stock);
 }

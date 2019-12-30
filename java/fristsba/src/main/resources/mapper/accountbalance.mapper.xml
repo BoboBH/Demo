@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"    
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+<mapper namespace="com.bobo.fristsba.mapper.AccountBalanceMapper">
+	<resultMap id="accountBalanceResult" type="com.bobo.fristsba.domain.AccountBalance">
+		<id property="id" column="id"></id>
+		<result property="creditAmount" column="credit_amount"></result>
+		<result property="debitAmount" column="debit_amount"></result>
+	</resultMap>
+	<select id="getAccountBalance" resultMap="accountBalanceResult">
+	   select id,credit_amount,debit_amount from account_balance
+	</select>
+	<select id="getAccountBalanceById" resultMap="accountBalanceResult" parameterType="String">
+	   select id,credit_amount,debit_amount from account_balance where id=#{id}
+	</select>
+	<insert id="addAccountBalance" parameterType="com.bobo.fristsba.domain.AccountBalance">
+	  insert into account_balance(id, credit_amount, debit_amount) select #{id},#{creditAmount},#{debitAmount} from dual where not exists (select id from account_balance where id=#{id})
+	</insert>
+	<insert id="updateAccountBalance" parameterType="com.bobo.fristsba.domain.AccountBalance">
+	   update account_balance set credit_amount = #{creditAmount},debit_amount = #{debitAmount}  where id = #{id}
+	</insert>
+	<delete id="deleteAccountBalance" parameterType="String">
+	   delete from account_balance where id = #{id}
+	</delete>
+</mapper>

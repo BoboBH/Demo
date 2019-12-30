@@ -21,7 +21,7 @@ public class ScheduleTask1 {
 	@Autowired
 	private RedisLockRegistry redisLockRegistry;
 	private int count = 0;
-	@Scheduled(cron="*/1 * * * * ?")
+	//@Scheduled(cron="*/1 * * * * ?")
 	private void process() throws InterruptedException{
 		if(count > 5){
 			System.out.println(this.getClass().getName()  + " is done. do not run again.");

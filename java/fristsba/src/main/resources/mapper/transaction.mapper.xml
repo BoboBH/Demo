@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"    
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+<mapper namespace="com.bobo.fristsba.mapper.TransactionMapper">
+	<resultMap id="transactionResult" type="com.bobo.fristsba.domain.Transaction">
+		<id property="id" column="id"></id>		
+		<result property="accountId" column="account_id"></result>
+		<result property="type" column="type"></result>
+		<result property="amount" column="amount"></result>
+		<result property="remarks" column="remarks"></result>
+	</resultMap>
+	<select id="getTransaction" resultMap="transactionResult">
+	   select id,account_id,type,amount,remarks from transaction
+	</select>
+	<select id="getTransactionById" resultMap="transactionResult" parameterType="String">
+	   select id,account_id,type,amount,remarks from transaction where id=#{id}
+	</select>
+	<insert id="addTransaction" parameterType="com.bobo.fristsba.domain.Transaction">
+	  insert into transaction(id, account_id, type,amount,remarks) select #{id},#{accountId},#{type},#{amount},#{remarks} from dual where not exists (select id from transaction where id=#{id})
+	</insert>
+	<insert id="updateTransaction" parameterType="com.bobo.fristsba.domain.Transaction">
+	   update transaction set account_id = #{accountId},type = #{type} ,amount = #{amount},remarks = #{remarks} where id = #{id}
+	</insert>
+	<delete id="deleteTransaction" parameterType="String">
+	   delete from transaction where id = #{id}
+	</delete>
+</mapper>

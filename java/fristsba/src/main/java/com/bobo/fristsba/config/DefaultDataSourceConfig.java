@@ -46,7 +46,6 @@ public class DefaultDataSourceConfig {
 	     * @return
 	     */
 	    @Bean(name = "transactionManager")
-	    @Primary
 	    public DataSourceTransactionManager transactionManager() {
 	        return new DataSourceTransactionManager(defaultDataSource());
 	    }

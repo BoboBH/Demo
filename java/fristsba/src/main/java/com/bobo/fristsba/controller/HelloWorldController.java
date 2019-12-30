@@ -20,6 +20,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.bobo.fristsba.FristsbaApplication;
 import com.bobo.fristsba.config.NeoProperties;
 import com.bobo.fristsba.domain.Student;
 import com.bobo.fristsba.service.StudentRepository;
@@ -27,7 +28,8 @@ import com.bobo.fristsba.service.StudentRepository;
 @RestController
 public class HelloWorldController{
 	
-	 
+
+	private static final org.slf4j.Logger log = org.slf4j.LoggerFactory.getLogger(HelloWorldController.class);
 
 	   
 	@Autowired
@@ -38,6 +40,7 @@ public class HelloWorldController{
 	private NeoProperties neoConfig;
 	@RequestMapping("hello")
 	public String index(){
+		log.info("Index returns :Hello Bobo Huang");
 		return "Hello Bobo Huang";
 	}
 	@RequestMapping("neoconfig")

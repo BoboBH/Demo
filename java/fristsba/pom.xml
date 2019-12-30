@@ -86,15 +86,15 @@
             <version>2.0.0</version>
         </dependency>
         <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <scope>runtime</scope>
-        </dependency>
-        <dependency>
       		<groupId>com.auth0</groupId>
      		 <artifactId>java-jwt</artifactId>
     		  <version>3.4.0</version>
 		</dependency>
+		<dependency>
+		     <groupId>org.apache.zookeeper</groupId>
+		     <artifactId>zookeeper</artifactId>
+		     <version>3.5.5</version>
+		 </dependency>
 	</dependencies>
 
 	<build>

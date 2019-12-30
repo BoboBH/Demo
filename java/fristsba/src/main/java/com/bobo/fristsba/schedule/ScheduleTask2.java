@@ -23,7 +23,7 @@ public class ScheduleTask2 {
 	private RedisLockRegistry redisLockRegistry;
 	private int count = 0;
 	private static final SimpleDateFormat dateFormate = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-	@Scheduled(cron="*/1 * * * * ?")
+	//@Scheduled(cron="*/1 * * * * ?")
 	public void reportCurrentTime() throws InterruptedException{
 		if(count > 5){
 			System.out.println(this.getClass().getName()  + " is done. do not run again.");

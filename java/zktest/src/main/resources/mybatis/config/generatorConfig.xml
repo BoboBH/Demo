@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+  <context id="context1">
+    <jdbcConnection connectionURL="jdbc:mysql://localhost:3306/stock?useUnicode=true&amp;characterEncoding=UTF-8&amp;serverTimezone=UTC" 
+    driverClass="com.mysql.jdbc.Driver" password="123456" userId="jeesite" />
+    <javaModelGenerator targetPackage="com.bobo.zktest.domain" targetProject="zktest" />
+    <sqlMapGenerator targetPackage="com.bboo.zktest.mapper.xml" targetProject="zktest" />
+    <javaClientGenerator targetPackage="com.bobo.zktest.mapper" targetProject="zktest" type="XMLMAPPER" />
+    <table schema="stock" tableName="stock" domainObjectName="Stock">    	
+    </table>
+  </context>
+</generatorConfiguration>

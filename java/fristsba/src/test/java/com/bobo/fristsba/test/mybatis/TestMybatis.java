@@ -67,6 +67,13 @@ public class TestMybatis {
 		String id = "sz000422";
 		Stock stock = stockMapper.getStockById(id);
 		Assert.assertNotNull(stock);
+		if(stock.getName().startsWith("st"))
+			stock.setName(stock.getName().substring(2));
+		else
+			stock.setName("st" + stock.getName());
+		stockMapper.updateStock(stock);
+		Stock stock2 = stockMapper.getStockById(id);
+		Assert.assertEquals(stock.getName(), stock2.getName());
 	}
 
 }

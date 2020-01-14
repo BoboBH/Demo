@@ -39,3 +39,5 @@ D:\github\Demo\csharp\RotativaPDFApp\bin\Debug\netcoreapp2.2\wwwroot\Rotativa\wk
 D:\github\Demo\csharp\RotativaPDFApp\bin\Debug\netcoreapp2.2\wwwroot\Rotativa\wkhtmltopdf.exe
 D:\github\Demo\csharp\RotativaPDFApp\bin\Debug\netcoreapp2.2\config\host.json
 D:\github\Demo\csharp\RotativaPDFApp\obj\Debug\netcoreapp2.2\RotativaPDFApp.csprojAssemblyReference.cache
+D:\github\Demo\csharp\RotativaPDFApp\obj\Debug\netcoreapp2.2\Razor\Views\Clients\PdfIndex.g.cshtml.cs
+D:\github\Demo\csharp\RotativaPDFApp\obj\Debug\netcoreapp2.2\Razor\Views\Clients\pdffooter.g.cshtml.cs

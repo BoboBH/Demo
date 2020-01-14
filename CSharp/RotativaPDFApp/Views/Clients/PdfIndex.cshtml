@@ -1,0 +1,617 @@
+﻿@model IEnumerable<RotativaPDFApp.Models.Client>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = null;
+}
+<html>
+<head>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: none;
+            margin: 0px;
+        }
+
+        tr {
+            padding: 0px;
+            border-collapse: collapse;
+            border: none;
+            margin: 0px;
+            height: 20px;
+        }
+
+        td {
+            padding: 10px;
+            border-collapse: collapse;
+            border: none;
+            margin: 0px;
+        }
+
+        p {
+            line-height: 120%;
+        }
+
+        p.big {
+            line-height: 150%;
+        }
+
+        tr {
+            line-height: 120%
+        }
+
+            tr.spacer {
+                height: 10px;
+                line-height: 10px;
+                border: none;
+            }
+
+        tr.head {
+            line-height: 150%;
+            background-color: lightgray;
+            border: 1px solid black;
+        }
+
+        tr.border-normal {
+            border: 1px solid black;
+        }
+
+        tr.border-top {
+            border-top: 1px solid black;
+            border-bottom: none;
+        }
+
+        tr.border-bottom {
+            border-bottom: 1px solid black;
+            border-top: none;
+        }
+
+        tr.border-top-bottom {
+            border-bottom: 1px solid black;
+            border-top: 1px solid black;
+        }
+
+        td.border-none {
+            border: none;
+        }
+
+        td.head {
+            border: 1px solid black;
+        }
+
+        tr.border-none {
+            border: none;
+        }
+
+        td.border-left {
+            border-left: 1px solid black;
+            border-top: none;
+            border-right: none;
+            border-bottom: none;
+        }
+
+        td.border-right {
+            border-right: 1px solid black;
+            border-top: none;
+            border-left: none;
+            border-bottom: none;
+        }
+
+        td.border-left-right {
+            border-right: 1px solid black;
+            border-top: none;
+            border-left: 1px solid black;
+            border-bottom: none;
+        }
+    </style>
+
+</head>
+<!--Table设计为12列，与bootstrap的div布局一致-->
+<body>
+    <table>
+        <thead>
+            <tr style="border:none">
+                <td style="width:8.3%;border:none"></td>
+                <td style="width:8.3%;border:none"></td>
+                <td style="width:8.3%;border:none"></td>
+                <td style="width:8.3%;border:none"></td>
+                <td style="width:8.3%;border:none"></td>
+                <td style="width:8.3%;border:none"></td>
+                <td style="width:8.3%;border:none"></td>
+                <td style="width:8.3%;border:none"></td>
+                <td style="width:8.3%;border:none"></td>
+                <td style="width:8.3%;border:none"></td>
+                <td style="width:8.3%;border:none"></td>
+                <td style="width:8.7%; border:none"></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="12">
+                    <p class="big">
+                        <strong>锋证券有限公司 Yunfeng Securities Limited</strong><br />
+                        中央编号：CE No.: AYT670<br />
+                        香港中环康乐广场8号交易广场一座3201-3204室<br />
+                        Suites 3201-3204, One Exchange Square, 8 Connaught Place, Central, Hong Kong
+                    </p>
+                </td>
+            </tr>
+            <tr class="border-normal">
+                <td colspan="6" class="border-right" style="background-color:lightgray">
+                    <br /><strong>开户表格-个人账户</strong><br /><br /><strong>Account Opending Form - Invidual Account</strong>&nbsp;
+
+                </td>
+                <td class="border-right" colspan="6"><br />云锋证券有限公司<br /><br />Yunfeng Securities Limited</td>
+            </tr>
+            <tr class="spacer"><td colspan="12"></td></tr>
+            <tr class="border-normal">
+                <td class="border-right" colspan="6"><strong>账户类型-Account Type</strong></td>
+                <td class="border-right" colspan="6"><strong>账户号码-Account No.</strong></td>
+            </tr>
+            <tr class="border-normal">
+                <td class="border-right" colspan="6"><input type="checkbox" checked="checked" />现金证券账户 Security Cash Account</td>
+                <td class="border-right" colspan="6">500123502</td>
+            </tr>
+            <tr class="border-normal">
+                <td class="border-right" colspan="6"><input type="checkbox" />证券保证金账户 Security Cash Account</td>
+                <td class="border-right" colspan="6"></td>
+            </tr>
+            <tr class="spacer"><td colspan="12"></td></tr>
+            <tr class="head border-normal"><td class="border-left-right" colspan="12"><strong>个人资料-Personal Information</strong></td></tr>
+            <tr class="border-normal">
+                <td class="border-right" colspan="6">
+                    <p>
+                        中文姓名<br /><br />
+                        黄齐仁<br />
+                        <br />
+                        <br /><br /><br />
+                        必须与身份证/护照相同 Sameas IdentityCard/Passport
+                    </p>
+                </td>
+                <td class="border-right" colspan="6">
+                    <p>
+                        英文 English <br />
+                        姓氏 SurName<br />
+                        Huang<br />
+                        名字 First Name<br />
+                        QIREN<br /><br /><br />
+                        必须与身份证/护照相同 Sameas IdentityCard/Passport
+                    </p>
+                </td>
+            </tr>
+            <tr class="border-normal">
+                <td colspan="2">性别<br />Gender</td>
+                <td colspan="2"><input type="checkbox" checked="checked" />男 M</td>
+                <td class="border-right" colspan="2"><input type="checkbox" />女 F</td>
+                <td colspan="3">出生年月(年/月/日)<br />Date of Birth(yyyy/mm/dd)</td>
+                <td class="border-right" colspan="3">1980-08-08</td>
+            </tr>
+            <tr class="border-normal">
+                <td colspan="2">出生国家<br />Country of Birth</td>
+                <td class="border-right" colspan="10">中国香港</td>
+            </tr>
+            <tr class="border-normal">
+                <td colspan="2">国籍<br />Nationality</td>
+                <td colspan="2"><input type="checkbox" checked="checked" />香港<br />Hong Kong</td>
+                <td colspan="2"><input type="checkbox" />中国<br />China</td>
+                <td colspan="2"><input type="checkbox" />其他(请说明)<br />Other(Please specify)</td>
+                <td colspan="4"></td>
+            </tr>
+            <tr class="border-normal">
+                <td colspan="2">证件类别<br />Identify Document Type</td>
+                <td class="border-right" colspan="2">大陆身份证</td>
+                <td colspan="2">证件号码<br />Identification No.</td>
+                <td class="border-right" colspan="2">4222225879545654568</td>
+                <td colspan="2">签发国家<br />Country Of Issue</td>
+                <td class="border-right" colspan="2">China</td>
+            </tr>
+            <tr class="border-normal">
+                <td colspan="2">其他证件类别（如适用）<br />Other Identify Document Type(if applicable)</td>
+                <td colspan="2" class="border-right">护照</td>
+                <td colspan="2">证件号码<br />Identification No.</td>
+                <td colspan="2" class="border-right">G123452435</td>
+                <td colspan="2">签发国家<br />Country Of Issue</td>
+                <td class="border-right" colspan="2">China</td>
+            </tr>
+            <tr class="border-normal">
+                <td colspan="2">住宅地址<br />Residential Address</td>
+                <td class="border-right" colspan="10">湖北省宜昌市伍家岗区建设新村40-123号</td>
+            </tr>
+            <tr class="border-normal">
+                <td colspan="2">地址邮件地址<br />Email Address</td>
+                <td colspan="4" class="border-right">bobo.huang@yff.com</td>
+                <td colspan="2">手机号码<br />Mobile Number</td>
+                <td class="border-right" colspan="4">+861363278408</td>
+            </tr>
+            <tr class="border-normal">
+                <td colspan="2">职业信息<br />Occupation Information</td>
+                <td colspan="2"><input type="checkbox" checked="checked" />受雇(Employeed)</td>
+                <td colspan="2"><input type="checkbox" />自雇/自营<br />Self-employeed</td>
+                <td colspan="2"><input type="checkbox" />学生<br />Sudent</td>
+                <td colspan="2"><input type="checkbox" />家庭主妇<br />Housewife</td>
+                <td class="border-right" colspan="2"><input type="checkbox" />退休<br />Retired</td>
+            </tr>
+            <tr class="border-normal">
+                <td class="border-left-right" colspan="12">
+                    * 请填写并选择您的公司名称/职位/行业<br />
+                    *  Please fill in and select your Company Name/Job Title/ Industry Group
+                </td>
+            </tr>
+            <tr class="border-normal">
+                <td class="border-left" colspan="3">
+                    公司名称Company Name<br />
+                    (如适用) (if applicable)
+                </td>
+                <td class="border-right" colspan="9">深圳市有鱼智能科技有限公司</td>
+            </tr>
+            <tr class="border-normal">
+                <td colspan="3">
+                    职位 Job Title<br />
+                    (如适用) (if applicable)
+                </td>
+                <td colspan="2">开发</td>
+                <td class="border-right" colspan=7">
+                    *在该公司/该行业共多少年No. of Years in that Company/ Industry<br />
+                    (如适用) (if applicable)  Eight 年/Year(s)
+                </td>
+            </tr>
+            <tr>
+                <td class="border-left-right" colspan="12">
+                    *行业（自选一项）：<br />
+                    Industry(Please select one)<br />
+                </td>
+            </tr>
+            <tr>
+                <td class="border-left-right" colspan="12">
+                    <input type="checkbox" checked="checked" />金融/银行/保险<br />
+                    Finance / Banking / Insurance
+                </td>
+            </tr>
+            <tr>
+                <td class="border-left-right" colspan="12">
+                    <input type="checkbox" checked="checked" />法律/教育培训/医疗/通讯/公共服务/设计/广告传媒<br />
+                    Legal / Education / Healthcare / Communications / Public Services / Design / Advertising &amp; Media
+
+                </td>
+            </tr>
+            <tr>
+                <td class="border-left-right" colspan="12">
+                    <input type="checkbox" checked="checked" />会计 / 农业/ 资讯科技 /房产 / 工程 / 进出口贸易 / 物流 / 制造业 / 旅游业<br />
+                    Accounting / Agriculture / Information Technology / Real Estate / Engineering / Import & Export Trading / Logistics / Manufacturing / Travel and Tourism
+                </td>
+            </tr>
+            <tr class="border-bottom">
+                <td class="border-left-right" colspan="12">
+                    <input type="checkbox" checked="checked" />博彩业/货币兑换/能源及矿业/慈善机构/珠宝/休闲及娱乐业<br />
+                    Gambling / Money Exchange / Energy and Mining / Charity / Jewelry / Leisure and Entertainment
+                </td>
+            </tr>
+            <tr class="border-bottom">
+                <td class="border-left-right" colspan="12">
+                    <input type="checkbox" checked="checked" />零售/电子商贸/餐饮业/建造业<br />
+                    Retail /  E-Commerce / Food & Beverage / Construction
+                </td>
+            </tr>
+            <tr><td colspan="12" class="border-right" style="border-left:1px solid black;">资金来源(可选多于一项 ）Sources of Fund (Can choose more than one)</td></tr>
+            <tr>
+                <td class="border-left" colspan="4"><input type="checkbox" checked="checked" /> Salary, Commission,Bonus </td>
+                <td colspan="4"><input type="checkbox" checked="checked" />营业/业务收入 Own Business </td>
+                <td class="border-right" colspan="4"><input type="checkbox" checked="checked" />储蓄 Savings</td>
+            </tr>
+            <tr>
+                <td class="border-left" colspan="4"><input type="checkbox" checked="checked" />投资获利 Investment Return </td>
+                <td colspan="4"><input type="checkbox" checked="checked" />出售物业 Sale of </td>
+                <td class="border-right" colspan="4"><input type="checkbox" checked="checked" />租金收入 Rental Income</td>
+            </tr>
+            <tr class="border-bottom">
+                <td class="border-left" colspan="4"><input type="checkbox" checked="checked" />家人给予 Family Gift</td>
+                <td class="border-right" colspan="8"><input type="checkbox" checked="checked" />退休金 Pension</td>
+            </tr>
+            <tr><td colspan="12" class="border-right" style="border-left:1px solid black;">财富来源（可选多于一项）Sources of Wealth (Can choose more than one )</td></tr>
+            <tr>
+                <td class="border-left" colspan="6"><input type="checkbox" checked="checked" />从工作中转入赚取收入 Earnings from Work</td>
+                <td class="border-right" colspan="6"><input type="checkbox" checked="checked" />从营业/业务中赚取收入Earnings from Business</td>
+            </tr>
+            <tr>
+                <td class="border-left" colspan="6"><input type="checkbox" checked="checked" />个人储蓄Personal Savings  </td>
+                <td class="border-right" colspan="6"><input type="checkbox" checked="checked" />投资获利Investment Return</td>
+            </tr>
+            <tr class="border-bottom">
+                <td class="border-left" colspan="6"><input type="checkbox" checked="checked" />遗产继承/家人给予Inheritance/ Gift    </td>
+                <td class="border-right" colspan="8"><input type="checkbox" checked="checked" />出售资产（例如汽车、物业） Sale of Assets (e.g. Car, Property)</td>
+            </tr>
+            <tr class="head border-bottom"><td class="border-left-right" colspan="12"><strong>付款方式 (用作资金提取)  Payment Method (for fund withdrawal)</strong></td></tr>
+            <tr><td class="border-left-right" colspan="12"><input type="checkbox" checked="checked" />支票 Cheque</td></tr>
+            <tr>
+                <td class="border-left-right" colspan="12">
+                    <input type="checkbox" checked="checked" />银行电汇（所有费用由账户持有人支付）（请填写下一个部分之银行资料）<br />
+                    Wire Transfer (all charges shall be borne by the account holder) (Please complete the bank details in the next section)
+                </td>
+            </tr>
+            <tr class="head"><td colspan="12" class="border-left-right"><strong>银行资料　Bank Details</strong></td></tr>
+            <tr>
+                <td class="border-left-right" colspan="12">
+                    银行账户持有人名称 Name of Bank Account Holder<br />
+                    黄齐仁<br /><br />
+                    *提款人与证券账户持有人必须是同一人，我们原则上不接受第三方汇款，不接受的汇款将会被退回，请您务必留意，银行处理退回款项到账，可能有其手续，手续需时，如出现退款，请客户与银行联络并跟进。我们不能代为跟进，客户亦承担一切相关手续费用。<br />
+                    The Bank Account Holder name must be the same as Client's name. We generally do not accept third party payments. Rejected payments will be refunded to the client. However, kindly note that banks may have its own process on the receipt of refund. The process may take some time. While it is the client’s own responsibility to contact the relevant bank for the refund, we can’t follow up on behalf of the client for the said refund. Moreover, client has to bear all related costs (if any) on the refund.
+                </td>
+            </tr>
+            <tr class="border-top"><td class="border-left-right" colspan="12">银行名称 Name of Bank<br />汇丰银行</td></tr>
+            <tr class="border-top">
+                <td class="border-left-right" colspan="6">账户号码<br />0120412587954</td>
+                <td class="border-right" colspan="6">收款银行所在国家 Country of Receiving Bank<br />China</td>
+            </tr>
+            <tr class="border-top">
+                <td class="border-left-right" colspan="6">SWIFT 代码 SWIFT Code<br />HKUIPQDDD</td>
+                <td class="border-right" colspan="6">收款银行地址 Address of Receiving Bank<br />中环交易广场12楼</td>
+            </tr>
+            <tr class="border-top">
+                <td class="border-left-right" colspan="12">银行其他信息 (如中转行资料)  Other Banking Information (e.g. Information of Correspondent Bank)<br />Other Info</td>
+            </tr>
+            <tr class="border-top">
+                <td class="border-left" colspan="4">账户类别 Account Type</td>
+                <td colspan="3"><input type="checkbox" checked="checked" />储蓄账户 Savings Account </td>
+                <td colspan="1">或者(or)&nbsp;&nbsp;</td>
+                <td class="border-right" colspan="4"><input type="checkbox" />往来账户 Current Account </td>
+            </tr>
+            <tr class="head"><td class="head" colspan="12"><strong>投资概况Investment Profile</strong></td></tr>
+            <tr class="border-top"><td class="border-left-right" colspan="12">全年收入(港币) Annual Income (HKD)    </td></tr>
+            <tr>
+                <td class="border-left" colspan="6"><input type="checkbox" checked="checked" />&lt; $300,000</td>
+                <td class="border-right" colspan="6"><input type="checkbox" checked="checked" />$300,001 - $600,000</td>
+            </tr>
+            <tr>
+                <td class="border-left" colspan="6"><input type="checkbox" checked="checked" />$600,001 - $900,000</td>
+                <td class="border-right" colspan="6"><input type="checkbox" checked="checked" />$900,001 - $1,200,000</td>
+            </tr>
+            <tr>
+                <td class="border-left-right" colspan="12"><input type="checkbox" checked="checked" />&gt; $1,200,001</td>
+            </tr>
+            <tr class="border-top"><td class="border-left-right" colspan="12">目前您可作为投资用途的资产净值为  (港币)  Approximate net investable assets (HKD)</td></tr>
+            <tr>
+                <td class="border-left" colspan="6"><input type="checkbox" checked="checked" />&lt; $1,000,000 </td>
+                <td class="border-right" colspan="6"><input type="checkbox" />$1,000,001 - $3,000,000 </td>
+            </tr>
+            <tr>
+                <td class="border-left" colspan="6"><input type="checkbox" />$3,000,001 - $8,000,000   </td>
+                <td class="border-right" colspan="6"><input type="checkbox" />&gt;$8,000,000 </td>
+            </tr>
+            <tr class="border-top"><td class="border-left-right" colspan="12">投资目标Investment Objective</td></tr>
+            <tr>
+                <td class="border-left" colspan="6"><input type="checkbox" checked="checked" />保本/对冲 Capital Preservation/Hedging </td>
+                <td class="border-right" colspan="6"><input type="checkbox" />股息／利息收入 Dividend / Interest Income </td>
+            </tr>
+            <tr>
+                <td class="border-left" colspan="6"><input type="checkbox" />高增长/资本增值 High Growth/Capital Growth </td>
+                <td class="border-right" colspan="6"><input type="checkbox" />投机 Speculation</td>
+            </tr>
+            <tr class="border-top"><td class="border-left-right" colspan="12">投资经验 Investment Experience   (可选多于一项  can choose more than one)</td></tr>
+            <tr>
+                <td class="border-left" colspan="6">股票 Security</td>
+                <td colspan="2"><input type="checkbox" checked="checked" />&lt;1年 year</td>
+                <td colspan="2"><input type="checkbox" />1-5年 years</td>
+                <td class="border-right" colspan="2"><input type="checkbox" />&gt;5年 years</td>
+            </tr>
+            <tr>
+                <td class="border-left" colspan="6">基金 Funds</td>
+                <td colspan="2"><input type="checkbox" checked="checked" />&lt;1年 year</td>
+                <td colspan="2"><input type="checkbox" />1-5年 years</td>
+                <td class="border-right" colspan="2"><input type="checkbox" />&gt;5年 years</td>
+            </tr>
+            <tr>
+                <td class="border-left" colspan="6">债券 Bonds</td>
+                <td colspan="2"><input type="checkbox" checked="checked" />&lt;1年 year</td>
+                <td colspan="2"><input type="checkbox" />1-5年 years</td>
+                <td class="border-right" colspan="2"><input type="checkbox" />&gt;5年 years</td>
+            </tr>
+            <tr>
+                <td class="border-left" colspan="6">
+                    #衍生产品基金/衍生产品/结构性产品/
+                    杠杆式外汇交易/大宗商品（无论是否交易所上市）*<br />
+                    #Derivative Funds/ Derivatives / Structured Products / Leveraged Foreign Exchange Trading/ Commodities(on-Exchange or off-Exchange)
+                </td>
+                <td colspan="2"><input type="checkbox" checked="checked" />&lt;1年 year</td>
+                <td colspan="2"><input type="checkbox" />1-5年 years</td>
+                <td class="border-right" colspan="2"><input type="checkbox" />&gt;5年 years</td>
+            </tr>
+            <tr class="border-top">
+                <td class="border-left-right" colspan="12">
+                    *您是否曾受有关衍生产品性质和风险的知识培训或修读相关课程？<br />
+                    Have you ever undergone training or attended courses on derivative products with general knowledge of the nature and risk of derivatives?
+                </td>
+            </tr>
+            <tr>
+                <td class="border-left" colspan="3"><input type="checkbox" checked="checked" />是 Yes</td>
+                <td class="border-right" colspan="9"><input type="checkbox" />否 No</td>
+            </tr>
+            <tr class="border-top">
+                <td class="border-left-right" colspan="12">
+                    *您现时或过去是否从事与衍生产品相关的工作？<br />
+                    Are you currently or previously working in industry in relation to derivative products?
+                </td>
+            </tr>
+            <tr>
+                <td class="border-left" colspan="3"><input type="checkbox" checked="checked" />是 Yes</td>
+                <td class="border-right" colspan="9"><input type="checkbox" />否 No</td>
+            </tr>
+            <tr class="border-top">
+                <td class="border-left-right" colspan="12">
+                    *您是否在过去三年曾买卖过至少五次任何衍生产品的交易（包括嵌入式衍生性金融工具及不论是否在交易所买卖）？<br />
+                    Have you traded at least 5 transactions in any derivative products (including embedded derivatives financial instruments and whether traded on an exchange or not) within the past 3 years?
+                </td>
+            </tr>
+            <tr>
+                <td class="border-left" colspan="3"><input type="checkbox" checked="checked" />是 Yes</td>
+                <td class="border-right" colspan="9"><input type="checkbox" />否 No</td>
+            </tr>
+            <tr class="border-top">
+                <td class="border-left-right" colspan="12">
+                    *请注意：如您在任何一项的投资经验少于一年/在任何二项答案为“否”，您将会视为没有上述产品经验的人士，上述产品可能并不适合您，惟如您仍计划进行上述产品的交易，您可能需要进行额外的评估，以确认您对上述产品的认识。<br />
+                    Note: If any of your investment experience is less than one year / any two of the replies are “No”, you will be deemed as not having relevant experience relating to the stated products.  The stated products may not be suitable to you.  However, if you decide to proceed to effect the transaction in the stated products, you may be subject to additional assessment to ascertain your knowledge in the stated products.
+                </td>
+            </tr>
+            <tr class="border-top">
+                <td class="border-left-right" colspan="12">最高学历Highest Educational Attainment </td>
+            </tr>
+            <tr>
+                <td class="border-left" colspan="3"><input type="checkbox" checked="checked" />小学或以下Primary or below   </td>
+                <td colspan="3"><input type="checkbox" />中学 Secondary  </td>
+                <td class="border-right" colspan="6"><input type="checkbox" />大专或以上 College or above</td>
+            </tr>
+            <tr class="border-top">
+                <td class="border-left-right" colspan="12">
+                    <strong>个人保证金客户与有关联保证金客户资料   Information of an Individual Margin Client and related parties</strong><br />
+                    [只适用于证券保证金账户客户填写]  [For Securities Margin Account Only]
+                </td>
+            </tr>
+            <tr class="border-top">
+                <td class="border-left-right" colspan="12">
+                    1. 您的配偶是否已在云锋证券及任何本集团内的公司或云锋证券关联公司开立保证金账户？<br />
+                    Is your spouse a margin customer of Yunfeng Securities Limited, any members within its group or any related entities?
+                </td>
+            </tr>
+            <tr>
+                <td class="border-left" colspan="3"><input type="checkbox" checked="checked" />是 Yes</td>
+                <td class="border-right" colspan="9"><input type="checkbox" />否 No</td>
+            </tr>
+            <tr>
+                <td class="border-left" colspan="3">户口号码 Account Number</td>
+                <td colspan="3">50001234</td>
+                <td colspan="3">户口名称 Account Name</td>
+                <td class="border-right" colspan="3">李云</td>
+            </tr>
+            <tr class="spacer border-top"><td colspan="12"></td></tr>
+            <tr class="head border-top"> <td class="border-left-right" colspan="12"><strong>声明及确认 Declaration and Acknowledgment</strong></td></tr>
+            <tr class="border-top">
+                <td class="border-left-right" colspan="12">
+                    1.阁下, 是否为香港证券及期货事务监察委员会的持牌人或注册人？<br />
+                    Are you a Licensed or Registered Person of the Securities and Futures Commission of Hong Kong?
+                </td>
+            </tr>
+            <tr>
+                <td class="border-left" colspan="3"><input type="checkbox" checked="checked" />是 Yes</td>
+                <td class="border-right" colspan="9"><input type="checkbox" />否 No</td>
+            </tr>
+            <tr>
+                <td class="border-left-right" colspan="12">
+                    2.阁下, 是否为香港证券及期货事务监察委员会的任何持牌人或注册人的董事或雇员？<br />
+                    Are you a director or an employee of any Licensed or Registered Person of the Securities and Futures Commission of Hong Kong?
+                </td>
+            </tr>
+            <tr>
+                <td class="border-left" colspan="3"><input type="checkbox" checked="checked" />是 Yes</td>
+                <td class="border-right" colspan="9"><input type="checkbox" />否 No</td>
+            </tr>
+            <tr>
+                <td class="border-left-right" colspan="12">
+                    3.阁下, 是否与云锋证券有限公司或云锋金融集团或其附属公司之董事或雇员有亲属关系？<br />
+                    Do you have any relationship with the director(s), employee(s) or representative(s) of the Company and any members within its group or any related entities?
+                </td>
+            </tr>
+            <tr>
+                <td class="border-left" colspan="3"><input type="checkbox" checked="checked" />否 No</td>
+                <td class="border-right" colspan="9"><input type="checkbox" />是 Yes 董事或职员之姓名 Name of the director(s) or employee</td>
+            </tr>
+            <tr><td class="border-left" colspan="2">(s):李云</td><td class="border-right" colspan="10"></td></tr>
+            <tr>
+                <td class="border-left" colspan="2"></td>
+                <td class="border-right" colspan="10">关系 Relationship</td>
+            </tr>
+            <tr>
+                <td class="border-left" colspan="2"></td>
+                <td class="border-right" colspan="10"><input type="checkbox" checked="checked" />丈夫/妻子 Husband / Wife </td>
+            </tr>
+            <tr>
+                <td class="border-left" colspan="2"></td>
+                <td class="border-right" colspan="10"><input type="checkbox" />父亲/母亲/儿子/女儿 Father / Mother / Son / Daughter</td>
+            </tr>
+            <tr>
+                <td class="border-left" colspan="2"></td>
+                <td colspan="6"><input type="checkbox" />其他 Other:</td>
+                <td class="border-right" colspan="4">其他关系</td>
+            </tr>
+            <tr>
+                <td class="border-left-right" colspan="12">
+                    4.阁下，是否曾涉及违法或违反监管守则而被捕/受审/ 被判刑/被纪律处分?<br />
+                    Have you been arrested/ tried/ sentenced/ disciplined for illegal activities or violating regulatory requirements?
+                </td>
+            </tr>
+            <tr>
+                <td class="border-left" colspan="3"><input type="checkbox" />否 No</td>
+                <td class="border-right" colspan="9"><input type="checkbox" checked="checked" />是 Yes (如果是，请述明具体If yes, specify please: _____特殊说明____ )</td>
+            </tr>
+            <tr>
+                <td class="border-left-right" colspan="12">
+                    5.阁下，或阁下的直系亲属是否为政治人物或与其有关连之人士、高级政府官员或国有企业高级行政人员?<br />
+                    Are you or your immediate family members politically exposed person (“PEP”), a person connected with PEP, senior government official or senior executive of a state-owned corporation?
+                </td>
+            </tr>
+            <tr>
+                <td class="border-left" colspan="3"><input type="checkbox" />否 No</td>
+                <td class="border-right" colspan="9"><input type="checkbox" checked="checked" />是 Yes Yes(如果是，请述明具体If yes, specify please: ___特殊说明__________)</td>
+            </tr>
+            <tr class="border-bottom">
+                <td class="border-left-right" colspan="12">
+                    1. 本人明白和同意，本合约的条款及细则（包括账户协议之总条款及细则、风险声明披露书、隐私政策和电子平台条款及细则（如适用））可被经纪不时以通知方式作出变更、补充或修改，本人明瞭本人可随时索取一份经过更新的合约（包括账户协议之总条款及细则、风险声明披露书、隐私政策和电子平台条款及细则（如适用））。<br>
+                    I understand and agree that the provisions of the terms and conditions of the Agreement (which includes the Master Terms and Conditions of Account Agreement, Risk Disclosure Statement, Privacy Policy and Electronic Platform Terms and Conditions (if applicable)) may be amended, supplemented or revised from time to time by Yunfeng Securities Limited by way of notice and I recognize that I may at any time ask for a copy of each of the up-to-date Agreement (which includes the Master Terms and Conditions of Account Agreement, Risk Disclosure Statement, Privacy Policy and Electronic Platform Terms and Conditions (if applicable)) for perusal<br />
+                    <br />
+                    2. 本人已详阅并同意本合约内有关证券买卖的条款及细则（包括帐户协议之总条款及细则、风险声明披露书、隐私政策和电子平台条款及细则（如适用））。本人确认本人明白本合约内的条款及细则，而本合约中有关证券买卖的内容已按本人明白的语言向本人解释清楚。<br />
+                    I have read and accepted the terms and conditions of the Agreement (which includes the Master Terms and Conditions of Account Agreement, Risk Disclosure Statement, Privacy Policy and Electronic Platform Terms and Conditions (if applicable)). I confirm my understanding of the terms and conditions of the Agreement, which were provided in a language that I understand<br />
+                    <br />
+                    3. 本人声明本人已被建议详细阅读本合约的条款及细则（包括帐户协议之总条款及细则、风险声明披露书、隐私政策和电子平台条款及细则（如适用）），并可据本人意欲提出问题或寻求独立意见。<br />
+                    I declare that I have been advised to read the terms and conditions of the Agreement (which includes the Master Terms and Conditions of Account Agreement, Risk Disclosure Statement, Privacy Policy and Electronic Platform Terms and Conditions (if applicable)) carefully, ask questions and take independent advice if I wish.<br />
+                    <br />
+                    4. 本人已仔细考虑风险披露声明书及了解进行证券买卖所涉及之高风险。考虑到本人的财务状况和投资目标，本人确认本人之财政状况能承担该交易带来之风险和承受其带来之任何损失，亦自愿确认证券买卖是一项对本人合适的买卖方式。<br />
+                    I have carefully considered the Risk Disclosure Statement and recognized that trading in securities involves a high degree of risk. Considering my financial position and investment objective, I confirm that I am financially viable to assume such risks and to sustain any losses resulting from such trading and voluntarily confirm that trading in securities is a suitable trading vehicle for me.<br />
+                    <br />
+                    5. 本人知悉及确认 本人必须遵守 本人登记注册国、国籍国、居住国及 / 或居籍国的法律之下可能适用的与购买、持有及沽售证券相关的 (i) 可能产生的任何税务后果，包括但不限于美国《海外账户税收合规法案》 (「FATCA」) 和《经济合作及发展组织》的自动交换金融账户资料共同汇报标准 (「CRS」) 及 (ii) 法律规定及外汇限制或管制规定。若本人的税务状况于日后出现任何变动，本人承诺立刻提供最新的税务状况。 <br />
+                    I acknowledge and confirm that I must (i) observe any possible tax consequences including but not limited to the U.S. Foreign Account Tax Compliance Act ("FATCA") and the OECD Common Reporting Standard ("CRS") for Automatic Exchange of Financial Account Information, and (ii) comply with any legal requirements and foreign exchange restrictions or exchange control requirements which might be applicable under the laws of the countries of my incorporation, citizenship, residence and/or domicile and which might be relevant to the purchase, holding or disposal of securities. I undertake to notify you promptly and provide an updated tax status should there be any changes to my tax detail<br />
+                    <br />
+                    6. 在不抵触当地适用法律的情况下，本人同意相关协议中相关的经纪可向国内与海外的监管机构或税务机构提供本人的个人资料以确立本人于任何司法管辖区的税务责任。<br />
+                    Subject to applicable local laws, I hereby consent for the relevant Broker as sets out in the relevant Agreement to share my information with domestic and overseas regulators or tax authorities where necessary to establish my tax liability in any jurisdiction.<br />
+                    <br />
+                    7. 因应国内或海外的监管机构或税务机构需要，本人准许并同意相关协议中相关的经纪可按适用的法律、法规和指令在本人账户中扣留相关所需的金额项。<br />
+                    Where required by domestic or overseas regulators or tax authorities, I consent and agree that the relevant Broker as sets out in the relevant Agreement may withhold from my account(s) such amounts as may be required according to the applicable laws, regulations and directives.<br />
+                    <br />
+                    8. 本人确认并非美国居民或美国公民，并没有持有美国永久居民身份证 (绿卡) 。<br />
+                    I confirm that I am not a US citizen or resident of the United States, do not hold a US permanent resident card (green card). <br />
+                    <br />
+                    9. 本人是账户最终负责发出交易指示的人士。<br />
+                    I am the person responsible for originating the instructions in relation to a transaction.<br />
+                    <br />
+                    10. 本人是从交易取得商业或经济利益或损失及/或承担起商业或经济风险之最终实益拥有人。<br />
+                    I am the ultimate beneficial owner of the relevant Account who stands the commercial or economic gain and loss of the transaction(s) and/or bear its commercial or economic risk<br />
+                    <br />
+                    11. 本人确认如对于此资料有所更改，本人会通知相关经纪。<br />
+                    I confirm I will notify the relevant Broker any material changes to the information.<br />
+                    <br />
+                    12. 如中、英文两个版本有任何抵触或不相符之处，应以英文版本为准。<br />
+                    If there is any inconsistency or ambiguity between the English and the Chinese version, the English version shall prevail.<br />
+                    <br />
+                    我们依照私隐政策的收集个人资料声明:<br />
+                    We refer to the PICS pursuant to the Privacy Policy:
+                    <input type="checkbox" checked="checked" />
+                    本人不同意使用本人的个人资料作 (i) 公司, (ii) 公司的关联公司, 及(iii) 任何第三者公司的市场销售信息用途<br />
+                    I do not consent to the use of my personal data to receive marketing communications from (i) the Company, (ii) the related    
+                    companies of the Company, and (iii) any third party company
+                </td>
+            </tr>
+            <tr class="spacer"><td></td></tr>
+            <tr class="border-top">
+                <td class="border-left" colspan="2">客户签署<br />Signature of Client </td>
+                <td class="border-left-right" colspan="10">
+                    <img style="height:80px;" src="https://static.runoob.com/images/demo/demo2.jpg" />
+                </td>
+            </tr>
+            <tr class="border-top-bottom">
+                <td class="border-left" colspan="3">客户姓名<br />Name of Client</td>
+                <td class="border-left" colspan="3">黄齐仁</td>
+                <td class="border-left" colspan="3">日期<br />Date</td>
+                <td class="border-left-right" colspan="3">2019-10-29</td>
+            </tr>
+        <tbody>
+    </table>
+</body>
+</html>

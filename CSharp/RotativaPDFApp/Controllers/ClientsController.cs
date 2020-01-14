@@ -46,6 +46,17 @@ namespace RotativaPDFApp.Controllers
             return View(await _context.Client.ToListAsync());
         }
 
+        // GET: PDF Index Clients
+        public async Task<IActionResult> PdfIndex(string type)
+        {
+            if (type == "view")
+                return View(await _context.Client.ToArrayAsync());
+            return new ViewAsPdf(await _context.Client.ToListAsync())
+            {
+                CustomSwitches= "--page-offset 0 --footer-right \"Page | [page]     \" --footer-font-size 8"
+            };
+        }
+
         // GET: Clients/Details/5
         public async Task<IActionResult> Details(string id)
         {
@@ -66,7 +77,7 @@ namespace RotativaPDFApp.Controllers
 
 
         // GET: Clients/Details/5
-        public async Task<IActionResult> PdfDetails(string id)
+        public async Task<IActionResult> PdfDetails(string id,string type)
         {
             if (id == null)
             {
@@ -80,8 +91,18 @@ namespace RotativaPDFApp.Controllers
                 return NotFound();
             }
 
-
-            return new ViewAsPdf(client);
+            if (type == "view")
+                return View(client);
+            return new ViewAsPdf(client)
+            {
+                FileName = "Client.pdf",
+                //PageMargins =
+                //{
+                //    Left=20, Bottom=20,Right=20,Top=60
+                //},
+                PageSize = Rotativa.AspNetCore.Options.Size.A4,
+                CustomSwitches = "--page-offset 0 --footer-center [page] --footer-font-size 12"
+            };
         }
 
         // GET: Clients/Create

@@ -1,0 +1,1 @@
+copy target\SocketSample-0.0.1-SNAPSHOT.jar d:\demo\SocketSample-0.0.1-SNAPSHOT.jar /y

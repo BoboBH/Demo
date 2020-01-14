@@ -65,7 +65,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebMvcViaMongo", "csharp\We
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XUnitForMongod", "csharp\XUnitForMongod\XUnitForMongod.csproj", "{CA0AF987-000F-4C13-996B-360D31C06940}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthWeixin", "csharp\AuthWeixin\AuthWeixin.csproj", "{40DA7703-C3F1-4BE7-8EB3-661F28AEB6F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthWeixin", "csharp\AuthWeixin\AuthWeixin.csproj", "{40DA7703-C3F1-4BE7-8EB3-661F28AEB6F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

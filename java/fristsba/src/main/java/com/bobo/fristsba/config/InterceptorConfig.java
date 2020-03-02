@@ -11,11 +11,11 @@ import com.bobo.fristsba.authentication.AuthenticationInterceptor;
 @Configuration
 public class InterceptorConfig implements WebMvcConfigurer {
 
-	 @Override
-	    public void addInterceptors(InterceptorRegistry registry) {
-	        registry.addInterceptor(authenticationInterceptor())
-	                .addPathPatterns("/api/**");
-	    }
+	@Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        registry.addInterceptor(authenticationInterceptor())
+                .addPathPatterns("/api/**");
+    }
 	@Bean
 	public AuthenticationInterceptor authenticationInterceptor() {
         return new AuthenticationInterceptor();

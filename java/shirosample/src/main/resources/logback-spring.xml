@@ -9,7 +9,7 @@
     <!-- name的值是变量的名称，value的值时变量定义的值。通过定义的值会被插入到logger上下文中。定义后，可以使“${}”来使用变量。 -->
     <!--<property name="LOG_FILE" value="${LOG_FILE:-${LOG_PATH:-${LOG_TEMP:-${java.io.tmpdir:-/tmp}}/}spring.log}"/>-->
     <property name="LOG_FILE" value="${LOG_FILE}"/>
-    <property name="LOG_FILE_FOLDER" value="LOG_FILE_FOLDERX"/>
+    <property name="LOG_FILE_FOLDER" value="D:\\demo\\log"/>
 
     <!--1. 输出到控制台-->
     <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
@@ -45,7 +45,7 @@
     </logger>
     <logger name="com.springboot" level="debug"/>
     <root level="info">
-        <appender-ref ref="stdout"/>
+        <!-- <appender-ref ref="stdout"/> -->
         <appender-ref ref="R"/>
     </root>
 </configuration>

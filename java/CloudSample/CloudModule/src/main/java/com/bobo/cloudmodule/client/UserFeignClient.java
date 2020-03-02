@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.bobo.cloudmodule.bean.ResponseUser;
 import com.bobo.cloudmodule.bean.User;
 
-@FeignClient(name="cloudprovider", fallbackFactory=UserFallback.class)
+@FeignClient(name="cloudprovider",value="cloudprovider", fallbackFactory=UserFallback.class)
 public interface UserFeignClient {
 
 	@RequestMapping(value="/user/get", method=RequestMethod.GET)

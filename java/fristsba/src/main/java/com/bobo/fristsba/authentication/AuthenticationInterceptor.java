@@ -24,6 +24,12 @@ import com.bobo.fristsba.util.UrlUtil;
 
 import io.netty.util.internal.StringUtil;
 
+/***
+ * 
+ * @author bobo.huang
+ * @Description:
+ *    自定义注解，可以用来做权限校验，可以独立于Shiro
+ */
 public class AuthenticationInterceptor implements HandlerInterceptor {
 
 	@Autowired

@@ -30,6 +30,7 @@
     <module>CloudProvider</module>
     <module>CloudConsumer</module>
     <module>CouldZuul</module>
+    <module>CloudConfig</module>
   </modules>
   <dependencyManagement>
        <dependencies>

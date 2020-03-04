@@ -1,0 +1,140 @@
+10:32:40.177 INFO  com.bobo.logsample.App [50] - Starting App on D076-SZ with PID 99624 (D:\github\Demo\java\logsample\target\classes started by bobo.huang in D:\github\Demo\java\logsample)
+10:32:40.179 INFO  com.bobo.logsample.App [675] - No active profile set, falling back to default profiles: default
+10:32:41.662 INFO  o.s.b.w.e.tomcat.TomcatWebServer [90] - Tomcat initialized with port(s): 12345 (http)
+10:32:41.697 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Initializing ProtocolHandler ["http-nio-12345"]
+10:32:41.715 INFO  o.a.catalina.core.StandardService [173] - Starting service [Tomcat]
+10:32:41.716 INFO  o.a.catalina.core.StandardEngine [173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+10:32:41.946 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring embedded WebApplicationContext
+10:32:41.947 INFO  o.s.web.context.ContextLoader [296] - Root WebApplicationContext: initialization completed in 1716 ms
+10:32:42.255 INFO  o.s.s.c.ThreadPoolTaskExecutor [171] - Initializing ExecutorService 'applicationTaskExecutor'
+10:32:42.524 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Starting ProtocolHandler ["http-nio-12345"]
+10:32:42.570 INFO  o.s.b.w.e.tomcat.TomcatWebServer [204] - Tomcat started on port(s): 12345 (http) with context path ''
+10:32:42.574 INFO  com.bobo.logsample.App [59] - Started App in 2.914 seconds (JVM running for 3.501)
+10:32:42.576 INFO  com.bobo.logsample.App [22] - -----------------------------Application End-----------------------------
+10:32:52.340 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:32:52.341 INFO  o.s.web.servlet.DispatcherServlet [524] - Initializing Servlet 'dispatcherServlet'
+10:32:52.347 INFO  o.s.web.servlet.DispatcherServlet [546] - Completed initialization in 6 ms
+10:33:10.782 INFO  com.bobo.logsample.App [50] - Starting App on D076-SZ with PID 98608 (D:\github\Demo\java\logsample\target\classes started by bobo.huang in D:\github\Demo\java\logsample)
+10:33:10.784 INFO  com.bobo.logsample.App [675] - No active profile set, falling back to default profiles: default
+10:33:12.190 INFO  o.s.b.w.e.tomcat.TomcatWebServer [90] - Tomcat initialized with port(s): 12345 (http)
+10:33:12.212 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Initializing ProtocolHandler ["http-nio-12345"]
+10:33:12.226 INFO  o.a.catalina.core.StandardService [173] - Starting service [Tomcat]
+10:33:12.226 INFO  o.a.catalina.core.StandardEngine [173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+10:33:12.374 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring embedded WebApplicationContext
+10:33:12.374 INFO  o.s.web.context.ContextLoader [296] - Root WebApplicationContext: initialization completed in 1532 ms
+10:33:12.634 INFO  o.s.s.c.ThreadPoolTaskExecutor [171] - Initializing ExecutorService 'applicationTaskExecutor'
+10:33:12.829 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Starting ProtocolHandler ["http-nio-12345"]
+10:33:12.899 INFO  o.s.b.w.e.tomcat.TomcatWebServer [204] - Tomcat started on port(s): 12345 (http) with context path ''
+10:33:12.902 INFO  com.bobo.logsample.App [59] - Started App in 2.635 seconds (JVM running for 3.222)
+10:33:12.905 INFO  com.bobo.logsample.App [22] - -----------------------------Application End-----------------------------
+10:33:32.217 INFO  com.bobo.logsample.App [50] - Starting App on D076-SZ with PID 99388 (D:\github\Demo\java\logsample\target\classes started by bobo.huang in D:\github\Demo\java\logsample)
+10:33:32.218 INFO  com.bobo.logsample.App [675] - No active profile set, falling back to default profiles: default
+10:33:33.593 INFO  o.s.b.w.e.tomcat.TomcatWebServer [90] - Tomcat initialized with port(s): 12346 (http)
+10:33:33.617 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Initializing ProtocolHandler ["http-nio-12346"]
+10:33:33.639 INFO  o.a.catalina.core.StandardService [173] - Starting service [Tomcat]
+10:33:33.639 INFO  o.a.catalina.core.StandardEngine [173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+10:33:33.779 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring embedded WebApplicationContext
+10:33:33.779 INFO  o.s.web.context.ContextLoader [296] - Root WebApplicationContext: initialization completed in 1505 ms
+10:33:34.018 INFO  o.s.s.c.ThreadPoolTaskExecutor [171] - Initializing ExecutorService 'applicationTaskExecutor'
+10:33:34.214 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Starting ProtocolHandler ["http-nio-12346"]
+10:33:34.257 INFO  o.s.b.w.e.tomcat.TomcatWebServer [204] - Tomcat started on port(s): 12346 (http) with context path ''
+10:33:34.261 INFO  com.bobo.logsample.App [59] - Started App in 2.577 seconds (JVM running for 3.197)
+10:33:34.263 INFO  com.bobo.logsample.App [22] - -----------------------------Application End-----------------------------
+10:33:53.461 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:33:53.461 INFO  o.s.web.servlet.DispatcherServlet [524] - Initializing Servlet 'dispatcherServlet'
+10:33:53.468 INFO  o.s.web.servlet.DispatcherServlet [546] - Completed initialization in 7 ms
+10:36:31.600 INFO  com.bobo.logsample.App [50] - Starting App on D076-SZ with PID 77148 (D:\github\Demo\java\logsample\target\classes started by bobo.huang in D:\github\Demo\java\logsample)
+10:36:31.602 INFO  com.bobo.logsample.App [675] - No active profile set, falling back to default profiles: default
+10:36:33.019 INFO  o.s.b.w.e.tomcat.TomcatWebServer [90] - Tomcat initialized with port(s): 12346 (http)
+10:36:33.038 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Initializing ProtocolHandler ["http-nio-12346"]
+10:36:33.052 INFO  o.a.catalina.core.StandardService [173] - Starting service [Tomcat]
+10:36:33.052 INFO  o.a.catalina.core.StandardEngine [173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+10:36:33.180 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring embedded WebApplicationContext
+10:36:33.180 INFO  o.s.web.context.ContextLoader [296] - Root WebApplicationContext: initialization completed in 1526 ms
+10:36:33.433 INFO  o.s.s.c.ThreadPoolTaskExecutor [171] - Initializing ExecutorService 'applicationTaskExecutor'
+10:36:33.634 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Starting ProtocolHandler ["http-nio-12346"]
+10:36:33.683 INFO  o.s.b.w.e.tomcat.TomcatWebServer [204] - Tomcat started on port(s): 12346 (http) with context path ''
+10:36:33.700 INFO  com.bobo.logsample.App [59] - Started App in 2.601 seconds (JVM running for 3.175)
+10:36:33.702 INFO  com.bobo.logsample.App [22] - -----------------------------Application End-----------------------------
+10:36:42.522 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:36:42.522 INFO  o.s.web.servlet.DispatcherServlet [524] - Initializing Servlet 'dispatcherServlet'
+10:36:42.529 INFO  o.s.web.servlet.DispatcherServlet [546] - Completed initialization in 6 ms
+11:10:39.218 INFO  com.bobo.logsample.App [50] - Starting App on D076-SZ with PID 85728 (D:\github\Demo\java\logsample\target\classes started by bobo.huang in D:\github\Demo\java\logsample)
+11:10:39.220 INFO  com.bobo.logsample.App [675] - No active profile set, falling back to default profiles: default
+11:10:40.587 INFO  o.s.b.w.e.tomcat.TomcatWebServer [90] - Tomcat initialized with port(s): 12346 (http)
+11:10:40.612 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Initializing ProtocolHandler ["http-nio-12346"]
+11:10:40.628 INFO  o.a.catalina.core.StandardService [173] - Starting service [Tomcat]
+11:10:40.628 INFO  o.a.catalina.core.StandardEngine [173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+11:10:40.803 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring embedded WebApplicationContext
+11:10:40.804 INFO  o.s.web.context.ContextLoader [296] - Root WebApplicationContext: initialization completed in 1526 ms
+11:10:41.105 INFO  o.s.s.c.ThreadPoolTaskExecutor [171] - Initializing ExecutorService 'applicationTaskExecutor'
+11:10:41.309 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Starting ProtocolHandler ["http-nio-12346"]
+11:10:41.353 INFO  o.s.b.w.e.tomcat.TomcatWebServer [204] - Tomcat started on port(s): 12346 (http) with context path ''
+11:10:41.357 INFO  com.bobo.logsample.App [59] - Started App in 2.648 seconds (JVM running for 3.223)
+11:10:41.358 INFO  com.bobo.logsample.App [22] - -----------------------------Application End-----------------------------
+11:13:28.315 INFO  com.bobo.logsample.App [50] - Starting App on D076-SZ with PID 73184 (D:\github\Demo\java\logsample\target\classes started by bobo.huang in D:\github\Demo\java\logsample)
+11:13:28.316 INFO  com.bobo.logsample.App [675] - No active profile set, falling back to default profiles: default
+11:13:29.670 INFO  o.s.b.w.e.tomcat.TomcatWebServer [90] - Tomcat initialized with port(s): 12346 (http)
+11:13:29.693 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Initializing ProtocolHandler ["http-nio-12346"]
+11:13:29.708 INFO  o.a.catalina.core.StandardService [173] - Starting service [Tomcat]
+11:13:29.708 INFO  o.a.catalina.core.StandardEngine [173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+11:13:29.863 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring embedded WebApplicationContext
+11:13:29.863 INFO  o.s.web.context.ContextLoader [296] - Root WebApplicationContext: initialization completed in 1485 ms
+11:13:30.141 INFO  o.s.s.c.ThreadPoolTaskExecutor [171] - Initializing ExecutorService 'applicationTaskExecutor'
+11:13:30.337 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Starting ProtocolHandler ["http-nio-12346"]
+11:13:30.352 ERROR o.apache.catalina.util.LifecycleBase [175] - Failed to start component [Connector[HTTP/1.1-12346]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:226)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.bobo.logsample.App.main(App.java:21)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:239)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1116)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1202)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:568)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
+	... 14 common frames omitted
+11:13:30.358 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Pausing ProtocolHandler ["http-nio-12346"]
+11:13:30.359 INFO  o.a.catalina.core.StandardService [173] - Stopping service [Tomcat]
+11:13:30.366 INFO  o.apache.catalina.util.LifecycleBase [173] - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+11:13:30.366 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Stopping ProtocolHandler ["http-nio-12346"]
+11:13:30.367 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Destroying ProtocolHandler ["http-nio-12346"]
+11:13:30.372 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener [142] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+11:13:30.375 ERROR o.s.b.d.LoggingFailureAnalysisReporter [42] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 12346 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 12346, or configure this application to listen on another port.
+
+11:13:30.378 INFO  o.s.s.c.ThreadPoolTaskExecutor [208] - Shutting down ExecutorService 'applicationTaskExecutor'
+11:16:51.383 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:16:51.384 INFO  o.s.web.servlet.DispatcherServlet [524] - Initializing Servlet 'dispatcherServlet'
+11:16:51.391 INFO  o.s.web.servlet.DispatcherServlet [546] - Completed initialization in 7 ms

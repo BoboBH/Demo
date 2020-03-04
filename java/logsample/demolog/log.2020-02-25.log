@@ -1,0 +1,63 @@
+11:14:47.734 INFO  com.bobo.logsample.App [50] - Starting App on D076-SZ with PID 95724 (D:\github\Demo\java\logsample\target\classes started by bobo.huang in D:\github\Demo\java\logsample)
+11:14:47.735 INFO  com.bobo.logsample.App [675] - No active profile set, falling back to default profiles: default
+11:14:49.191 INFO  o.s.b.w.e.tomcat.TomcatWebServer [90] - Tomcat initialized with port(s): 12346 (http)
+11:14:49.212 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Initializing ProtocolHandler ["http-nio-12346"]
+11:14:49.225 INFO  o.a.catalina.core.StandardService [173] - Starting service [Tomcat]
+11:14:49.225 INFO  o.a.catalina.core.StandardEngine [173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+11:14:49.356 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring embedded WebApplicationContext
+11:14:49.357 INFO  o.s.web.context.ContextLoader [296] - Root WebApplicationContext: initialization completed in 1565 ms
+11:14:49.616 INFO  o.s.s.c.ThreadPoolTaskExecutor [171] - Initializing ExecutorService 'applicationTaskExecutor'
+11:14:49.821 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Starting ProtocolHandler ["http-nio-12346"]
+11:14:49.836 ERROR o.apache.catalina.util.LifecycleBase [175] - Failed to start component [Connector[HTTP/1.1-12346]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:226)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.bobo.logsample.App.main(App.java:21)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:239)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1116)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1202)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:568)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
+	... 14 common frames omitted
+11:14:49.843 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Pausing ProtocolHandler ["http-nio-12346"]
+11:14:49.843 INFO  o.a.catalina.core.StandardService [173] - Stopping service [Tomcat]
+11:14:49.850 INFO  o.apache.catalina.util.LifecycleBase [173] - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+11:14:49.851 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Stopping ProtocolHandler ["http-nio-12346"]
+11:14:49.851 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Destroying ProtocolHandler ["http-nio-12346"]
+11:14:49.855 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener [142] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+11:14:49.858 ERROR o.s.b.d.LoggingFailureAnalysisReporter [42] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 12346 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 12346, or configure this application to listen on another port.
+
+11:14:49.861 INFO  o.s.s.c.ThreadPoolTaskExecutor [208] - Shutting down ExecutorService 'applicationTaskExecutor'

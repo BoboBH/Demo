@@ -1,0 +1,14 @@
+D:\github\demo\csharp\Finance\Business\bin\Debug\netcoreapp2.2\Business.deps.json
+D:\github\demo\csharp\Finance\Business\bin\Debug\netcoreapp2.2\Business.dll
+D:\github\demo\csharp\Finance\Business\bin\Debug\netcoreapp2.2\Business.pdb
+D:\github\demo\csharp\Finance\Business\bin\Debug\netcoreapp2.2\Common.dll
+D:\github\demo\csharp\Finance\Business\bin\Debug\netcoreapp2.2\Common.pdb
+D:\github\demo\csharp\Finance\Business\obj\Debug\netcoreapp2.2\Business.csprojAssemblyReference.cache
+D:\github\demo\csharp\Finance\Business\obj\Debug\netcoreapp2.2\Business.csproj.CoreCompileInputs.cache
+D:\github\demo\csharp\Finance\Business\obj\Debug\netcoreapp2.2\Business.AssemblyInfoInputs.cache
+D:\github\demo\csharp\Finance\Business\obj\Debug\netcoreapp2.2\Business.AssemblyInfo.cs
+D:\github\demo\csharp\Finance\Business\obj\Debug\netcoreapp2.2\Business.csproj.CopyComplete
+D:\github\demo\csharp\Finance\Business\obj\Debug\netcoreapp2.2\Business.dll
+D:\github\demo\csharp\Finance\Business\obj\Debug\netcoreapp2.2\Business.pdb
+D:\github\Demo\CSharp\Finance\Business\bin\Debug\netcoreapp2.2\Business.runtimeconfig.json
+D:\github\Demo\CSharp\Finance\Business\bin\Debug\netcoreapp2.2\Business.runtimeconfig.dev.json

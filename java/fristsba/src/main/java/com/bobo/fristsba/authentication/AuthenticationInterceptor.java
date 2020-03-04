@@ -28,7 +28,7 @@ import io.netty.util.internal.StringUtil;
  * 
  * @author bobo.huang
  * @Description:
- *    自定义注解，可以用来做权限校验，可以独立于Shiro
+ *    自定义注解，可以用来做权限校验，可以独立于Shiro的配置
  */
 public class AuthenticationInterceptor implements HandlerInterceptor {
 

@@ -31,6 +31,8 @@
     <module>CloudConsumer</module>
     <module>CouldZuul</module>
     <module>CloudConfig</module>
+    <module>CloudConfigClient</module>
+    <module>cloudconfig2</module>
   </modules>
   <dependencyManagement>
        <dependencies>

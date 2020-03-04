@@ -32,6 +32,7 @@ public class JWTFilter extends BasicHttpAuthenticationFilter {
 			return false;
 		}
 	}
+	
 	@Override
 	protected boolean executeLogin(ServletRequest request, ServletResponse response) throws Exception
 	{

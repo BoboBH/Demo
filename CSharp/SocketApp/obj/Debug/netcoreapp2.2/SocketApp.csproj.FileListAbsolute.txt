@@ -1,0 +1,11 @@
+D:\github\Demo\csharp\SocketApp\bin\Debug\netcoreapp2.2\SocketApp.deps.json
+D:\github\Demo\csharp\SocketApp\bin\Debug\netcoreapp2.2\SocketApp.runtimeconfig.json
+D:\github\Demo\csharp\SocketApp\bin\Debug\netcoreapp2.2\SocketApp.runtimeconfig.dev.json
+D:\github\Demo\csharp\SocketApp\bin\Debug\netcoreapp2.2\SocketApp.dll
+D:\github\Demo\csharp\SocketApp\bin\Debug\netcoreapp2.2\SocketApp.pdb
+D:\github\Demo\csharp\SocketApp\obj\Debug\netcoreapp2.2\SocketApp.csproj.CoreCompileInputs.cache
+D:\github\Demo\csharp\SocketApp\obj\Debug\netcoreapp2.2\SocketApp.AssemblyInfoInputs.cache
+D:\github\Demo\csharp\SocketApp\obj\Debug\netcoreapp2.2\SocketApp.AssemblyInfo.cs
+D:\github\Demo\csharp\SocketApp\obj\Debug\netcoreapp2.2\SocketApp.dll
+D:\github\Demo\csharp\SocketApp\obj\Debug\netcoreapp2.2\SocketApp.pdb
+D:\github\Demo\CSharp\SocketApp\obj\Debug\netcoreapp2.2\SocketApp.csprojAssemblyReference.cache

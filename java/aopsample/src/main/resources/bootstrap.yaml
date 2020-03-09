@@ -1,0 +1,7 @@
+#required,exposure refresh api to refresh configuration
+#refresh api: http://localhost:port/actuator/refresh
+management:
+  endpoints:
+    web:
+      exposure:
+         include: refresh,health

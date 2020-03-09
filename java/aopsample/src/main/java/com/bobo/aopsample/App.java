@@ -2,6 +2,10 @@ package com.bobo.aopsample;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
+
+import com.bobo.aopsample.bean.Student;
 
 /**
  * Application Entrance!
@@ -9,6 +13,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *
  */
 @SpringBootApplication
+@EnableConfigurationProperties(Student.class)
+@RefreshScope
 public class App 
 {
     public static void main( String[] args )

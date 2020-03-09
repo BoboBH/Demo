@@ -1,0 +1,15 @@
+#在启动时制定配置文件地址：
+#java -jar app.jar --spring.config.location=d:\temp\config
+#启动时指定端口：--server.port
+#Value的冒号后面必须要加空格
+#spring.cloud.starter-config刷新地址为：
+#/actuator/refresh
+spring:
+  profiles:
+    include: test
+server:
+  port: 9098
+student:
+  name: bobo.huangxxxx
+  age: 20
+  id: 092
